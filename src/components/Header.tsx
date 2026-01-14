@@ -17,7 +17,7 @@ const Header = () => {
           <a href="#cursos" className="text-base font-medium text-white hover:text-violet-400 hover:scale-110 transition-all duration-300">
             Curso
           </a>
-          <a href="#sobre" className="text-base font-medium text-white hover:text-cyan-400 hover:scale-110 transition-all duration-300">
+          <a href="#sobre" className="text-base font-medium text-white hover:text-blue-400 hover:scale-110 transition-all duration-300">
             Como Funciona
           </a>
           <a
@@ -32,7 +32,7 @@ const Header = () => {
           <a href="https://www.fasuleducacional.edu.br/graduacao/analise-e-desenvolvimento-de-sistemas" target="_blank" rel="noopener noreferrer">
             <Button
               variant="default"
-              className="bg-gradient-to-r from-violet-600 to-cyan-500 text-white hover:from-violet-500 hover:to-cyan-400 font-semibold rounded-full text-sm md:text-base px-4 md:px-5 py-2.5"
+              className="bg-gradient-to-r from-violet-600 to-blue-600 text-white hover:from-violet-500 hover:to-blue-500 font-semibold rounded-full text-sm md:text-base px-4 md:px-5 py-2.5"
             >
               COMECE AGORA
             </Button>

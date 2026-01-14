@@ -17,29 +17,32 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 20%;
 
-    /* Brand colors - Purple & Cyan Tech palette */
+    /* Brand colors - Purple & Dark Blue palette */
     --primary: 270 70% 55%;
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 185 80% 45%;
+    --secondary: 220 80% 35%;
     --secondary-foreground: 0 0% 100%;
     
-    /* Cyan for tech accents */
-    --cyan: 185 80% 50%;
-    --cyan-foreground: 0 0% 100%;
+    /* Dark Blue for tech accents */
+    --dark-accent: 220 80% 35%;
+    --dark-accent-foreground: 0 0% 100%;
     
     /* Purple for primary actions */
     --purple: 270 70% 55%;
     --purple-foreground: 0 0% 100%;
 
     /* Dark backgrounds */
-    --dark-blue: 250 40% 10%;
+    --dark-blue: 220 80% 25%;
+
+    /* Dark Blue accent */
+    --blue-accent: 220 70% 45%;
 
     --muted: 260 15% 96%;
     --muted-foreground: 260 20% 40%;
 
-    /* Accent - Cyan */
-    --accent: 185 80% 45%;
+    /* Accent - Dark Blue */
+    --accent: 220 80% 35%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -54,12 +57,12 @@ All colors MUST be HSL.
     /* Gradient colors */
     --gradient-start: 260 50% 8%;
     --gradient-mid: 270 60% 30%;
-    --gradient-end: 185 80% 50%;
+    --gradient-end: 220 80% 35%;
     
     /* Legacy gradient colors */
-    --gradient-cyan: 185 80% 50%;
+    --gradient-dark-blue: 220 80% 35%;
     --gradient-purple: 270 70% 55%;
-    --gradient-blue: 250 60% 45%;
+    --gradient-blue: 220 70% 45%;
     
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -133,27 +136,27 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
-  /* Fixed gradient background - Purple to cyan tech */
+  /* Fixed gradient background - Purple to dark blue tech */
   .gradient-animated {
     background: linear-gradient(135deg, 
       #1a0a2e 0%, 
       #4c1d95 40%, 
-      #06b6d4 100%
+      #1e3a8a 100%
     );
   }
   
-  /* Tech gradient - Purple to cyan */
+  /* Tech gradient - Purple to dark blue */
   .tech-gradient {
     background: linear-gradient(135deg, 
       #1a0a2e 0%, 
       #581c87 45%, 
-      #0891b2 100%
+      #1e40af 100%
     );
   }
   
   /* Gradient text */
   .gradient-text {
-    background: linear-gradient(135deg, hsl(270 70% 55%), hsl(185 80% 50%));
+    background: linear-gradient(135deg, hsl(270 70% 55%), hsl(220 80% 35%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -227,7 +230,7 @@ All colors MUST be HSL.
 .benefits-card {
   background-color: #1a0a2e;
   background-image: 
-    radial-gradient(ellipse at 12% 88%, rgba(6, 182, 212, 0.5) 0, rgba(6, 182, 212, 0.2) 32%, rgba(26, 10, 46, 0) 60%),
+    radial-gradient(ellipse at 12% 88%, rgba(30, 58, 138, 0.5) 0, rgba(30, 58, 138, 0.2) 32%, rgba(26, 10, 46, 0) 60%),
     radial-gradient(ellipse at 94% 20%, rgba(139, 92, 246, 0.6) 0, rgba(139, 92, 246, 0.25) 32%, rgba(26, 10, 46, 0) 56%),
     linear-gradient(180deg, #1a0a2e 0, #130722 55%, #0d0518 100%);
   background-repeat: no-repeat;
@@ -238,7 +241,7 @@ All colors MUST be HSL.
 .benefits-card-tech {
   background-color: #1a0a2e;
   background-image: 
-    radial-gradient(ellipse at 12% 88%, rgba(6, 182, 212, 0.5) 0, rgba(6, 182, 212, 0.2) 32%, rgba(26, 10, 46, 0) 60%),
+    radial-gradient(ellipse at 12% 88%, rgba(30, 58, 138, 0.5) 0, rgba(30, 58, 138, 0.2) 32%, rgba(26, 10, 46, 0) 60%),
     radial-gradient(ellipse at 94% 20%, rgba(139, 92, 246, 0.6) 0, rgba(139, 92, 246, 0.25) 32%, rgba(26, 10, 46, 0) 56%),
     linear-gradient(180deg, #1a0a2e 0, #130722 55%, #0d0518 100%);
   background-repeat: no-repeat;
@@ -248,7 +251,7 @@ All colors MUST be HSL.
 
 .benefits-button-tech {
   width: 100%;
-  background: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%);
+  background: linear-gradient(135deg, #8b5cf6 0%, #1e40af 100%);
   color: white;
   font-weight: 700;
   font-size: 0.875rem;
@@ -264,7 +267,7 @@ All colors MUST be HSL.
 }
 
 .benefits-button-tech:hover {
-  background: linear-gradient(135deg, #a78bfa 0%, #22d3ee 100%);
+  background: linear-gradient(135deg, #a78bfa 0%, #2563eb 100%);
   box-shadow: 0 25px 50px -12px rgba(139, 92, 246, 0.5);
   transform: scale(1.05);
 }

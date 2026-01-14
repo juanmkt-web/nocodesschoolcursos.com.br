@@ -40,7 +40,7 @@ const Hero = () => {
                 textShadow: "2px 2px 8px rgba(0, 0, 0, 0.4)",
               }}
             >
-              TORNE-SE <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-cyan-400">DESENVOLVEDOR</span> E CONQUISTE O MERCADO DE TECNOLOGIA
+              TORNE-SE <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-blue-400">DESENVOLVEDOR</span> E CONQUISTE O MERCADO DE TECNOLOGIA
             </h1>
 
             <p className="text-base md:text-xl text-white/90 leading-relaxed mb-5 md:mb-8">
@@ -56,7 +56,7 @@ const Hero = () => {
               >
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-violet-600 to-cyan-500 text-white hover:from-violet-500 hover:to-cyan-400 font-bold text-sm md:text-lg px-6 md:px-10 py-5 md:py-7 rounded-full shadow-[0_0_20px_rgba(139,92,246,0.5)] hover:shadow-[0_0_30px_rgba(139,92,246,0.7)] transition-all hover:-translate-y-1 animate-pulse-cta w-full md:w-auto"
+                  className="bg-gradient-to-r from-violet-600 to-blue-600 text-white hover:from-violet-500 hover:to-blue-500 font-bold text-sm md:text-lg px-6 md:px-10 py-5 md:py-7 rounded-full shadow-[0_0_20px_rgba(139,92,246,0.5)] hover:shadow-[0_0_30px_rgba(139,92,246,0.7)] transition-all hover:-translate-y-1 animate-pulse-cta w-full md:w-auto"
                 >
                   QUERO ME INSCREVER <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
                 </Button>
@@ -65,7 +65,7 @@ const Hero = () => {
 
             <div className="flex flex-row gap-3 md:gap-6 justify-center md:justify-start flex-wrap">
               <div className="flex items-center gap-1 md:gap-2">
-                <Award className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-cyan-400" />
+                <Award className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-blue-400" />
                 <span className="text-xs md:text-sm font-medium">Diploma MEC</span>
               </div>
               <div className="flex items-center gap-1 md:gap-2">
@@ -73,7 +73,7 @@ const Hero = () => {
                 <span className="text-xs md:text-sm font-medium">5 Semestres</span>
               </div>
               <div className="flex items-center gap-1 md:gap-2">
-                <Users className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-cyan-400" />
+                <Users className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-blue-400" />
                 <span className="text-xs md:text-sm font-medium">+10 mil Alunos</span>
               </div>
             </div>

@@ -84,7 +84,7 @@ const Courses = () => {
                     <span className="text-sm font-medium text-gray-700">Tecnólogo</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Monitor className="w-5 h-5 text-cyan-600" />
+                    <Monitor className="w-5 h-5 text-blue-600" />
                     <span className="text-sm font-medium text-gray-700">{courseDetails.modality}</span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -92,7 +92,7 @@ const Courses = () => {
                     <span className="text-sm font-medium text-gray-700">{courseDetails.hours}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Calendar className="w-5 h-5 text-cyan-600" />
+                    <Calendar className="w-5 h-5 text-blue-600" />
                     <span className="text-sm font-medium text-gray-700">{courseDetails.semesters}</span>
                   </div>
                 </div>
@@ -104,7 +104,7 @@ const Courses = () => {
                     <span className="text-lg text-gray-900">/mês</span>
                     <span className="text-gray-400 line-through ml-2">{courseDetails.regularPrice}</span>
                   </div>
-                  <span className="inline-block text-xs bg-gradient-to-r from-violet-500 to-cyan-400 text-white px-3 py-1 rounded-full font-semibold">
+                  <span className="inline-block text-xs bg-gradient-to-r from-violet-500 to-blue-500 text-white px-3 py-1 rounded-full font-semibold">
                     VALOR FIXO ATÉ O FINAL DO CURSO
                   </span>
                 </div>
@@ -112,7 +112,7 @@ const Courses = () => {
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Button
-                    className="bg-gradient-to-r from-violet-600 to-cyan-500 hover:from-violet-500 hover:to-cyan-400 text-white font-bold rounded-full text-base py-6 flex-1 shadow-[0_0_20px_rgba(139,92,246,0.5)]"
+                    className="bg-gradient-to-r from-violet-600 to-blue-600 hover:from-violet-500 hover:to-blue-500 text-white font-bold rounded-full text-base py-6 flex-1 shadow-[0_0_20px_rgba(139,92,246,0.5)]"
                     asChild
                   >
                     <a href={courseDetails.url} target="_blank" rel="noopener noreferrer">
@@ -142,7 +142,7 @@ const Courses = () => {
                 key={index}
                 className="bg-white/10 backdrop-blur-sm rounded-xl p-4 lg:p-6 text-center hover:bg-white/20 transition-colors border border-violet-500/20"
               >
-                <div className="w-12 h-12 bg-gradient-to-br from-violet-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                <div className="w-12 h-12 bg-gradient-to-br from-violet-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-3">
                   <area.icon className="w-6 h-6 text-white" />
                 </div>
                 <h4 className="text-white font-bold text-sm lg:text-base mb-1">{area.title}</h4>
