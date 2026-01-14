@@ -145,6 +145,15 @@ All colors MUST be HSL.
     );
   }
   
+  /* Tech gradient - Dark slate to cyan */
+  .tech-gradient {
+    background: linear-gradient(135deg, 
+      #0a1628 0%, 
+      #0e4158 50%, 
+      #0891b2 100%
+    );
+  }
+  
   /* Gradient text */
   .gradient-text {
     background: linear-gradient(135deg, hsl(217 91% 53%), hsl(217 91% 65%));
@@ -165,7 +174,7 @@ All colors MUST be HSL.
     }
     50% {
       transform: scale(1.05);
-      box-shadow: 0 15px 30px rgba(37, 99, 235, 0.6);
+      box-shadow: 0 15px 30px rgba(6, 182, 212, 0.6);
     }
     100% {
       transform: scale(1);
@@ -190,6 +199,14 @@ All colors MUST be HSL.
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Tech glassmorphism effect */
+  .glass-effect-tech {
+    background: rgba(6, 182, 212, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(6, 182, 212, 0.3);
   }
 }
 
@@ -219,6 +236,53 @@ All colors MUST be HSL.
   background-repeat: no-repeat;
   background-size: 150% 150%, 130% 130%, cover;
   background-position: left bottom, right top, center;
+}
+
+.benefits-card-tech {
+  background-color: #0a1628;
+  background-image: 
+    radial-gradient(ellipse at 12% 88%, rgba(6, 182, 212, 0.5) 0, rgba(6, 182, 212, 0.2) 32%, rgba(10, 22, 40, 0) 60%),
+    radial-gradient(ellipse at 94% 20%, rgba(14, 116, 144, 0.6) 0, rgba(14, 116, 144, 0.25) 32%, rgba(10, 22, 40, 0) 56%),
+    linear-gradient(180deg, #0f172a 0, #0a1628 55%, #061017 100%);
+  background-repeat: no-repeat;
+  background-size: 150% 150%, 130% 130%, cover;
+  background-position: left bottom, right top, center;
+}
+
+.benefits-button-tech {
+  width: 100%;
+  background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+  color: white;
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 9999px;
+  box-shadow: 0 20px 25px -5px rgba(6, 182, 212, 0.3);
+  transition: all 300ms;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+}
+
+.benefits-button-tech:hover {
+  background: linear-gradient(135deg, #22d3ee 0%, #06b6d4 100%);
+  box-shadow: 0 25px 50px -12px rgba(6, 182, 212, 0.5);
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .benefits-button-tech {
+    font-size: 1.125rem;
+    padding: 0.9rem 1.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .benefits-button-tech {
+    width: auto;
+  }
 }
 
 .benefits-content {
