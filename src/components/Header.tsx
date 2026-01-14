@@ -7,32 +7,32 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#1e2842] border-b border-white/10 shadow-lg">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#0f172a] border-b border-cyan-500/20 shadow-lg">
       <div className="container mx-auto px-4 py-4 md:py-5 flex items-center justify-between">
         <div className="flex items-center">
           <img src={logoFasul} alt="Fasul Educação" className="h-12 md:h-14" />
         </div>
 
         <nav className="hidden md:flex items-center gap-10">
-          <a href="#cursos" className="text-base font-medium text-white hover:scale-110 transition-all duration-300">
-            Cursos
+          <a href="#cursos" className="text-base font-medium text-white hover:text-cyan-400 hover:scale-110 transition-all duration-300">
+            Curso
           </a>
-          <a href="#sobre" className="text-base font-medium text-white hover:scale-110 transition-all duration-300">
+          <a href="#sobre" className="text-base font-medium text-white hover:text-cyan-400 hover:scale-110 transition-all duration-300">
             Como Funciona
           </a>
           <a
             href="#depoimentos"
-            className="text-base font-medium text-white hover:scale-110 transition-all duration-300"
+            className="text-base font-medium text-white hover:text-cyan-400 hover:scale-110 transition-all duration-300"
           >
             Alunos
           </a>
         </nav>
 
         <div className="flex items-center gap-4">
-          <a href="https://www.fasuleducacional.edu.br/posgraduacao/cursos" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.fasuleducacional.edu.br/graduacao/analise-e-desenvolvimento-de-sistemas" target="_blank" rel="noopener noreferrer">
             <Button
               variant="default"
-              className="bg-primary text-primary-foreground hover:bg-primary/80 font-semibold rounded-full text-sm md:text-base px-4 md:px-5 py-2.5"
+              className="bg-cyan-500 text-white hover:bg-cyan-400 font-semibold rounded-full text-sm md:text-base px-4 md:px-5 py-2.5"
             >
               COMECE AGORA
             </Button>
@@ -50,11 +50,11 @@ const Header = () => {
 
       {/* Mobile menu sidebar */}
       <div
-        className={`md:hidden fixed top-0 right-0 h-full w-72 bg-[#1e2842] z-50 transform transition-transform duration-300 ease-in-out ${
+        className={`md:hidden fixed top-0 right-0 h-full w-72 bg-[#0f172a] z-50 transform transition-transform duration-300 ease-in-out ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex items-center justify-between p-5 border-b border-white/10">
+        <div className="flex items-center justify-between p-5 border-b border-cyan-500/20">
           <img src={logoFasul} alt="Fasul Educação" className="h-10" />
           <button className="p-2 text-white" onClick={() => setIsMenuOpen(false)} aria-label="Fechar menu">
             <X className="h-7 w-7" />
@@ -63,21 +63,21 @@ const Header = () => {
         <nav className="px-5 py-7 flex flex-col gap-3">
           <a
             href="#cursos"
-            className="text-lg font-medium text-white py-3.5 border-b border-white/10"
+            className="text-lg font-medium text-white py-3.5 border-b border-cyan-500/20"
             onClick={() => setIsMenuOpen(false)}
           >
-            Cursos
+            Curso
           </a>
           <a
             href="#sobre"
-            className="text-lg font-medium text-white py-3.5 border-b border-white/10"
+            className="text-lg font-medium text-white py-3.5 border-b border-cyan-500/20"
             onClick={() => setIsMenuOpen(false)}
           >
             Como Funciona
           </a>
           <a
             href="#depoimentos"
-            className="text-lg font-medium text-white py-3.5 border-b border-white/10"
+            className="text-lg font-medium text-white py-3.5 border-b border-cyan-500/20"
             onClick={() => setIsMenuOpen(false)}
           >
             Alunos

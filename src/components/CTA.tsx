@@ -39,7 +39,7 @@ const CTA = () => {
   }, []);
 
   return (
-    <section className="py-12 md:py-24 gradient-animated relative overflow-hidden">
+    <section className="py-12 md:py-24 tech-gradient relative overflow-hidden">
       <div className="absolute inset-0 bg-black/10"></div>
       <div className="absolute top-0 left-0 right-0 h-10 md:h-16 lg:h-20 rotate-180">
         <svg
@@ -62,37 +62,37 @@ const CTA = () => {
               <h2 className="text-xl md:text-3xl lg:text-5xl font-bold mb-3 md:mb-6">
                 GARANTA SUA VAGA NO
                 <br />
-                <span className="text-blue-500">BACHARELADO EM ADMINISTRAÇÃO</span>
+                <span className="text-cyan-400">TECNÓLOGO EM ADS</span>
               </h2>
               <p className="text-base md:text-xl text-white/90 max-w-2xl mx-auto">
-                Aproveite condições especiais e comece sua jornada para se tornar um administrador de sucesso.
+                Aproveite condições especiais e comece sua jornada para se tornar um desenvolvedor de sucesso.
               </p>
             </div>
 
             <div className="text-center">
               <p className="text-xs md:text-sm uppercase tracking-wider mb-2 md:mb-4 text-white/80">OFERTA ESPECIAL ACABA EM:</p>
-              <div className="inline-flex gap-1 md:gap-3 bg-black/30 backdrop-blur-sm rounded-xl md:rounded-2xl p-3 md:p-6">
+              <div className="inline-flex gap-1 md:gap-3 bg-black/30 backdrop-blur-sm rounded-xl md:rounded-2xl p-3 md:p-6 border border-cyan-500/20">
                 <div className="text-center">
                   <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-1">
                     {String(timeLeft.days).padStart(2, "0")}
                   </div>
                   <div className="text-[10px] md:text-xs uppercase text-white/70">DIAS</div>
                 </div>
-                <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-white flex items-center">:</div>
+                <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-cyan-400 flex items-center">:</div>
                 <div className="text-center">
                   <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-1">
                     {String(timeLeft.hours).padStart(2, "0")}
                   </div>
                   <div className="text-[10px] md:text-xs uppercase text-white/70">HRS</div>
                 </div>
-                <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-white flex items-center">:</div>
+                <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-cyan-400 flex items-center">:</div>
                 <div className="text-center">
                   <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-1">
                     {String(timeLeft.minutes).padStart(2, "0")}
                   </div>
                   <div className="text-[10px] md:text-xs uppercase text-white/70">MIN</div>
                 </div>
-                <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-white flex items-center">:</div>
+                <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-cyan-400 flex items-center">:</div>
                 <div className="text-center">
                   <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-1">
                     {String(timeLeft.seconds).padStart(2, "0")}
@@ -104,10 +104,10 @@ const CTA = () => {
           </div>
 
           <div className="text-center px-2">
-            <a href="https://www.fasuleducacional.edu.br/graduacao/graduacao-em-administracao-ead" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.fasuleducacional.edu.br/graduacao/analise-e-desenvolvimento-de-sistemas" target="_blank" rel="noopener noreferrer">
               <Button
                 size="lg"
-                className="bg-blue-600 text-white hover:bg-blue-700 font-bold text-sm md:text-xl px-6 md:px-12 py-5 md:py-8 rounded-full shadow-[0_0_25px_rgba(37,99,235,0.6)] hover:shadow-[0_0_35px_rgba(37,99,235,0.8)] animate-pulse-cta mb-4 md:mb-8 w-full md:w-auto max-w-full whitespace-normal"
+                className="bg-cyan-500 text-white hover:bg-cyan-400 font-bold text-sm md:text-xl px-6 md:px-12 py-5 md:py-8 rounded-full shadow-[0_0_25px_rgba(6,182,212,0.6)] hover:shadow-[0_0_35px_rgba(6,182,212,0.8)] animate-pulse-cta mb-4 md:mb-8 w-full md:w-auto max-w-full whitespace-normal"
               >
                 QUERO ME MATRICULAR AGORA!{" "}
                 <ArrowRight className="ml-2 md:ml-3 h-5 w-5 md:h-6 md:w-6 flex-shrink-0" />
@@ -116,11 +116,11 @@ const CTA = () => {
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-6 text-xs md:text-sm text-white mt-4 md:mt-8">
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="h-4 w-4 md:h-5 md:w-5 text-blue-500" />
+                <CheckCircle2 className="h-4 w-4 md:h-5 md:w-5 text-cyan-400" />
                 <span>Mensalidade fixa de R$ 139/mês</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="h-4 w-4 md:h-5 md:w-5 text-blue-500" />
+                <CheckCircle2 className="h-4 w-4 md:h-5 md:w-5 text-cyan-400" />
                 <span>Diploma reconhecido pelo MEC</span>
               </div>
             </div>

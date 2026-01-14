@@ -2,29 +2,29 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const faqItems = [
   {
-    question: "Qual a duração do Curso de Bacharelado em Administração?",
+    question: "Qual a duração do curso de Análise e Desenvolvimento de Sistemas?",
     answer:
-      "O Curso de Bacharelado em Administração tem duração de 8 semestres, com carga horária total de 3.200 horas. É possível concluir em menos tempo através do aproveitamento de disciplinas, caso você já tenha cursado outra Graduação.",
+      "O curso de Tecnólogo em ADS tem duração de 5 semestres (2 anos e meio), com carga horária total de 2.400 horas. É possível concluir em menos tempo através do aproveitamento de disciplinas, caso você já tenha cursado outra graduação.",
   },
   {
-    question: "O diploma de Administração EaD é reconhecido pelo MEC?",
+    question: "O diploma de ADS EaD é reconhecido pelo MEC?",
     answer:
-      "Sim! A FASUL é uma Instituição com nota 5 no MEC, a nota máxima de avaliação. O diploma de Bacharelado em Administração tem a mesma validade de Cursos presenciais e é reconhecido em todo o território nacional.",
+      "Sim! A FASUL é uma Instituição com nota 5 no MEC, a nota máxima de avaliação. O diploma de Tecnólogo em Análise e Desenvolvimento de Sistemas tem a mesma validade de cursos presenciais e é reconhecido em todo o território nacional.",
   },
   {
-    question: "Quais são as áreas de atuação do administrador?",
+    question: "Preciso saber programar para começar o curso?",
     answer:
-      "O administrador pode atuar em diversas áreas como: gestão empresarial, finanças, recursos humanos, marketing, logística, consultoria, empreendedorismo, gestão pública, entre outras. É uma das formações mais versáteis do mercado.",
+      "Não! O curso foi desenvolvido para ensinar programação do zero. Você aprenderá desde lógica de programação até linguagens avançadas como Python, Java, JavaScript e SQL, mesmo sem nenhum conhecimento prévio.",
   },
   {
-    question: "Preciso ter experiência prévia em administração?",
+    question: "Quais são as principais áreas de atuação para quem forma em ADS?",
     answer:
-      "Não é necessário ter experiência prévia. O Curso foi desenvolvido para formar profissionais do zero, com disciplinas que vão do básico ao avançado, preparando você para o mercado de trabalho.",
+      "O profissional de ADS pode atuar como desenvolvedor web, desenvolvedor mobile, analista de sistemas, DBA (administrador de banco de dados), DevOps, analista de segurança da informação, cientista de dados, entre outras áreas muito demandadas no mercado.",
   },
   {
     question: "Qual o valor do investimento?",
     answer:
-      "A mensalidade é de apenas R$ 139,00 com valor fixo até o final do Curso. Oferecemos diversas formas de pagamento: boleto, cartão de crédito com parcelamento e PIX.",
+      "A mensalidade é de apenas R$ 139,00 com valor fixo até o final do curso. Oferecemos diversas formas de pagamento: boleto, cartão de crédito com parcelamento e PIX.",
   },
 ];
 
@@ -35,8 +35,8 @@ const FAQ = () => {
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="mb-10 text-center">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E2842] mb-4">PERGUNTAS FREQUENTES</h2>
-            <p className="text-gray-600 text-lg">Tire suas dúvidas sobre o Bacharelado em Administração da FASUL</p>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0f172a] mb-4">PERGUNTAS FREQUENTES</h2>
+            <p className="text-gray-600 text-lg">Tire suas dúvidas sobre o curso de ADS da FASUL</p>
           </div>
 
           {/* FAQ Accordion */}
@@ -45,9 +45,9 @@ const FAQ = () => {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="border border-gray-200 rounded-lg px-6 data-[state=open]:border-blue-500"
+                className="border border-gray-200 rounded-lg px-6 data-[state=open]:border-cyan-500"
               >
-                <AccordionTrigger className="text-left text-[#1E2842] font-medium text-base md:text-lg hover:no-underline py-5">
+                <AccordionTrigger className="text-left text-[#0f172a] font-medium text-base md:text-lg hover:no-underline py-5">
                   {item.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-600 text-base pb-5">{item.answer}</AccordionContent>

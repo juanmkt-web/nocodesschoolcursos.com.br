@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Award, Users, BookOpen } from "lucide-react";
-import heroBackground from "@/assets/hero-background.jpg";
+import { ArrowRight, Award, Clock, Users } from "lucide-react";
+import heroBackground from "@/assets/hero-tech.jpg";
 
 const Hero = () => {
   return (
@@ -9,10 +9,10 @@ const Hero = () => {
       style={{
         backgroundImage: `url(${heroBackground})`,
         backgroundSize: "cover",
-        backgroundPosition: "top right",
+        backgroundPosition: "center",
       }}
     >
-      <div className="absolute inset-0 bg-gradient-to-r from-dark-blue/95 via-dark-blue/60 via-50% to-transparent to-70%"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628]/98 via-[#0a1628]/80 via-60% to-[#0a1628]/40"></div>
       <div className="absolute bottom-0 left-0 right-0 h-10 md:h-16 lg:h-20">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -30,33 +30,33 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-4 md:py-12 relative z-10">
         <div className="max-w-2xl mb-6 md:mb-12">
           <div className="text-white animate-fade-in text-center md:text-left">
-            <div className="inline-block bg-amber-500/20 backdrop-blur-sm border border-amber-400/40 rounded-full px-4 py-1.5 mb-4">
-              <span className="text-amber-300 font-semibold text-sm">BACHARELADO EM ADMINISTRAÇÃO</span>
+            <div className="inline-block bg-cyan-500/20 backdrop-blur-sm border border-cyan-400/40 rounded-full px-4 py-1.5 mb-4">
+              <span className="text-cyan-300 font-semibold text-sm">TECNÓLOGO EM ADS</span>
             </div>
 
             <h1
               className="text-2xl md:text-4xl lg:text-5xl font-extrabold mb-4 md:mb-6 leading-tight"
               style={{
-                textShadow: "2px 2px 8px rgba(0, 0, 0, 0.2)",
+                textShadow: "2px 2px 8px rgba(0, 0, 0, 0.4)",
               }}
             >
-              TORNE-SE EXPERT EM <span className="text-primary">NEGÓCIOS E GESTÃO</span> E LIDERE O MERCADO
+              TORNE-SE <span className="text-cyan-400">DESENVOLVEDOR</span> E CONQUISTE O MERCADO DE TECNOLOGIA
             </h1>
 
             <p className="text-base md:text-xl text-white/90 leading-relaxed mb-5 md:mb-8">
-              Domine os pilares essenciais do mercado: Finanças, Estratégia e Pessoas. Saia do operacional e prepare-se
-              para ocupar cargos de comando, tomando as decisões difíceis que definem o sucesso de uma empresa.
+              Domine programação, banco de dados e desenvolvimento de sistemas. Entre para uma das áreas mais valorizadas 
+              do mercado, com salários acima da média e oportunidades em todo o mundo.
             </p>
 
             <div className="mb-5 md:mb-8 flex justify-center md:justify-start">
               <a
-                href="https://www.fasuleducacional.edu.br/graduacao/graduacao-em-administracao-ead"
+                href="https://www.fasuleducacional.edu.br/graduacao/analise-e-desenvolvimento-de-sistemas"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Button
                   size="lg"
-                  className="bg-primary text-primary-foreground hover:bg-primary/90 font-bold text-sm md:text-lg px-6 md:px-10 py-5 md:py-7 rounded-full shadow-[0_0_20px_hsl(217_91%_53%/0.5)] hover:shadow-[0_0_30px_hsl(217_91%_53%/0.7)] transition-all hover:-translate-y-1 animate-pulse-cta w-full md:w-auto"
+                  className="bg-cyan-500 text-white hover:bg-cyan-400 font-bold text-sm md:text-lg px-6 md:px-10 py-5 md:py-7 rounded-full shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_30px_rgba(6,182,212,0.7)] transition-all hover:-translate-y-1 animate-pulse-cta w-full md:w-auto"
                 >
                   QUERO ME INSCREVER <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
                 </Button>
@@ -65,15 +65,15 @@ const Hero = () => {
 
             <div className="flex flex-row gap-3 md:gap-6 justify-center md:justify-start flex-wrap">
               <div className="flex items-center gap-1 md:gap-2">
-                <Award className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-primary" />
+                <Award className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-cyan-400" />
                 <span className="text-xs md:text-sm font-medium">Diploma MEC</span>
               </div>
               <div className="flex items-center gap-1 md:gap-2">
-                <BookOpen className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-primary" />
-                <span className="text-xs md:text-sm font-medium">8 Semestres</span>
+                <Clock className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-cyan-400" />
+                <span className="text-xs md:text-sm font-medium">5 Semestres</span>
               </div>
               <div className="flex items-center gap-1 md:gap-2">
-                <Users className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-primary" />
+                <Users className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-cyan-400" />
                 <span className="text-xs md:text-sm font-medium">+10 mil Alunos</span>
               </div>
             </div>

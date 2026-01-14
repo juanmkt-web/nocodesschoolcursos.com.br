@@ -4,94 +4,42 @@ import {
   Monitor,
   Clock,
   Calendar,
-  BookOpen,
-  Briefcase,
-  TrendingUp,
-  Users,
-  BarChart3,
-  Building2,
+  Code2,
+  Database,
+  Globe,
+  Smartphone,
+  Shield,
+  Cloud,
   ArrowRight,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import cursoAdministracao from "@/assets/curso-administracao.webp";
+import cursoADS from "@/assets/curso-analise-sistemas.jpg";
 
 const courseDetails = {
-  title: "Bacharelado em Administração",
+  title: "Tecnólogo em Análise e Desenvolvimento de Sistemas",
   modality: "EAD",
-  hours: "3.200 HORAS",
-  semesters: "8 SEMESTRES",
+  hours: "2.400 HORAS",
+  semesters: "5 SEMESTRES",
   promoPrice: "R$ 139,00",
   regularPrice: "R$ 329,00",
-  image: cursoAdministracao,
-  url: "https://www.fasuleducacional.edu.br/graduacao/graduacao-em-administracao-ead",
+  image: cursoADS,
+  url: "https://www.fasuleducacional.edu.br/graduacao/analise-e-desenvolvimento-de-sistemas",
   description:
-    "O curso de Bacharelado em Administração da FASUL prepara profissionais para atuar em todas as áreas da gestão empresarial, desenvolvendo competências em planejamento estratégico, finanças, marketing, recursos humanos e operações.",
+    "O curso de Tecnólogo em Análise e Desenvolvimento de Sistemas da FASUL prepara profissionais para atuar no desenvolvimento de software, aplicações web e mobile, bancos de dados, e gestão de projetos de TI.",
 };
 
-const curriculumModules = [
-  {
-    semester: "1º Semestre",
-    subjects: [
-      "Fundamentos de Administração",
-      "Matemática Aplicada",
-      "Comunicação Empresarial",
-      "Metodologia Científica",
-    ],
-  },
-  {
-    semester: "2º Semestre",
-    subjects: ["Teoria Geral da Administração", "Contabilidade Básica", "Economia", "Sociologia Organizacional"],
-  },
-  {
-    semester: "3º Semestre",
-    subjects: ["Gestão de Pessoas", "Marketing I", "Estatística Aplicada", "Direito Empresarial"],
-  },
-  {
-    semester: "4º Semestre",
-    subjects: ["Administração Financeira I", "Marketing II", "Gestão de Processos", "Comportamento Organizacional"],
-  },
-  {
-    semester: "5º Semestre",
-    subjects: ["Administração Financeira II", "Gestão da Produção", "Logística Empresarial", "Sistemas de Informação"],
-  },
-  {
-    semester: "6º Semestre",
-    subjects: ["Planejamento Estratégico", "Gestão de Projetos", "Empreendedorismo", "Administração Pública"],
-  },
-  {
-    semester: "7º Semestre",
-    subjects: [
-      "Gestão da Qualidade",
-      "Comércio Exterior",
-      "Consultoria Empresarial",
-      "Ética e Responsabilidade Social",
-    ],
-  },
-  {
-    semester: "8º Semestre",
-    subjects: [
-      "Trabalho de Conclusão de Curso",
-      "Estágio Supervisionado",
-      "Gestão da Inovação",
-      "Tópicos Avançados em Administração",
-    ],
-  },
-];
-
 const careerAreas = [
-  { icon: Briefcase, title: "Gestão Empresarial", description: "Gerencie empresas e tome decisões estratégicas" },
-  { icon: TrendingUp, title: "Finanças", description: "Atue em bancos, corretoras e departamentos financeiros" },
-  { icon: Users, title: "Recursos Humanos", description: "Desenvolva e gerencie equipes de alto desempenho" },
-  { icon: BarChart3, title: "Marketing", description: "Crie estratégias para posicionar marcas no mercado" },
-  { icon: Building2, title: "Consultoria", description: "Ofereça soluções para empresas de todos os portes" },
-  { icon: BookOpen, title: "Empreendedorismo", description: "Abra e gerencie seu próprio negócio" },
+  { icon: Code2, title: "Desenvolvedor Full-Stack", description: "Crie aplicações web completas do front ao back-end" },
+  { icon: Smartphone, title: "Desenvolvedor Mobile", description: "Desenvolva apps para iOS e Android" },
+  { icon: Database, title: "Analista de Dados", description: "Trabalhe com Big Data e Business Intelligence" },
+  { icon: Shield, title: "Segurança da Informação", description: "Proteja sistemas e dados corporativos" },
+  { icon: Cloud, title: "DevOps / Cloud", description: "Gerencie infraestrutura e deploys em nuvem" },
+  { icon: Globe, title: "Desenvolvedor Web", description: "Crie sites e sistemas para a internet" },
 ];
 
 const Courses = () => {
-  const [expandedSemester, setExpandedSemester] = useState<number | null>(null);
-
   return (
-    <section id="cursos" className="pb-24 gradient-animated relative">
+    <section id="cursos" className="pb-24 tech-gradient relative">
       <div className="absolute top-0 left-0 right-0 h-10 md:h-16 lg:h-20">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -111,8 +59,7 @@ const Courses = () => {
         <div className="text-center mb-12 text-white animate-fade-in">
           <h2 className="text-3xl lg:text-5xl font-bold mb-4">CONHEÇA O CURSO</h2>
           <p className="text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
-            O Bacharelado em Administração é um dos cursos mais versáteis do mercado, abrindo portas para diversas áreas
-            de atuação profissional.
+            O Tecnólogo em ADS é uma das formações mais valorizadas do mercado de tecnologia, com alta empregabilidade e salários competitivos.
           </p>
         </div>
 
@@ -134,19 +81,19 @@ const Courses = () => {
                 {/* Course Info */}
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="flex items-center gap-2">
-                    <GraduationCap className="w-5 h-5 text-blue-600" />
-                    <span className="text-sm font-medium text-gray-700">Bacharelado</span>
+                    <GraduationCap className="w-5 h-5 text-cyan-600" />
+                    <span className="text-sm font-medium text-gray-700">Tecnólogo</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Monitor className="w-5 h-5 text-blue-600" />
+                    <Monitor className="w-5 h-5 text-cyan-600" />
                     <span className="text-sm font-medium text-gray-700">{courseDetails.modality}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Clock className="w-5 h-5 text-blue-600" />
+                    <Clock className="w-5 h-5 text-cyan-600" />
                     <span className="text-sm font-medium text-gray-700">{courseDetails.hours}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Calendar className="w-5 h-5 text-blue-600" />
+                    <Calendar className="w-5 h-5 text-cyan-600" />
                     <span className="text-sm font-medium text-gray-700">{courseDetails.semesters}</span>
                   </div>
                 </div>
@@ -158,7 +105,7 @@ const Courses = () => {
                     <span className="text-lg text-gray-900">/mês</span>
                     <span className="text-gray-400 line-through ml-2">{courseDetails.regularPrice}</span>
                   </div>
-                  <span className="inline-block text-xs bg-gradient-to-r from-emerald-500 to-teal-400 text-white px-3 py-1 rounded-full font-semibold">
+                  <span className="inline-block text-xs bg-gradient-to-r from-cyan-500 to-teal-400 text-white px-3 py-1 rounded-full font-semibold">
                     VALOR FIXO ATÉ O FINAL DO CURSO
                   </span>
                 </div>
@@ -166,7 +113,7 @@ const Courses = () => {
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Button
-                    className="bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-full text-base py-6 flex-1 shadow-[0_0_20px_rgba(37,99,235,0.5)]"
+                    className="bg-cyan-600 hover:bg-cyan-700 text-white font-bold rounded-full text-base py-6 flex-1 shadow-[0_0_20px_rgba(6,182,212,0.5)]"
                     asChild
                   >
                     <a href={courseDetails.url} target="_blank" rel="noopener noreferrer">
@@ -177,7 +124,7 @@ const Courses = () => {
                     href={courseDetails.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 font-bold text-base border-2 border-blue-600 rounded-full py-3 px-6 hover:bg-blue-600/10 transition-colors text-center"
+                    className="text-cyan-600 font-bold text-base border-2 border-cyan-600 rounded-full py-3 px-6 hover:bg-cyan-600/10 transition-colors text-center"
                   >
                     SAIBA MAIS
                   </a>
@@ -194,9 +141,9 @@ const Courses = () => {
             {careerAreas.map((area, index) => (
               <div
                 key={index}
-                className="bg-white/10 backdrop-blur-sm rounded-xl p-4 lg:p-6 text-center hover:bg-white/20 transition-colors"
+                className="bg-white/10 backdrop-blur-sm rounded-xl p-4 lg:p-6 text-center hover:bg-white/20 transition-colors border border-cyan-500/20"
               >
-                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-full flex items-center justify-center mx-auto mb-3">
                   <area.icon className="w-6 h-6 text-white" />
                 </div>
                 <h4 className="text-white font-bold text-sm lg:text-base mb-1">{area.title}</h4>
@@ -205,8 +152,6 @@ const Courses = () => {
             ))}
           </div>
         </div>
-
-        {/* Curriculum */}
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 h-10 md:h-16 lg:h-20">
@@ -218,7 +163,7 @@ const Courses = () => {
         >
           <path
             d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            fill="#1e2842"
+            fill="#0f172a"
           />
         </svg>
       </div>
