@@ -12,7 +12,7 @@ const Hero = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className="absolute inset-0 bg-gradient-to-r from-[#1E2842] via-[#1E2842]/80 via-50% to-transparent to-70%"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-[#1E2842]/90 via-[#1E2842]/60 via-50% to-transparent to-70%"></div>
       <div className="absolute bottom-0 left-0 right-0 h-10 md:h-16 lg:h-20">
         <svg
           xmlns="http://www.w3.org/2000/svg"
