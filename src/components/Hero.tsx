@@ -65,15 +65,15 @@ const Hero = () => {
 
             <div className="flex flex-row gap-3 md:gap-6 justify-center md:justify-start flex-wrap">
               <div className="flex items-center gap-1 md:gap-2">
-                <Award className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-blue-400" />
+                <Award className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-[#2563EB]" />
                 <span className="text-xs md:text-sm font-medium">Diploma MEC</span>
               </div>
               <div className="flex items-center gap-1 md:gap-2">
-                <Clock className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-violet-400" />
+                <Clock className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-[#2563EB]" />
                 <span className="text-xs md:text-sm font-medium">5 Semestres</span>
               </div>
               <div className="flex items-center gap-1 md:gap-2">
-                <Users className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-blue-400" />
+                <Users className="h-4 w-4 md:h-5 md:w-5 flex-shrink-0 text-[#2563EB]" />
                 <span className="text-xs md:text-sm font-medium">+10 mil Alunos</span>
               </div>
             </div>
