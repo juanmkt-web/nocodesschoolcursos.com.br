@@ -35,7 +35,7 @@ const Benefits = () => {
               {/* Left side - Main Title */}
               <div className="animate-fade-in text-center md:text-left">
                 <h2 className="text-xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white mb-2 md:mb-6 leading-tight">
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-blue-400"> PROGRAMAÇÃO </span>
+                  <span className="text-[#783BED]"> PROGRAMAÇÃO </span>
                   <br />
                   PARA QUEM QUER INOVAR
                 </h2>

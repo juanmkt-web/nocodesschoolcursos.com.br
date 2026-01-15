@@ -40,7 +40,7 @@ const Hero = () => {
                 textShadow: "2px 2px 8px rgba(0, 0, 0, 0.4)",
               }}
             >
-              TORNE-SE <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-blue-400">DESENVOLVEDOR</span> E CONQUISTE O MERCADO DE TECNOLOGIA
+              TORNE-SE <span className="text-[#783BED]">DESENVOLVEDOR</span> E CONQUISTE O MERCADO DE TECNOLOGIA
             </h1>
 
             <p className="text-base md:text-xl text-white/90 leading-relaxed mb-5 md:mb-8">
