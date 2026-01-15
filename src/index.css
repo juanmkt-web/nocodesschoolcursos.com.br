@@ -55,14 +55,14 @@ All colors MUST be HSL.
     --radius: 0.75rem;
     
     /* Gradient colors */
-    --gradient-start: 260 50% 8%;
-    --gradient-mid: 270 60% 30%;
-    --gradient-end: 220 80% 35%;
+    --gradient-start: 280 55% 35%;
+    --gradient-mid: 250 65% 45%;
+    --gradient-end: 200 80% 55%;
     
     /* Legacy gradient colors */
-    --gradient-dark-blue: 220 80% 35%;
-    --gradient-purple: 270 70% 55%;
-    --gradient-blue: 220 70% 45%;
+    --gradient-dark-blue: 200 80% 55%;
+    --gradient-purple: 280 55% 35%;
+    --gradient-blue: 250 65% 45%;
     
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -139,24 +139,24 @@ All colors MUST be HSL.
   /* Fixed gradient background - Purple to dark blue tech */
   .gradient-animated {
     background: linear-gradient(135deg, 
-      #1a0a2e 0%, 
-      #4c1d95 40%, 
-      #1e3a8a 100%
+      hsl(280, 55%, 35%) 0%, 
+      hsl(250, 65%, 45%) 50%, 
+      hsl(200, 80%, 55%) 100%
     );
   }
   
   /* Tech gradient - Purple to dark blue */
   .tech-gradient {
     background: linear-gradient(135deg, 
-      #1a0a2e 0%, 
-      #581c87 45%, 
-      #1e40af 100%
+      hsl(280, 55%, 35%) 0%, 
+      hsl(250, 65%, 45%) 50%, 
+      hsl(200, 80%, 55%) 100%
     );
   }
   
   /* Gradient text */
   .gradient-text {
-    background: linear-gradient(135deg, hsl(270 70% 55%), hsl(220 80% 35%));
+    background: linear-gradient(135deg, hsl(280, 55%, 35%), hsl(200, 80%, 55%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -251,13 +251,13 @@ All colors MUST be HSL.
 
 .benefits-button-tech {
   width: 100%;
-  background: linear-gradient(135deg, #8b5cf6 0%, #1e40af 100%);
+  background: linear-gradient(135deg, hsl(280, 55%, 35%) 0%, hsl(250, 65%, 45%) 50%, hsl(200, 80%, 55%) 100%);
   color: white;
   font-weight: 700;
   font-size: 0.875rem;
   padding: 0.6rem 0.9rem;
   border-radius: 9999px;
-  box-shadow: 0 20px 25px -5px rgba(139, 92, 246, 0.3);
+  box-shadow: 0 20px 25px -5px rgba(92, 35, 127, 0.3);
   transition: all 300ms;
   display: inline-flex;
   align-items: center;
@@ -267,8 +267,8 @@ All colors MUST be HSL.
 }
 
 .benefits-button-tech:hover {
-  background: linear-gradient(135deg, #a78bfa 0%, #2563eb 100%);
-  box-shadow: 0 25px 50px -12px rgba(139, 92, 246, 0.5);
+  background: linear-gradient(135deg, hsl(280, 55%, 45%) 0%, hsl(250, 65%, 55%) 50%, hsl(200, 80%, 65%) 100%);
+  box-shadow: 0 25px 50px -12px rgba(92, 35, 127, 0.5);
   transform: scale(1.05);
 }
 
