@@ -201,12 +201,12 @@ All colors MUST be HSL.
     border: 1px solid rgba(255, 255, 255, 0.2);
   }
   
-  /* Tech glassmorphism effect - Purple & Cyan */
+  /* Tech glassmorphism effect - Blue theme */
   .glass-effect-tech {
-    background: rgba(139, 92, 246, 0.15);
+    background: rgba(42, 96, 235, 0.15);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(139, 92, 246, 0.3);
+    border: 1px solid rgba(42, 96, 235, 0.3);
   }
 }
 
