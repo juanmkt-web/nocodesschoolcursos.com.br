@@ -17,7 +17,7 @@ import cursoADS from "@/assets/curso-analise-sistemas.jpg";
 const courseDetails = {
   title: "Tecnólogo em Análise e Desenvolvimento de Sistemas",
   modality: "EAD",
-  hours: "2.400 HORAS",
+  hours: "2.120 HORAS",
   semesters: "5 SEMESTRES",
   promoPrice: "R$ 139,00",
   regularPrice: "R$ 329,00",
@@ -58,7 +58,8 @@ const Courses = () => {
         <div className="text-center mb-12 text-white animate-fade-in">
           <h2 className="text-3xl lg:text-5xl font-bold mb-4">CONHEÇA O CURSO</h2>
           <p className="text-lg text-white/90 max-w-3xl mx-auto leading-relaxed">
-            O Tecnólogo em ADS é uma das formações mais valorizadas do mercado de tecnologia, com alta empregabilidade e salários competitivos.
+            O Tecnólogo em ADS é uma das formações mais valorizadas do mercado de tecnologia, com alta empregabilidade e
+            salários competitivos.
           </p>
         </div>
 
@@ -68,7 +69,11 @@ const Courses = () => {
             <div className="grid lg:grid-cols-2">
               {/* Image Side */}
               <div className="relative h-64 lg:h-auto min-h-[300px]">
-                <img src={courseDetails.image} alt={courseDetails.title} className="w-full h-full object-cover object-center" />
+                <img
+                  src={courseDetails.image}
+                  alt={courseDetails.title}
+                  className="w-full h-full object-cover object-center"
+                />
                 <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(0,0,0,0.4)_0%,transparent_30%)] lg:bg-[linear-gradient(to_right,rgba(0,0,0,0.4)_0%,transparent_30%)]" />
               </div>
 
