@@ -31,7 +31,7 @@ const Hero = () => {
         <div className="max-w-2xl mb-6 md:mb-12">
           <div className="text-white animate-fade-in text-center md:text-left">
             <div className="inline-block bg-violet-500/20 backdrop-blur-sm border border-violet-400/40 rounded-full px-4 py-1.5 mb-4">
-              <span className="text-violet-300 font-semibold text-sm">TECNÓLOGO EM ADS</span>
+              <span className="text-violet-300 font-semibold text-sm">GRADUAÇÃO EM ADS</span>
             </div>
 
             <h1
@@ -44,8 +44,8 @@ const Hero = () => {
             </h1>
 
             <p className="text-base md:text-xl text-white/90 leading-relaxed mb-5 md:mb-8">
-              Domine programação, banco de dados e desenvolvimento de sistemas. Entre para uma das áreas mais valorizadas 
-              do mercado, com salários acima da média e oportunidades em todo o mundo.
+              Domine programação, banco de dados e desenvolvimento de sistemas. Entre para uma das áreas mais
+              valorizadas do mercado, com salários acima da média e oportunidades em todo o mundo.
             </p>
 
             <div className="mb-5 md:mb-8 flex justify-center md:justify-start">
