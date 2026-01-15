@@ -35,7 +35,7 @@ const Benefits = () => {
               {/* Left side - Main Title */}
               <div className="animate-fade-in text-center md:text-left">
                 <h2 className="text-xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white mb-2 md:mb-6 leading-tight">
-                  <span className="text-[#2563EB]"> PROGRAMAÇÃO </span>
+                  <span className="text-[#783BED]"> PROGRAMAÇÃO </span>
                   <br />
                   PARA QUEM QUER INOVAR
                 </h2>
@@ -69,7 +69,7 @@ const Benefits = () => {
                       animationDelay: `${0.3 + index * 0.1}s`,
                     }}
                   >
-                    <div className="flex-shrink-0 w-8 h-8 md:w-12 md:h-12 rounded-md md:rounded-lg flex items-center justify-center shadow-lg shadow-blue-500/30 bg-gradient-to-br from-blue-600 to-blue-500">
+                    <div className="flex-shrink-0 w-8 h-8 md:w-12 md:h-12 rounded-md md:rounded-lg flex items-center justify-center shadow-lg shadow-violet-500/30 bg-gradient-to-br from-violet-500 to-blue-600">
                       <benefit.icon className="h-4 w-4 md:h-6 md:w-6 text-white" strokeWidth={2.5} />
                     </div>
                     <div className="flex-1">
