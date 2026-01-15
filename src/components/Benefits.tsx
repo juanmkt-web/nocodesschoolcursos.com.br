@@ -47,7 +47,7 @@ const Benefits = () => {
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3">
                   {highlights.map((item, index) => (
                     <div key={index} className="flex items-center gap-1.5 text-white/90">
-                      <CheckCircle2 className="h-3 w-3 md:h-4 md:w-4 text-[#2563EB] flex-shrink-0" />
+                      <CheckCircle2 className="h-3 w-3 md:h-4 md:w-4 text-blue-400 flex-shrink-0" />
                       <span className="text-[10px] md:text-sm">{item}</span>
                     </div>
                   ))}
@@ -69,7 +69,7 @@ const Benefits = () => {
                       animationDelay: `${0.3 + index * 0.1}s`,
                     }}
                   >
-                    <div className="flex-shrink-0 w-8 h-8 md:w-12 md:h-12 rounded-md md:rounded-lg flex items-center justify-center shadow-lg shadow-[#2563EB]/30 bg-[#2563EB]">
+                    <div className="flex-shrink-0 w-8 h-8 md:w-12 md:h-12 rounded-md md:rounded-lg flex items-center justify-center shadow-lg shadow-violet-500/30 bg-gradient-to-br from-violet-500 to-blue-600">
                       <benefit.icon className="h-4 w-4 md:h-6 md:w-6 text-white" strokeWidth={2.5} />
                     </div>
                     <div className="flex-1">
