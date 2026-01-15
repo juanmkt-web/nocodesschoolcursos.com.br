@@ -47,7 +47,7 @@ const Benefits = () => {
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3">
                   {highlights.map((item, index) => (
                     <div key={index} className="flex items-center gap-1.5 text-white/90">
-                      <CheckCircle2 className="h-3 w-3 md:h-4 md:w-4 text-blue-400 flex-shrink-0" />
+                      <CheckCircle2 className="h-3 w-3 md:h-4 md:w-4 text-[#2563EB] flex-shrink-0" />
                       <span className="text-[10px] md:text-sm">{item}</span>
                     </div>
                   ))}
