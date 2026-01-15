@@ -85,7 +85,7 @@ const Faculty = () => {
                 className="flex flex-col items-center text-center group cursor-pointer"
               >
                 <div className="relative mb-3 md:mb-4 overflow-hidden rounded-lg">
-                  <div className="absolute inset-0 bg-gradient-to-t from-violet-500/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-500/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
                   <img
                     src={professor.image}
                     alt={professor.name}
