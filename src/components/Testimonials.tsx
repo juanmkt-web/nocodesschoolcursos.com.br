@@ -65,7 +65,7 @@ const Testimonials = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-6 md:mb-12 animate-fade-in text-white">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2 md:mb-4">
-            DESENVOLVEDORES <span className="text-[#783BED]">DE SUCESSO</span>
+            DESENVOLVEDORES <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">DE SUCESSO</span>
           </h2>
           <p className="text-sm md:text-lg text-white/90 max-w-3xl mx-auto">
             Veja como o curso de ADS transformou a carreira dos nossos alunos.
