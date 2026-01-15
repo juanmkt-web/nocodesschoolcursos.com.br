@@ -40,7 +40,7 @@ const Hero = () => {
                 textShadow: "2px 2px 8px rgba(0, 0, 0, 0.4)",
               }}
             >
-              TORNE-SE <span className="text-[#783BED]">DESENVOLVEDOR</span> E CONQUISTE O MERCADO DE TECNOLOGIA
+              CONSTRUA UMA CARREIRA <span className="text-[#783BED]">EM TECNOLOGIA</span> SEM FRONTEIRAS.
             </h1>
 
             <p className="text-base md:text-xl text-white/90 leading-relaxed mb-5 md:mb-8">
