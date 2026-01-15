@@ -116,11 +116,11 @@ const CTA = () => {
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-6 text-xs md:text-sm text-white mt-4 md:mt-8">
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="h-4 w-4 md:h-5 md:w-5 text-blue-400" />
+                <CheckCircle2 className="h-4 w-4 md:h-5 md:w-5 text-[#2563EB]" />
                 <span>Mensalidade fixa de R$ 139/mês</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="h-4 w-4 md:h-5 md:w-5 text-violet-400" />
+                <CheckCircle2 className="h-4 w-4 md:h-5 md:w-5 text-[#2563EB]" />
                 <span>Diploma reconhecido pelo MEC</span>
               </div>
             </div>
