@@ -36,14 +36,14 @@ const Steps = () => {
           {steps.map((step, index) => (
             <div key={index} className="text-center animate-fade-in" style={{ animationDelay: `${index * 0.2}s` }}>
               <div className="relative mb-4 md:mb-8">
-                <div className="w-24 h-24 md:w-36 md:h-36 tech-gradient rounded-full flex items-center justify-center mx-auto shadow-2xl relative z-10">
+                <div className="w-24 h-24 md:w-36 md:h-36 bg-[#2563EB] rounded-full flex items-center justify-center mx-auto shadow-2xl relative z-10">
                   <step.icon className="h-10 w-10 md:h-16 md:w-16 text-white" strokeWidth={2.5} />
-                  <div className="absolute -top-3 -left-3 md:-top-5 md:-left-5 w-10 h-10 md:w-14 md:h-14 bg-gradient-to-br from-violet-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg md:text-2xl border-2 md:border-4 border-white shadow-xl z-10">
+                  <div className="absolute -top-3 -left-3 md:-top-5 md:-left-5 w-10 h-10 md:w-14 md:h-14 bg-[#2563EB] rounded-full flex items-center justify-center text-white font-bold text-lg md:text-2xl border-2 md:border-4 border-white shadow-xl z-10">
                     {index + 1}
                   </div>
                 </div>
                 {index < steps.length - 1 && (
-                  <div className="hidden md:block absolute top-1/2 left-[60%] w-full h-0.5 bg-gradient-to-r from-violet-600 to-blue-600/20 z-0"></div>
+                  <div className="hidden md:block absolute top-1/2 left-[60%] w-full h-0.5 bg-gradient-to-r from-[#2563EB] to-[#2563EB]/20 z-0"></div>
                 )}
               </div>
               <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-4">{step.title}</h3>

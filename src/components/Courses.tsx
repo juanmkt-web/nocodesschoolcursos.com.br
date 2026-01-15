@@ -80,19 +80,19 @@ const Courses = () => {
                 {/* Course Info */}
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="flex items-center gap-2">
-                    <GraduationCap className="w-5 h-5 text-violet-600" />
+                    <GraduationCap className="w-5 h-5 text-[#2563EB]" />
                     <span className="text-sm font-medium text-gray-700">Tecnólogo</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Monitor className="w-5 h-5 text-blue-600" />
+                    <Monitor className="w-5 h-5 text-[#2563EB]" />
                     <span className="text-sm font-medium text-gray-700">{courseDetails.modality}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Clock className="w-5 h-5 text-violet-600" />
+                    <Clock className="w-5 h-5 text-[#2563EB]" />
                     <span className="text-sm font-medium text-gray-700">{courseDetails.hours}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Calendar className="w-5 h-5 text-blue-600" />
+                    <Calendar className="w-5 h-5 text-[#2563EB]" />
                     <span className="text-sm font-medium text-gray-700">{courseDetails.semesters}</span>
                   </div>
                 </div>
@@ -142,7 +142,7 @@ const Courses = () => {
                 key={index}
                 className="bg-white/10 backdrop-blur-sm rounded-xl p-4 lg:p-6 text-center hover:bg-white/20 transition-colors border border-violet-500/20"
               >
-                <div className="w-12 h-12 bg-gradient-to-br from-violet-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                <div className="w-12 h-12 bg-[#2563EB] rounded-full flex items-center justify-center mx-auto mb-3">
                   <area.icon className="w-6 h-6 text-white" />
                 </div>
                 <h4 className="text-white font-bold text-sm lg:text-base mb-1">{area.title}</h4>
