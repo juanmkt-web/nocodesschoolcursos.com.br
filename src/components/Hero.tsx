@@ -9,7 +9,7 @@ const Hero = () => {
       style={{
         backgroundImage: `url(${heroBackground})`,
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: "top",
       }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-[#1E2842]/90 via-[#1E2842]/60 via-50% to-transparent to-70%"></div>
