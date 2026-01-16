@@ -1,33 +1,33 @@
 import { Quote, ChevronLeft, ChevronRight } from "lucide-react";
-import mauricioFoto from "@/assets/mauricio-pereira-andrade.png";
-import emilyaFoto from "@/assets/emilya-soares.png";
-import pauloFoto from "@/assets/paulo-jose-cardoso.png";
+import carlosFoto from "@/assets/carlos-silva.png";
+import marianaFoto from "@/assets/mariana-campos.png";
+import pedroFoto from "@/assets/pedro-oliveira.png";
 import { useState, useEffect } from "react";
 
 const testimonials = [
   {
     id: 1,
     quote:
-      "Trabalhava em suporte técnico e sonhava em programar. O curso de ADS me deu toda a base que eu precisava. Hoje sou desenvolvedor full-stack em uma startup, trabalho remoto e meu salário triplicou em menos de dois anos.",
-    name: "Mauricio Pereira Andrade",
+      "Eu já atuava na área de infraestrutura, mas sentia que faltava a base de programação para evoluir. Muitos diziam que depois dos 40 era tarde para mudar, mas a graduação em ADS me provou o contrário. O curso atualizou meu mindset e me deu as ferramentas para migrar para o desenvolvimento Back-End. Hoje, tenho a segurança técnica que precisava e fui promovido a Sênior na minha empresa.",
+    name: "Carlos Silva",
     course: "Análise e Desenvolvimento de Sistemas",
-    photo: mauricioFoto,
+    photo: carlosFoto,
   },
   {
     id: 2,
     quote:
-      "Sempre tive curiosidade por tecnologia, mas achava que era tarde demais para mudar de área. Com 32 anos, decidi fazer ADS e foi a melhor decisão. Aprendi Python, Java e SQL do zero. Hoje atuo como analista de dados em uma multinacional.",
-    name: "Emilya Soares",
+      "Entrei na faculdade apaixonada por código, mas descobri que a tecnologia também é sobre gestão e pessoas. A graduação não me ensinou apenas linguagens de programação, mas me deu a visão sistêmica de negócios que eu precisava. Essa bagagem técnica foi o diferencial para eu deixar de ser apenas executora e assumir a cadeira de Diretora de Tecnologia. Hoje, lidero a transformação digital de grandes projetos.",
+    name: "Mariana Campos",
     course: "Análise e Desenvolvimento de Sistemas",
-    photo: emilyaFoto,
+    photo: marianaFoto,
   },
   {
     id: 3,
     quote:
-      "O mercado de TI está aquecido e o curso me preparou muito bem. Consegui minha primeira vaga como dev júnior ainda durante a graduação. A flexibilidade do EAD me permitiu estudar e trabalhar ao mesmo tempo.",
-    name: "Paulo José Cardoso",
+      "Antes do curso, eu aprendia tudo sozinho, na tentativa e erro. A graduação em ADS organizou meu conhecimento e me ensinou as boas práticas e arquitetura de software que o mercado global exige. O impacto foi imediato: consegui meu primeiro estágio no segundo semestre e fui efetivado em menos de um ano. Hoje trabalho como Tech Lead em uma multinacional e vejo como aquela base sólida faz falta para quem pula etapas.",
+    name: "Pedro Oliveira",
     course: "Análise e Desenvolvimento de Sistemas",
-    photo: pauloFoto,
+    photo: pedroFoto,
   },
 ];
 
