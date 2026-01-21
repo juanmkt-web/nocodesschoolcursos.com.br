@@ -30,13 +30,13 @@ const faqItems = [
 
 const FAQ = () => {
   return (
-    <section className="pt-4 md:pt-6 pb-10 sm:pb-12 md:pb-16 bg-white">
+    <section className="pt-2 pb-6 md:pt-6 md:pb-16 bg-white">
       <div className="container mx-auto px-3 sm:px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
-          <div className="mb-6 sm:mb-8 md:mb-10 text-center">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#1a0a2e] mb-3 sm:mb-4">PERGUNTAS FREQUENTES</h2>
-            <p className="text-gray-600 text-sm sm:text-base md:text-lg px-2">Tire suas dúvidas sobre o curso de ADS da FASUL</p>
+          <div className="mb-4 sm:mb-8 md:mb-10 text-center">
+            <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#1a0a2e] mb-2 sm:mb-4">PERGUNTAS FREQUENTES</h2>
+            <p className="text-gray-600 text-xs sm:text-base md:text-lg px-2">Tire suas dúvidas sobre o curso de ADS da FASUL</p>
           </div>
 
           {/* FAQ Accordion */}

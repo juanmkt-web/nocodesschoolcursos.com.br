@@ -39,9 +39,9 @@ const CTA = () => {
   }, []);
 
   return (
-    <section className="py-12 md:py-24 tech-gradient relative overflow-hidden">
+    <section className="py-6 md:py-24 tech-gradient relative overflow-hidden">
       <div className="absolute inset-0 bg-black/10"></div>
-      <div className="absolute top-0 left-0 right-0 h-10 md:h-16 lg:h-20 rotate-180">
+      <div className="absolute top-0 left-0 right-0 h-6 md:h-16 lg:h-20 rotate-180">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
@@ -57,16 +57,15 @@ const CTA = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto animate-fade-in">
-          <div className="flex flex-col gap-4 md:gap-8 items-center mb-4 md:mb-8">
+          <div className="flex flex-col gap-2 md:gap-8 items-center mb-2 md:mb-8">
             <div className="text-white text-center">
-              <h2 className="text-xl md:text-3xl lg:text-5xl font-bold mb-3 md:mb-6">
-                GARANTA SUA VAGA NO
-                <br />
+              <h2 className="text-xl md:text-3xl lg:text-5xl font-bold mb-1 md:mb-6 leading-tight">
+                GARANTA SUA VAGA NO{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-blue-400">
                   GRADUAÇÃO EM ADS
                 </span>
               </h2>
-              <p className="text-base md:text-xl text-white/90 max-w-2xl mx-auto">
+              <p className="text-xs md:text-xl text-white/90 max-w-2xl mx-auto">
                 Aproveite condições especiais e comece sua jornada para se tornar um desenvolvedor de sucesso.
               </p>
             </div>
@@ -121,13 +120,13 @@ const CTA = () => {
               </Button>
             </a>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-6 text-xs md:text-sm text-white mt-4 md:mt-8">
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="h-4 w-4 md:h-5 md:w-5 text-[#2563EB]" />
+            <div className="flex flex-row items-center justify-center gap-3 md:gap-6 text-[10px] md:text-sm text-white mt-2 md:mt-8 flex-wrap">
+              <div className="flex items-center gap-1 md:gap-2">
+                <CheckCircle2 className="h-3 w-3 md:h-5 md:w-5 text-[#2563EB]" />
                 <span>Mensalidade fixa de R$ 139/mês</span>
               </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="h-4 w-4 md:h-5 md:w-5 text-[#2563EB]" />
+              <div className="flex items-center gap-1 md:gap-2">
+                <CheckCircle2 className="h-3 w-3 md:h-5 md:w-5 text-[#2563EB]" />
                 <span>Diploma reconhecido pelo MEC</span>
               </div>
             </div>

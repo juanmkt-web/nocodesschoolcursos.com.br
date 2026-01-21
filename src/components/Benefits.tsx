@@ -34,21 +34,21 @@ const Benefits = () => {
             <div className="benefits-grid">
               {/* Left side - Main Title */}
               <div className="animate-fade-in text-center md:text-left">
-                <h2 className="text-lg sm:text-xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white mb-2 md:mb-6 leading-tight">
+                <h2 className="text-xl sm:text-xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white mb-1 md:mb-6 leading-tight">
                   <span className="text-[#783BED]"> PROGRAMAÇÃO </span>
                   <br />
                   PARA QUEM QUER INOVAR
                 </h2>
-                <p className="text-xs sm:text-sm md:text-lg text-white/80 leading-relaxed mb-4 md:mb-6">
+                <p className="text-xs sm:text-sm md:text-lg text-white/80 leading-relaxed mb-2 md:mb-6">
                   A área de tecnologia não para de crescer. Forme-se em uma das profissões mais demandadas do mundo com{" "}
                   <strong className="text-white">diploma reconhecido pelo MEC </strong>e conquiste oportunidades globais.
                 </p>
 
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 md:gap-3">
+                <div className="flex flex-wrap justify-center md:justify-start gap-x-3 gap-y-1 md:grid md:grid-cols-3 md:gap-3">
                   {highlights.map((item, index) => (
                     <div key={index} className="flex items-center gap-1.5 text-white/90">
                       <CheckCircle2 className="h-3 w-3 sm:h-3.5 sm:w-3.5 md:h-4 md:w-4 text-[#2563EB] flex-shrink-0" />
-                      <span className="text-[10px] sm:text-xs md:text-sm">{item}</span>
+                      <span className="text-xs sm:text-xs md:text-sm">{item}</span>
                     </div>
                   ))}
                 </div>
@@ -56,7 +56,7 @@ const Benefits = () => {
 
               {/* Right side - Benefits List */}
               <div
-                className="space-y-2 md:space-y-6 animate-fade-in"
+                className="space-y-1.5 md:space-y-6 animate-fade-in"
                 style={{
                   animationDelay: "0.2s",
                 }}

@@ -38,8 +38,8 @@ const careerAreas = [
 
 const Courses = () => {
   return (
-    <section id="cursos" className="pb-24 tech-gradient relative">
-      <div className="absolute top-0 left-0 right-0 h-10 md:h-16 lg:h-20">
+    <section id="cursos" className="pb-10 md:pb-24 tech-gradient relative">
+      <div className="absolute top-0 left-0 right-0 h-6 md:h-16 lg:h-20">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
@@ -53,10 +53,10 @@ const Courses = () => {
         </svg>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 relative z-10 pt-12 sm:pt-16">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10 pt-6 sm:pt-16">
         {/* Header */}
-        <div className="text-center mb-8 sm:mb-12 text-white animate-fade-in">
-          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold mb-3 sm:mb-4">CONHEÇA O CURSO</h2>
+        <div className="text-center mb-4 sm:mb-12 text-white animate-fade-in">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold mb-2 sm:mb-4">CONHEÇA O CURSO</h2>
           <p className="text-sm sm:text-base md:text-lg text-white/90 max-w-3xl mx-auto leading-relaxed px-2">
             O Tecnólogo em ADS é uma das formações mais valorizadas do mercado de tecnologia, com alta empregabilidade e
             salários competitivos.
@@ -64,11 +64,11 @@ const Courses = () => {
         </div>
 
         {/* Main Course Card */}
-        <div className="max-w-6xl mx-auto mb-16">
-          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
+        <div className="max-w-6xl mx-auto mb-6 md:mb-16">
+          <div className="bg-white rounded-2xl md:rounded-3xl shadow-2xl overflow-hidden">
             <div className="grid lg:grid-cols-2">
               {/* Image Side */}
-              <div className="relative h-64 lg:h-auto min-h-[300px]">
+              <div className="relative h-40 md:h-64 lg:h-auto min-h-[160px] md:min-h-[300px]">
                 <img
                   src={courseDetails.image}
                   alt={courseDetails.title}
@@ -78,12 +78,12 @@ const Courses = () => {
               </div>
 
               {/* Content Side */}
-              <div className="p-4 sm:p-6 lg:p-10">
-                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">{courseDetails.title}</h3>
-                <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed">{courseDetails.description}</p>
+              <div className="p-3 sm:p-6 lg:p-10">
+                <h3 className="text-lg sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-2 sm:mb-4">{courseDetails.title}</h3>
+                <p className="text-xs sm:text-base text-gray-600 mb-2 sm:mb-6 leading-relaxed">{courseDetails.description}</p>
 
                 {/* Course Info */}
-                <div className="grid grid-cols-2 gap-3 sm:gap-4 mb-4 sm:mb-6">
+                <div className="grid grid-cols-2 gap-2 sm:gap-4 mb-2 sm:mb-6">
                   <div className="flex items-center gap-1.5 sm:gap-2">
                     <GraduationCap className="w-4 h-4 sm:w-5 sm:h-5 text-[#2563EB] flex-shrink-0" />
                     <span className="text-xs sm:text-sm font-medium text-gray-700">Tecnólogo</span>
@@ -103,11 +103,11 @@ const Courses = () => {
                 </div>
 
                 {/* Pricing */}
-                <div className="bg-gray-50 rounded-xl p-3 sm:p-4 mb-4 sm:mb-6">
+                <div className="bg-gray-50 rounded-xl p-2 sm:p-4 mb-2 sm:mb-6">
                   <div className="flex flex-wrap items-baseline gap-1 sm:gap-2 mb-1">
-                    <span className="text-2xl sm:text-3xl font-bold text-gray-900">{courseDetails.promoPrice}</span>
-                    <span className="text-base sm:text-lg text-gray-900">/mês</span>
-                    <span className="text-gray-400 line-through ml-1 sm:ml-2 text-sm sm:text-base">{courseDetails.regularPrice}</span>
+                    <span className="text-xl sm:text-3xl font-bold text-gray-900">{courseDetails.promoPrice}</span>
+                    <span className="text-sm sm:text-lg text-gray-900">/mês</span>
+                    <span className="text-gray-400 line-through ml-1 sm:ml-2 text-xs sm:text-base">{courseDetails.regularPrice}</span>
                   </div>
                   <span className="inline-block text-[10px] sm:text-xs bg-gradient-to-r from-violet-500 to-blue-500 text-white px-2 sm:px-3 py-1 rounded-full font-semibold">
                     VALOR FIXO ATÉ O FINAL DO CURSO
@@ -115,20 +115,20 @@ const Courses = () => {
                 </div>
 
                 {/* CTA Buttons */}
-                <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
+                <div className="flex flex-row gap-2 sm:gap-3">
                   <Button
-                    className="bg-gradient-to-r from-violet-600 to-blue-600 hover:from-violet-500 hover:to-blue-500 text-white font-bold rounded-full text-sm sm:text-base py-5 sm:py-6 flex-1 shadow-[0_0_20px_rgba(139,92,246,0.5)]"
+                    className="bg-gradient-to-r from-violet-600 to-blue-600 hover:from-violet-500 hover:to-blue-500 text-white font-bold rounded-full text-[10px] sm:text-base py-2 sm:py-6 flex-1 shadow-[0_0_20px_rgba(139,92,246,0.5)]"
                     asChild
                   >
                     <a href={courseDetails.url} target="_blank" rel="noopener noreferrer">
-                      MATRICULE-SE AGORA <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                      MATRICULE-SE <ArrowRight className="ml-1 h-3 w-3 sm:ml-2 sm:h-5 sm:w-5" />
                     </a>
                   </Button>
                   <a
                     href={courseDetails.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-violet-600 font-bold text-sm sm:text-base border-2 border-violet-600 rounded-full py-2.5 sm:py-3 px-4 sm:px-6 hover:bg-violet-600/10 transition-colors text-center"
+                    className="text-violet-600 font-bold text-[10px] sm:text-base border-2 border-violet-600 rounded-full py-2 sm:py-3 px-3 sm:px-6 hover:bg-violet-600/10 transition-colors text-center flex items-center"
                   >
                     SAIBA MAIS
                   </a>
@@ -139,26 +139,26 @@ const Courses = () => {
         </div>
 
         {/* Career Areas */}
-        <div className="max-w-6xl mx-auto mb-16">
-          <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white text-center mb-6 sm:mb-8">ÁREAS DE ATUAÇÃO</h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
+        <div className="max-w-6xl mx-auto mb-4 md:mb-16">
+          <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white text-center mb-3 sm:mb-8">ÁREAS DE ATUAÇÃO</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-4">
             {careerAreas.map((area, index) => (
               <div
                 key={index}
-                className="bg-white/10 backdrop-blur-sm rounded-xl p-3 sm:p-4 lg:p-6 text-center hover:bg-white/20 transition-colors border border-violet-500/20"
+                className="bg-white/10 backdrop-blur-sm rounded-xl p-2 sm:p-4 lg:p-6 text-center hover:bg-white/20 transition-colors border border-violet-500/20"
               >
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-violet-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
-                  <area.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+                <div className="w-8 h-8 sm:w-12 sm:h-12 bg-gradient-to-br from-violet-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-1 sm:mb-3">
+                  <area.icon className="w-4 h-4 sm:w-6 sm:h-6 text-white" />
                 </div>
-                <h4 className="text-white font-bold text-xs sm:text-sm lg:text-base mb-1">{area.title}</h4>
-                <p className="text-white/70 text-[10px] sm:text-xs lg:text-sm">{area.description}</p>
+                <h4 className="text-white font-bold text-[10px] sm:text-sm lg:text-base mb-0.5">{area.title}</h4>
+                <p className="text-white/70 text-[9px] sm:text-xs lg:text-sm">{area.description}</p>
               </div>
             ))}
           </div>
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-10 md:h-16 lg:h-20">
+      <div className="absolute bottom-0 left-0 right-0 h-6 md:h-16 lg:h-20">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"

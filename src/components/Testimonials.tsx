@@ -48,8 +48,8 @@ const Testimonials = () => {
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <section id="depoimentos" className="py-10 sm:py-12 md:py-24 desktop:pb-[116px] bg-[#1E2842] relative">
-      <div className="absolute bottom-0 left-0 right-0 h-10 md:h-16 lg:h-20 pointer-events-none">
+    <section id="depoimentos" className="pt-4 pb-8 sm:py-12 md:py-24 desktop:pb-[116px] bg-[#1E2842] relative">
+      <div className="absolute bottom-0 left-0 right-0 h-6 md:h-16 lg:h-20 pointer-events-none">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
@@ -63,8 +63,8 @@ const Testimonials = () => {
         </svg>
       </div>
       <div className="container mx-auto px-3 sm:px-4 md:px-6 relative z-10">
-        <div className="text-center mb-5 sm:mb-6 md:mb-12 animate-fade-in text-white">
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2 md:mb-4">
+        <div className="text-center mb-3 sm:mb-6 md:mb-12 animate-fade-in text-white">
+          <h2 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-1 md:mb-4">
             DESENVOLVEDORES <span className="text-[#783BED]">DE SUCESSO</span>
           </h2>
           <p className="text-xs sm:text-sm md:text-lg text-white/90 max-w-3xl mx-auto px-2">

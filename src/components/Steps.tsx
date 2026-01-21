@@ -21,18 +21,18 @@ const steps = [
 
 const Steps = () => {
   return (
-    <section id="sobre" className="py-12 md:py-24 bg-white relative z-10">
+    <section id="sobre" className="py-6 md:py-24 bg-white relative z-10">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-8 md:mb-16 animate-fade-in">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4">
+        <div className="text-center mb-4 md:mb-16 animate-fade-in">
+          <h2 className="text-xl md:text-3xl lg:text-4xl font-bold mb-2 md:mb-4">
             SUA CARREIRA EM TECNOLOGIA <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-blue-600 font-extrabold">EM 3 PASSOS</span>
           </h2>
-          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-sm md:text-lg text-muted-foreground max-w-2xl mx-auto">
             O caminho para se tornar um desenvolvedor de sucesso começa aqui.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 md:gap-12 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-4 md:gap-12 max-w-5xl mx-auto">
           {steps.map((step, index) => (
             <div key={index} className="text-center animate-fade-in" style={{ animationDelay: `${index * 0.2}s` }}>
               <div className="relative mb-4 md:mb-8">
