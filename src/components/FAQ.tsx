@@ -39,7 +39,7 @@ const FAQ = () => {
               PERGUNTAS FREQUENTES
             </h2>
             <p className="text-gray-600 text-xs sm:text-base md:text-lg px-2">
-              Tire suas dúvidas sobre o curso de ADS da FASUL
+              Tire suas dúvidas sobre o Curso de ADS da FASUL
             </p>
           </div>
 
