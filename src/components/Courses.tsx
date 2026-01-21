@@ -117,21 +117,22 @@ const Courses = () => {
                 {/* CTA Buttons */}
                 <div className="flex flex-row gap-2 sm:gap-3">
                   <Button
-                    className="bg-gradient-to-r from-violet-600 to-blue-600 hover:from-violet-500 hover:to-blue-500 text-white font-bold rounded-full text-[10px] sm:text-base py-2 sm:py-6 flex-1 shadow-[0_0_20px_rgba(139,92,246,0.5)]"
+                    className="bg-gradient-to-r from-violet-600 to-blue-600 hover:from-violet-500 hover:to-blue-500 text-white font-bold rounded-full text-[10px] sm:text-base py-2 sm:py-6 px-4 sm:px-6 flex-1 shadow-[0_0_20px_rgba(139,92,246,0.5)]"
                     asChild
                   >
                     <a href={courseDetails.url} target="_blank" rel="noopener noreferrer">
                       MATRICULE-SE <ArrowRight className="ml-1 h-3 w-3 sm:ml-2 sm:h-5 sm:w-5" />
                     </a>
                   </Button>
-                  <a
-                    href={courseDetails.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-violet-600 font-bold text-[10px] sm:text-base border-2 border-violet-600 rounded-full py-2 sm:py-3 px-3 sm:px-6 hover:bg-violet-600/10 transition-colors text-center flex items-center"
+                  <Button
+                    variant="outline"
+                    className="text-violet-600 font-bold text-[10px] sm:text-base border-2 border-violet-600 rounded-full py-2 sm:py-6 px-4 sm:px-6 flex-1 hover:bg-violet-600/10 transition-colors"
+                    asChild
                   >
-                    SAIBA MAIS
-                  </a>
+                    <a href={courseDetails.url} target="_blank" rel="noopener noreferrer">
+                      SAIBA MAIS
+                    </a>
+                  </Button>
                 </div>
               </div>
             </div>

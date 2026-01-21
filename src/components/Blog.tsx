@@ -54,7 +54,7 @@ const blogPosts = [
 
 const Blog = () => {
   return (
-    <section className="pt-5 pb-32 bg-[#1E2842] relative">
+    <section className="pt-5 pb-16 md:pb-32 bg-[#1E2842] relative">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
