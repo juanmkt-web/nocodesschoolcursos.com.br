@@ -24,7 +24,7 @@ const courseDetails = {
   image: cursoADS,
   url: "https://www.fasuleducacional.edu.br/graduacao/analise-e-desenvolvimento-de-sistemas",
   description:
-    "O curso de Tecnólogo em Análise e Desenvolvimento de Sistemas da FASUL prepara profissionais para atuar no desenvolvimento de software, aplicações web e mobile, bancos de dados, e gestão de projetos de TI.",
+    "O Curso de Tecnólogo em Análise e Desenvolvimento de Sistemas da FASUL prepara profissionais para atuar no desenvolvimento de software, aplicações web e mobile, bancos de dados, e gestão de projetos de TI.",
 };
 
 const careerAreas = [
@@ -79,8 +79,12 @@ const Courses = () => {
 
               {/* Content Side */}
               <div className="p-3 sm:p-6 lg:p-10">
-                <h3 className="text-lg sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-2 sm:mb-4">{courseDetails.title}</h3>
-                <p className="text-xs sm:text-base text-gray-600 mb-2 sm:mb-6 leading-relaxed">{courseDetails.description}</p>
+                <h3 className="text-lg sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-2 sm:mb-4">
+                  {courseDetails.title}
+                </h3>
+                <p className="text-xs sm:text-base text-gray-600 mb-2 sm:mb-6 leading-relaxed">
+                  {courseDetails.description}
+                </p>
 
                 {/* Course Info */}
                 <div className="grid grid-cols-2 gap-2 sm:gap-4 mb-2 sm:mb-6">
@@ -107,7 +111,9 @@ const Courses = () => {
                   <div className="flex flex-wrap items-baseline gap-1 sm:gap-2 mb-1">
                     <span className="text-xl sm:text-3xl font-bold text-gray-900">{courseDetails.promoPrice}</span>
                     <span className="text-sm sm:text-lg text-gray-900">/mês</span>
-                    <span className="text-gray-400 line-through ml-1 sm:ml-2 text-xs sm:text-base">{courseDetails.regularPrice}</span>
+                    <span className="text-gray-400 line-through ml-1 sm:ml-2 text-xs sm:text-base">
+                      {courseDetails.regularPrice}
+                    </span>
                   </div>
                   <span className="inline-block text-[10px] sm:text-xs bg-gradient-to-r from-violet-500 to-blue-500 text-white px-2 sm:px-3 py-1 rounded-full font-semibold">
                     VALOR FIXO ATÉ O FINAL DO CURSO
@@ -141,7 +147,9 @@ const Courses = () => {
 
         {/* Career Areas */}
         <div className="max-w-6xl mx-auto mb-4 md:mb-16">
-          <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white text-center mb-3 sm:mb-8">ÁREAS DE ATUAÇÃO</h3>
+          <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white text-center mb-3 sm:mb-8">
+            ÁREAS DE ATUAÇÃO
+          </h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-4">
             {careerAreas.map((area, index) => (
               <div
