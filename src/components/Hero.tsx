@@ -84,6 +84,7 @@ const Hero = () => {
             </div>
 
             {/* Stats */}
+            <div className="mb-16 md:mb-24"></div>
             <div className="flex flex-wrap gap-6 md:gap-10 justify-center">
               <div className="flex items-center gap-2 text-white/90">
                 <div className="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-500 to-cyan-600 flex items-center justify-center">
