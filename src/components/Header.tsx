@@ -48,16 +48,17 @@ const Header = () => {
       {/* Mobile menu overlay */}
       {isMenuOpen && (
         <div
-          className="md:hidden fixed inset-0 bg-black/70 backdrop-blur-sm z-[105]"
+          className="md:hidden fixed inset-0 bg-black/70 z-[105]"
           onClick={() => setIsMenuOpen(false)}
         />
       )}
 
       {/* Mobile menu sidebar */}
       <div
-        className={`md:hidden fixed top-0 right-0 h-full w-72 bg-[hsl(225,50%,8%)]/98 backdrop-blur-xl border-l border-white/10 z-[110] shadow-2xl transform transition-transform duration-300 ease-in-out ${
+        className={`md:hidden fixed top-0 right-0 h-full w-72 border-l border-white/10 z-[110] shadow-2xl transform transition-transform duration-300 ease-in-out ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
+        style={{ backgroundColor: "hsl(225 50% 8%)" }}
       >
         <div className="flex items-center justify-between p-5 border-b border-white/10">
           <img src={logoFasul} alt="Fasul Educação" className="h-10" />
