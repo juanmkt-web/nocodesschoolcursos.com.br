@@ -1,13 +1,13 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle2, Sparkles } from "lucide-react";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const CTA = () => {
   const [timeLeft, setTimeLeft] = useState({
-    days: 2,
-    hours: 14,
+    days: 0,
+    hours: 20,
     minutes: 30,
-    seconds: 0,
+    seconds: 41,
   });
 
   useEffect(() => {
@@ -39,15 +39,9 @@ const CTA = () => {
   }, []);
 
   return (
-    <section className="py-12 md:py-24 bg-gradient-to-br from-[#0f0f23] via-[#1a1a3e] to-[#0d0d1f] relative overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-violet-500/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-pink-500/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }}></div>
-      </div>
-
-      {/* Top wave */}
-      <div className="absolute top-0 left-0 right-0 h-8 md:h-16 lg:h-24 rotate-180">
+    <section className="py-6 md:py-24 tech-gradient relative overflow-hidden">
+      <div className="absolute inset-0 bg-black/10"></div>
+      <div className="absolute top-0 left-0 right-0 h-6 md:h-16 lg:h-20 rotate-180">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
@@ -62,91 +56,79 @@ const CTA = () => {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto animate-fade-in text-center">
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-violet-500/20 to-pink-500/20 backdrop-blur-sm border border-violet-400/30 rounded-full px-4 py-2 mb-6">
-            <Sparkles className="w-4 h-4 text-yellow-400" />
-            <span className="text-violet-400 font-semibold text-xs md:text-sm">OFERTA POR TEMPO LIMITADO</span>
-          </div>
+        <div className="max-w-6xl mx-auto animate-fade-in">
+          <div className="flex flex-col gap-2 md:gap-8 items-center mb-2 md:mb-8">
+            <div className="text-white text-center">
+              <h2 className="text-xl md:text-3xl lg:text-5xl font-bold mb-1 md:mb-6 leading-tight">
+                GARANTA SUA VAGA NO{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-blue-400">
+                  GRADUAÇÃO EM ADS
+                </span>
+              </h2>
+              <p className="text-xs md:text-xl text-white/90 max-w-2xl mx-auto">
+                Aproveite condições especiais e comece sua jornada para se tornar um desenvolvedor de sucesso.
+              </p>
+            </div>
 
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight">
-            COMECE SUA JORNADA{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 via-pink-400 to-cyan-400">
-              NOCODE HOJE
-            </span>
-          </h2>
-          <p className="text-sm md:text-xl text-white/80 max-w-2xl mx-auto mb-6 md:mb-8">
-            Tenha acesso a todos os cursos, projetos práticos e comunidade exclusiva por um preço especial.
-          </p>
-
-          {/* Countdown */}
-          <div className="mb-8 md:mb-10">
-            <p className="text-xs md:text-sm uppercase tracking-wider mb-4 text-white/60">
-              ESTA OFERTA EXPIRA EM:
-            </p>
-            <div className="inline-flex gap-2 md:gap-4 bg-white/5 backdrop-blur-sm rounded-2xl p-4 md:p-6 border border-white/10">
-              <div className="text-center px-2 md:px-4">
-                <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-1">
-                  {String(timeLeft.days).padStart(2, "0")}
+            <div className="text-center">
+              <p className="text-xs md:text-sm uppercase tracking-wider mb-2 md:mb-4 text-white/80">
+                OFERTA ESPECIAL ACABA EM:
+              </p>
+              <div className="inline-flex gap-1 md:gap-3 bg-black/30 backdrop-blur-sm rounded-xl md:rounded-2xl p-3 md:p-6 border border-violet-500/20">
+                <div className="text-center">
+                  <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-1">
+                    {String(timeLeft.days).padStart(2, "0")}
+                  </div>
+                  <div className="text-[10px] md:text-xs uppercase text-white/70">DIAS</div>
                 </div>
-                <div className="text-[10px] md:text-xs uppercase text-white/50">DIAS</div>
-              </div>
-              <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-violet-400 flex items-center">:</div>
-              <div className="text-center px-2 md:px-4">
-                <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-1">
-                  {String(timeLeft.hours).padStart(2, "0")}
+                <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-violet-400 flex items-center">:</div>
+                <div className="text-center">
+                  <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-1">
+                    {String(timeLeft.hours).padStart(2, "0")}
+                  </div>
+                  <div className="text-[10px] md:text-xs uppercase text-white/70">HRS</div>
                 </div>
-                <div className="text-[10px] md:text-xs uppercase text-white/50">HRS</div>
-              </div>
-              <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-pink-400 flex items-center">:</div>
-              <div className="text-center px-2 md:px-4">
-                <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-1">
-                  {String(timeLeft.minutes).padStart(2, "0")}
+                <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-blue-400 flex items-center">:</div>
+                <div className="text-center">
+                  <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-1">
+                    {String(timeLeft.minutes).padStart(2, "0")}
+                  </div>
+                  <div className="text-[10px] md:text-xs uppercase text-white/70">MIN</div>
                 </div>
-                <div className="text-[10px] md:text-xs uppercase text-white/50">MIN</div>
-              </div>
-              <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-violet-400 flex items-center">:</div>
-              <div className="text-center px-2 md:px-4">
-                <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-1">
-                  {String(timeLeft.seconds).padStart(2, "0")}
+                <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-violet-400 flex items-center">:</div>
+                <div className="text-center">
+                  <div className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-1">
+                    {String(timeLeft.seconds).padStart(2, "0")}
+                  </div>
+                  <div className="text-[10px] md:text-xs uppercase text-white/70">SEGS</div>
                 </div>
-                <div className="text-[10px] md:text-xs uppercase text-white/50">SEG</div>
               </div>
             </div>
           </div>
 
-          {/* Pricing highlight */}
-          <div className="bg-gradient-to-r from-violet-500/10 to-pink-500/10 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-white/20 mb-8 max-w-lg mx-auto">
-            <div className="flex items-baseline justify-center gap-2 mb-2">
-              <span className="text-white/50 line-through text-lg md:text-xl">R$ 197</span>
-              <span className="text-4xl md:text-5xl font-bold text-white">R$ 97</span>
-              <span className="text-white/70">/mês</span>
-            </div>
-            <span className="inline-block text-xs md:text-sm bg-gradient-to-r from-violet-500 to-pink-500 text-white px-4 py-1.5 rounded-full font-semibold">
-              50% DE DESCONTO
-            </span>
-          </div>
+          <div className="text-center px-2">
+            <a
+              href="https://www.fasuleducacional.edu.br/graduacao/analise-e-desenvolvimento-de-sistemas"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-violet-600 to-blue-600 text-white hover:from-violet-500 hover:to-blue-500 font-bold text-sm md:text-xl px-6 md:px-12 py-5 md:py-8 rounded-full shadow-[0_0_25px_rgba(139,92,246,0.6)] hover:shadow-[0_0_35px_rgba(139,92,246,0.8)] animate-pulse-cta mb-4 md:mb-8 w-full md:w-auto max-w-full whitespace-normal"
+              >
+                QUERO ME MATRICULAR AGORA! <ArrowRight className="ml-2 md:ml-3 h-5 w-5 md:h-6 md:w-6 flex-shrink-0" />
+              </Button>
+            </a>
 
-          {/* CTA Button */}
-          <Button
-            size="lg"
-            className="bg-gradient-to-r from-violet-600 via-purple-600 to-pink-600 text-white hover:from-violet-500 hover:via-purple-500 hover:to-pink-500 font-bold text-base md:text-xl px-8 md:px-14 py-6 md:py-8 rounded-full shadow-[0_0_40px_rgba(139,92,246,0.6)] hover:shadow-[0_0_60px_rgba(139,92,246,0.8)] animate-pulse-cta mb-6 md:mb-8 w-full sm:w-auto"
-          >
-            GARANTIR MINHA VAGA <ArrowRight className="ml-2 md:ml-3 h-5 w-5 md:h-6 md:w-6" />
-          </Button>
-
-          {/* Benefits */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-8 text-sm text-white/70">
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 md:h-5 md:w-5 text-emerald-400" />
-              <span>Acesso a todos os cursos</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 md:h-5 md:w-5 text-emerald-400" />
-              <span>Comunidade exclusiva</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 md:h-5 md:w-5 text-emerald-400" />
-              <span>Garantia de 7 dias</span>
+            <div className="flex flex-row items-center justify-center gap-3 md:gap-6 text-[10px] md:text-sm text-white mt-2 md:mt-8 flex-wrap">
+              <div className="flex items-center gap-1 md:gap-2">
+                <CheckCircle2 className="h-3 w-3 md:h-5 md:w-5 text-[#2563EB]" />
+                <span>Mensalidade fixa de R$ 139/mês</span>
+              </div>
+              <div className="flex items-center gap-1 md:gap-2">
+                <CheckCircle2 className="h-3 w-3 md:h-5 md:w-5 text-[#2563EB]" />
+                <span>Diploma reconhecido pelo MEC</span>
+              </div>
             </div>
           </div>
         </div>

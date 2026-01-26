@@ -1,116 +1,134 @@
-import { Eye, Clock, ArrowRight } from "lucide-react";
+import { Eye, MessageSquare, Heart } from "lucide-react";
+
+import blog1 from "@/assets/blog-1.webp";
+import blog2 from "@/assets/blog-2.webp";
+import blog3 from "@/assets/blog-3.webp";
+import blog4 from "@/assets/blog-4.webp";
 
 const blogPosts = [
   {
-    title: "Como criar um SaaS do zero usando Bubble.io em 2024",
-    author: "Ana Costa",
-    date: "15 de jan. de 2024",
-    readTime: "8 min",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
-    views: "12.4k",
-    category: "Bubble",
+    title: "Mitos e Verdades sobre o Ensino a Distância da FASUL: Como funciona e suas vantagens para sua carreira?",
+    author: "Profª. Débora",
+    date: "26 de dez. de 2025",
+    readTime: "8 min de leitura",
+    image: blog1,
+    views: "6821",
+    comments: "0",
+    likes: "418",
+    url: "https://www.fasulmg.com.br/post/mitos-e-verdades-sobre-o-ensino-a-distancia-da-fasul-como-funciona-e-suas-vantagens-para-sua-carreira/",
   },
   {
-    title: "Webflow vs Framer: Qual escolher para seu projeto?",
-    author: "Bruno Martins",
-    date: "12 de jan. de 2024",
-    readTime: "6 min",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-    views: "8.7k",
-    category: "Webflow",
+    title: "Guia Completo do Vestibular ao Diploma e Suas Oportunidades de Carreira",
+    author: "Prof. Maurício",
+    date: "26 de dez. de 2025",
+    readTime: "11 min de leitura",
+    image: blog2,
+    views: "7534",
+    comments: "0",
+    likes: "502",
+    url: "https://www.fasulmg.com.br/post/guia-completo-do-vestibular-ao-diploma-e-suas-oportunidades-de-carreira/",
   },
   {
-    title: "Automatize tudo: Guia completo de Make (Integromat)",
-    author: "Carla Ribeiro",
-    date: "10 de jan. de 2024",
-    readTime: "10 min",
-    image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=600&h=400&fit=crop",
-    views: "6.2k",
-    category: "Automação",
+    title: "Não Estude no Escuro: Por Que Saber QUEM São Seus Professores Define o Valor do Seu Diploma FASUL",
+    author: "Profª. Vera Lúcia",
+    date: "26 de dez. de 2025",
+    readTime: "5 min de leitura",
+    image: blog3,
+    views: "4987",
+    comments: "0",
+    likes: "311",
+    url: "https://www.fasulmg.com.br/post/nao-estude-no-escuro-por-que-saber-quem-sao-seus-professores-define-o-valor-do-seu-diploma-fasul/",
   },
   {
-    title: "Como ganhar R$ 10.000/mês como freelancer NoCode",
-    author: "Daniel Souza",
-    date: "08 de jan. de 2024",
-    readTime: "12 min",
-    image: "https://images.unsplash.com/photo-1553729459-uj5aa9c43c07?w=600&h=400&fit=crop",
-    views: "15.8k",
-    category: "Carreira",
+    title: "A Escolha Inteligente para o Seu Futuro com Nota Máxima no MEC e Preço Fixo no EaD",
+    author: "Prof. Maurício",
+    date: "26 de dez. de 2025",
+    readTime: "6 min de leitura",
+    image: blog4,
+    views: "6210",
+    comments: "0",
+    likes: "387",
+    url: "https://www.fasulmg.com.br/post/a-escolha-inteligente-para-o-seu-futuro-com-nota-maxima-no-mec-e-preco-fixo-no-ead/",
   },
 ];
 
 const Blog = () => {
   return (
-    <section className="py-12 md:py-24 bg-[#1E2842] relative">
+    <section className="pt-5 pb-16 md:pb-32 bg-[#1E2842] relative">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-8 md:mb-12">
-          <div className="inline-block bg-gradient-to-r from-violet-500/20 to-pink-500/20 backdrop-blur-sm border border-violet-400/30 rounded-full px-4 py-2 mb-4">
-            <span className="text-violet-400 font-semibold text-xs md:text-sm">BLOG NOCODE</span>
-          </div>
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-            CONTEÚDO{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-pink-400">
-              GRATUITO
-            </span>
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            BLOG DE INFORMAÇÕES
           </h2>
-          <p className="text-white/70 text-sm md:text-lg max-w-3xl mx-auto">
-            Tutoriais, dicas e estratégias para você dominar o universo NoCode.
+          <p className="text-gray-300 text-lg max-w-3xl mx-auto">
+            Dicas de carreira, tendências de mercado e tudo o que você precisa
+            saber para impulsionar sua trajetória profissional.
           </p>
         </div>
 
         {/* Blog Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-8">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
           {blogPosts.map((post, index) => (
-            <article
+            <a
               key={index}
-              className="group bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 hover:border-violet-500/50 transition-all duration-300 hover:-translate-y-2"
+              href={post.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative rounded-lg overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105 block"
             >
-              {/* Image */}
-              <div className="relative aspect-[4/3] overflow-hidden">
+              {/* Background Image */}
+              <div className="aspect-[3/4] md:aspect-[4/5] relative">
                 <img
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <span className="absolute top-3 left-3 text-xs bg-gradient-to-r from-violet-500 to-pink-500 text-white px-3 py-1 rounded-full font-medium">
-                  {post.category}
-                </span>
-              </div>
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
 
-              {/* Content */}
-              <div className="p-4 md:p-5">
-                <h3 className="text-white font-bold text-sm md:text-base leading-snug mb-3 group-hover:text-violet-400 transition-colors line-clamp-2">
-                  {post.title}
-                </h3>
-                
-                <div className="flex items-center justify-between text-white/50 text-xs">
-                  <span>{post.author}</span>
-                  <div className="flex items-center gap-3">
-                    <span className="flex items-center gap-1">
-                      <Clock className="w-3 h-3" /> {post.readTime}
-                    </span>
-                    <span className="flex items-center gap-1">
-                      <Eye className="w-3 h-3" /> {post.views}
-                    </span>
+                {/* Content */}
+                <div className="absolute inset-0 flex flex-col justify-between p-4">
+                  {/* Author Info */}
+                  <div className="text-white">
+                    <p className="font-semibold text-sm">{post.author}</p>
+                    <p className="text-xs text-white/90">
+                      {post.date} · {post.readTime}
+                    </p>
+                  </div>
+
+                  {/* Title and Stats */}
+                  <div>
+                    <h3 className="text-white font-semibold text-sm leading-tight mb-4">
+                      {post.title}
+                    </h3>
+                    {/* Stats */}
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-4 text-white text-xs">
+                        <span className="flex items-center gap-1">
+                          <Eye className="w-3 h-3" />
+                          {post.views}
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <MessageSquare className="w-3 h-3" />
+                          {post.comments}
+                        </span>
+                      </div>
+                      <span className="flex items-center gap-1 text-white text-xs">
+                        <Heart className="w-3 h-3 text-red-400" />
+                        {post.likes}
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
-            </article>
+            </a>
           ))}
-        </div>
-
-        {/* CTA */}
-        <div className="text-center">
-          <button className="inline-flex items-center gap-2 text-violet-400 hover:text-violet-300 font-semibold transition-colors">
-            Ver todos os artigos <ArrowRight className="w-4 h-4" />
-          </button>
         </div>
       </div>
 
       {/* Bottom Wave */}
-      <div className="absolute bottom-0 left-0 right-0 h-10 md:h-16 lg:h-24">
+      <div className="absolute bottom-0 left-0 right-0 h-10 md:h-16 lg:h-20">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"

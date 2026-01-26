@@ -2,65 +2,59 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const faqItems = [
   {
-    question: "Preciso saber programar para começar?",
+    question: "Qual a duração do Curso de Análise e Desenvolvimento de Sistemas?",
     answer:
-      "Não! O NoCode foi feito exatamente para quem não sabe programar. Nossos cursos começam do absoluto zero e te ensinam passo a passo como usar cada ferramenta. Você só precisa de um computador e vontade de aprender.",
+      "O Curso de Tecnólogo em ADS tem duração de 5 semestres, com carga horária total de 2.120 horas. É possível concluir em menos tempo através do aproveitamento de disciplinas, caso você já tenha Cursado outra Graduação.",
   },
   {
-    question: "Quanto tempo leva para criar meu primeiro projeto?",
+    question: "O diploma de ADS EaD é reconhecido pelo MEC?",
     answer:
-      "Com dedicação, você consegue criar seu primeiro projeto funcional em 2-4 semanas. Nossos alunos mais dedicados lançam produtos completos em 1-2 meses. A velocidade é uma das maiores vantagens do NoCode!",
+      "Sim! A FASUL é uma Instituição com nota 5 no MEC, a nota máxima de avaliação. O diploma de Tecnólogo em Análise e Desenvolvimento de Sistemas tem a mesma validade de Cursos presenciais e é reconhecido em todo o território nacional.",
   },
   {
-    question: "Quais ferramentas vou aprender?",
+    question: "Preciso saber programar para começar o Curso?",
     answer:
-      "Você terá acesso a cursos de Bubble.io, Webflow, Framer, Make (Integromat), Airtable, Zapier, Shopify e muito mais. Cobrimos as ferramentas mais demandadas pelo mercado e atualizamos constantemente.",
+      "Não! O Curso foi desenvolvido para ensinar programação do zero. Você aprenderá desde lógica de programação até linguagens avançadas como Python, Java, JavaScript e SQL, mesmo sem nenhum conhecimento prévio.",
   },
   {
-    question: "Consigo monetizar minhas habilidades NoCode?",
+    question: "Quais são as principais áreas de atuação para quem forma em ADS?",
     answer:
-      "Sim! Existem várias formas: criar seus próprios produtos SaaS, oferecer serviços como freelancer, abrir uma agência NoCode, ou usar internamente na sua empresa. Freelancers NoCode cobram de R$ 5.000 a R$ 30.000 por projeto.",
+      "O profissional de ADS pode atuar como desenvolvedor web, desenvolvedor mobile, analista de sistemas, DBA (administrador de banco de dados), DevOps, analista de segurança da informação, cientista de dados, entre outras áreas muito demandadas no mercado.",
   },
   {
     question: "Qual o valor do investimento?",
     answer:
-      "Oferecemos planos acessíveis a partir de R$ 97/mês com acesso a todos os cursos, projetos práticos, comunidade exclusiva e suporte. Também temos opção de pagamento anual com desconto de 40%.",
+      "A mensalidade é de apenas R$ 139,00 com valor fixo até o final do Curso. Oferecemos diversas formas de pagamento: boleto, cartão de crédito com parcelamento e PIX.",
   },
 ];
 
 const FAQ = () => {
   return (
-    <section className="py-12 md:py-24 bg-white">
-      <div className="container mx-auto px-4 md:px-6">
+    <section className="pt-2 pb-6 md:pt-6 md:pb-16 bg-white">
+      <div className="container mx-auto px-3 sm:px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
-          <div className="mb-8 md:mb-12 text-center">
-            <div className="inline-block bg-gradient-to-r from-violet-100 to-pink-100 rounded-full px-4 py-2 mb-4">
-              <span className="text-violet-600 font-semibold text-xs md:text-sm">TIRE SUAS DÚVIDAS</span>
-            </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              PERGUNTAS{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-pink-600">
-                FREQUENTES
-              </span>
+          <div className="mb-4 sm:mb-8 md:mb-10 text-center">
+            <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E2842] mb-2 sm:mb-4">
+              PERGUNTAS FREQUENTES
             </h2>
-            <p className="text-gray-600 text-sm md:text-lg">
-              Tudo que você precisa saber antes de começar sua jornada NoCode
+            <p className="text-gray-600 text-xs sm:text-base md:text-lg px-2">
+              Tire suas dúvidas sobre o Curso de ADS da FASUL
             </p>
           </div>
 
           {/* FAQ Accordion */}
-          <Accordion type="single" collapsible className="space-y-4">
+          <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
             {faqItems.map((item, index) => (
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="border border-gray-200 rounded-xl px-4 md:px-6 data-[state=open]:border-violet-500 data-[state=open]:shadow-lg transition-all"
+                className="border border-gray-200 rounded-lg px-3 sm:px-4 md:px-6 data-[state=open]:border-violet-500"
               >
-                <AccordionTrigger className="text-left text-gray-900 font-semibold text-sm sm:text-base md:text-lg hover:no-underline py-4 md:py-5">
+                <AccordionTrigger className="text-left text-[#1E2842] font-medium text-sm sm:text-base md:text-lg hover:no-underline py-3 sm:py-4 md:py-5">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-600 text-sm md:text-base pb-4 md:pb-5 leading-relaxed">
+                <AccordionContent className="text-gray-600 text-xs sm:text-sm md:text-base pb-3 sm:pb-4 md:pb-5">
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>
