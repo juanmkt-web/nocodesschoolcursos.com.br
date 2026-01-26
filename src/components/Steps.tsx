@@ -5,17 +5,19 @@ const steps = [
     icon: Search,
     title: "Escolha sua Pós",
     description:
-      "Explore nossas especializações em NoCode: automação, desenvolvimento, design de produtos. Escolha a que combina com seus objetivos.",
+      "Explore nossas Especializações em: Automação, Desenvolvimento, Design de Produtos. Escolha a que combina com seus objetivos.",
   },
   {
     icon: ClipboardCheck,
     title: "Faça sua Matrícula",
-    description: "Processo 100% online e simplificado. Em poucos minutos você já está matriculado e pronto para dominar o NoCode.",
+    description:
+      "Processo 100% online e simplificado. Em poucos minutos você já está matriculado e pronto para dominar.",
   },
   {
     icon: Rocket,
     title: "Torne-se Especialista",
-    description: "Estude no seu ritmo, aprenda as principais ferramentas do mercado e receba seu certificado de Pós-Graduação reconhecido pelo MEC.",
+    description:
+      "Estude no seu próprio ritmo, domine o que há de mais recente no mercado e garanta seu Certificado de Pós-Graduação reconhecido pelo MEC.",
   },
 ];
 
@@ -25,11 +27,10 @@ const Steps = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 md:mb-16 animate-fade-in">
           <h2 className="text-xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-gray-900">
-            SUA CARREIRA NOCODE{" "}
-            <span className="gradient-text font-extrabold">EM 3 PASSOS</span>
+            SUA CARREIRA NOCODE <span className="gradient-text font-extrabold">EM 3 PASSOS</span>
           </h2>
           <p className="text-sm md:text-lg text-gray-600 max-w-2xl mx-auto">
-            O caminho para se tornar um especialista NoCode começa aqui.
+            O caminho para se tornar um Especialista começa aqui.
           </p>
         </div>
 
