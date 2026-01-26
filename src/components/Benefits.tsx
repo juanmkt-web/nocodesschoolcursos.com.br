@@ -35,13 +35,12 @@ const Benefits = () => {
               {/* Left side - Main Title */}
               <div className="animate-fade-in text-center md:text-left">
                 <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-extrabold text-white mb-2 md:mb-6 leading-tight">
-                  O FUTURO É{" "}
-                  <span className="gradient-text">NOCODE</span>
+                  O MERCADO É DOS <span className="gradient-text">ESPECIALISTAS</span>
                 </h2>
                 <p className="text-xs sm:text-sm md:text-lg text-white/80 leading-relaxed mb-3 md:mb-6">
-                  Empresas de todos os tamanhos estão migrando para plataformas NoCode. 
-                  Seja o especialista que elas precisam e conquiste as melhores oportunidades 
-                  com <strong className="text-cyan-400">diploma reconhecido pelo MEC</strong>.
+                  Generalistas são facilmente substituídos. Garanta sua estabilidade e altos salários tornando-se a
+                  autoridade que as grandes empresas buscam e valorizam.{" "}
+                  <strong className="text-cyan-400">diploma reconhecido pelo MEC</strong>.
                 </p>
 
                 <div className="flex flex-wrap justify-center md:justify-start gap-x-4 gap-y-2 md:grid md:grid-cols-3 md:gap-4">
