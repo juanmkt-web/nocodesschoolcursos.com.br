@@ -66,7 +66,7 @@ const Header = () => {
             <X className="h-7 w-7" />
           </button>
         </div>
-        <nav className="px-5 py-7 flex flex-col gap-1">
+        <nav className="px-5 py-7 flex flex-col gap-1 bg-[hsl(225,50%,8%)]">
           <a
             href="#cursos"
             className="block text-lg font-medium text-white py-4 border-b border-white/10 hover:text-cyan-400 transition-colors"
