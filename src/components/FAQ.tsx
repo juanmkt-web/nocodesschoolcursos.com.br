@@ -2,29 +2,29 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const faqItems = [
   {
-    question: "Qual a duração das Pós-Graduações em NoCode?",
+    question: "Qual a duração das Pós-Graduações?",
     answer:
-      "As especializações variam de 10 a 12 meses, com carga horária entre 360 e 420 horas. É possível concluir em menos tempo através do aproveitamento de disciplinas, caso você já tenha cursado outra Pós-Graduação.",
+      "Nossos Cursos são flexíveis, com duração de 3 a 12 meses e carga horária entre 360h e 720h. O formato 100% online permite que você estude no seu próprio ritmo.",
   },
   {
-    question: "O certificado de Pós-Graduação é reconhecido pelo MEC?",
+    question: "O Certificado de Pós-Graduação é reconhecido pelo MEC?",
     answer:
-      "Sim! A FASUL é uma Instituição com nota 5 no MEC, a nota máxima de avaliação. O certificado de Pós-Graduação tem a mesma validade de cursos presenciais e é reconhecido em todo o território nacional.",
+      "Sim! A FASUL é uma Instituição com nota 5 no MEC, a nota máxima de avaliação. O Certificado tem a mesma validade de Cursos presenciais, é reconhecido em todo o território nacional e valorizado por grandes empresas.",
   },
   {
-    question: "Preciso saber programar para fazer a Pós em NoCode?",
+    question: "Preciso saber programar para fazer a Pós em Dados ou IA?",
     answer:
-      "Não! O NoCode foi criado justamente para quem não sabe programar. Você aprenderá a usar ferramentas visuais como Bubble, Webflow, Make e Zapier para criar aplicações completas sem escrever uma linha de código.",
+      "Não é um pré-requisito obrigatório. Nossa metodologia ensina desde os fundamentos. Você aprenderá a lógica e as ferramentas essenciais com foco prático, ideal tanto para quem é de TI quanto para quem está migrando de área.",
   },
   {
-    question: "Quais são as principais áreas de atuação para quem se especializa em NoCode?",
+    question: "Quais são as principais áreas de atuação para esse Especialista?",
     answer:
-      "O profissional NoCode pode atuar como desenvolvedor de apps, especialista em automação, product builder, consultor de transformação digital, UI/UX designer, growth hacker, entre outras áreas em alta demanda no mercado.",
+      "O Profissional pode atuar como Cientista de Dados, Analista de BI, Engenheiro de Machine Learning, Consultor de Big Data ou Gestor de Inovação. São as carreiras com maior demanda e os salários mais altos da atualidade.",
   },
   {
     question: "Qual o valor do investimento?",
     answer:
-      "As mensalidades variam de R$ 169,00 a R$ 189,00 com valor fixo até o final do curso. Oferecemos diversas formas de pagamento: boleto, cartão de crédito com parcelamento e PIX.",
+      "Temos planos super acessíveis a partir de 18x de R$ 86,00. O valor é fixo. Aceitamos diversas formas de pagamento para facilitar seu investimento na carreira.",
   },
 ];
 
@@ -39,7 +39,7 @@ const FAQ = () => {
               PERGUNTAS <span className="gradient-text">FREQUENTES</span>
             </h2>
             <p className="text-gray-600 text-xs sm:text-base md:text-lg px-2">
-              Tire suas dúvidas sobre as Pós-Graduações em NoCode da FASUL
+              Tire suas dúvidas sobre as Pós-Graduações da FASUL
             </p>
           </div>
 
