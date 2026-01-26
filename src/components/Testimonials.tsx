@@ -1,33 +1,33 @@
-import { Quote, ChevronLeft, ChevronRight } from "lucide-react";
-import carlosFoto from "@/assets/carlos-silva.png";
-import marianaFoto from "@/assets/mariana-campos.png";
-import pedroFoto from "@/assets/pedro-oliveira.png";
+import { Quote, ChevronLeft, ChevronRight, Star } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const testimonials = [
   {
     id: 1,
     quote:
-      "Eu já atuava na área de infraestrutura, mas sentia que faltava a base de programação para evoluir. Muitos diziam que depois dos 40 era tarde para mudar, mas a graduação em ADS me provou o contrário. O curso atualizou meu mindset e me deu as ferramentas para migrar para o desenvolvimento Back-End. Hoje, tenho a segurança técnica que precisava e fui promovido a Sênior na minha empresa.",
-    name: "Carlos Silva",
-    course: "Análise e Desenvolvimento de Sistemas",
-    photo: carlosFoto,
+      "Eu era designer gráfico e queria criar meus próprios produtos digitais. Com o curso de Bubble, consegui lançar meu primeiro SaaS em 3 meses. Hoje faturo R$ 25.000/mês com uma ferramenta de gestão para clínicas que criei 100% sem código.",
+    name: "Lucas Ferreira",
+    role: "Fundador - ClinicaApp",
+    photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+    rating: 5,
   },
   {
     id: 2,
     quote:
-      "Entrei na faculdade apaixonada por código, mas descobri que a tecnologia também é sobre gestão e pessoas. A graduação não me ensinou apenas linguagens de programação, mas me deu a visão sistêmica de negócios que eu precisava. Essa bagagem técnica foi o diferencial para eu deixar de ser apenas executora e assumir a cadeira de Diretora de Tecnologia. Hoje, lidero a transformação digital de grandes projetos.",
-    name: "Mariana Campos",
-    course: "Análise e Desenvolvimento de Sistemas",
-    photo: marianaFoto,
+      "Sempre quis empreender mas não sabia programar. O NoCodePro mudou minha vida. Aprendi Webflow e hoje tenho uma agência focada em sites NoCode. Saí do CLT e dobrei minha renda em 6 meses trabalhando de casa.",
+    name: "Camila Santos",
+    role: "CEO - Studio Flow",
+    photo: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face",
+    rating: 5,
   },
   {
     id: 3,
     quote:
-      "Antes do curso, eu aprendia tudo sozinho, na tentativa e erro. A graduação em ADS organizou meu conhecimento e me ensinou as boas práticas e arquitetura de software que o mercado global exige. O impacto foi imediato: consegui meu primeiro estágio no segundo semestre e fui efetivado em menos de um ano. Hoje trabalho como Tech Lead em uma multinacional e vejo como aquela base sólida faz falta para quem pula etapas.",
-    name: "Pedro Oliveira",
-    course: "Análise e Desenvolvimento de Sistemas",
-    photo: pedroFoto,
+      "Como product manager, aprender NoCode foi um divisor de águas. Agora consigo criar protótipos funcionais rapidamente e validar ideias antes de passar para o time de dev. O curso de Make me economiza horas toda semana com automações.",
+    name: "Rafael Oliveira",
+    role: "Product Manager - TechStartup",
+    photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+    rating: 5,
   },
 ];
 
@@ -48,8 +48,14 @@ const Testimonials = () => {
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <section id="depoimentos" className="pt-4 pb-8 sm:py-12 md:py-24 desktop:pb-[116px] bg-[#1E2842] relative">
-      <div className="absolute bottom-0 left-0 right-0 h-6 md:h-16 lg:h-20 pointer-events-none">
+    <section id="depoimentos" className="py-12 md:py-24 bg-[#1E2842] relative">
+      {/* Decorative elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-20 right-20 w-64 h-64 bg-violet-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 left-20 w-64 h-64 bg-pink-500/10 rounded-full blur-3xl"></div>
+      </div>
+
+      <div className="absolute bottom-0 left-0 right-0 h-8 md:h-16 lg:h-24 pointer-events-none">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
@@ -62,93 +68,86 @@ const Testimonials = () => {
           />
         </svg>
       </div>
-      <div className="container mx-auto px-3 sm:px-4 md:px-6 relative z-10">
-        <div className="text-center mb-3 sm:mb-6 md:mb-12 animate-fade-in text-white">
-          <h2 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-1 md:mb-4">
-            DESENVOLVEDORES <span className="text-[#783BED]">DE SUCESSO</span>
+
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
+        <div className="text-center mb-8 md:mb-16 animate-fade-in text-white">
+          <div className="inline-block bg-gradient-to-r from-violet-500/20 to-pink-500/20 backdrop-blur-sm border border-violet-400/30 rounded-full px-4 py-2 mb-4">
+            <span className="text-violet-400 font-semibold text-xs md:text-sm">CASOS DE SUCESSO</span>
+          </div>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+            CRIADORES QUE{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-pink-400">
+              TRANSFORMARAM SUAS VIDAS
+            </span>
           </h2>
-          <p className="text-xs sm:text-sm md:text-lg text-white/90 max-w-3xl mx-auto px-2">
-            Veja como o Curso de ADS transformou a carreira dos nossos alunos.
+          <p className="text-sm sm:text-base md:text-lg text-white/70 max-w-3xl mx-auto">
+            Conheça histórias reais de pessoas que aprenderam NoCode e conquistaram sua independência.
           </p>
         </div>
 
-        {/* Carousel para telas menores que 1200px */}
+        {/* Carousel */}
         <div
-          className="max-w-4xl mx-auto block desktop:hidden relative"
+          className="max-w-4xl mx-auto relative"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          {/* Seta esquerda */}
+          {/* Navigation arrows */}
           <button
             onClick={() => setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length)}
-            className="absolute left-0 md:-left-4 top-1/2 -translate-y-1/2 z-20 w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+            className="absolute left-0 md:-left-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors backdrop-blur-sm"
             aria-label="Depoimento anterior"
           >
-            <ChevronLeft className="w-5 h-5 md:w-6 md:h-6 text-white/70" />
+            <ChevronLeft className="w-5 h-5 md:w-6 md:h-6 text-white" />
           </button>
 
-          {/* Seta direita */}
           <button
             onClick={() => setCurrentIndex((prev) => (prev + 1) % testimonials.length)}
-            className="absolute right-0 md:-right-4 top-1/2 -translate-y-1/2 z-20 w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+            className="absolute right-0 md:-right-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors backdrop-blur-sm"
             aria-label="Próximo depoimento"
           >
-            <ChevronRight className="w-5 h-5 md:w-6 md:h-6 text-white/70" />
+            <ChevronRight className="w-5 h-5 md:w-6 md:h-6 text-white" />
           </button>
 
           <div
-            className="glass-effect-tech rounded-2xl md:rounded-3xl p-4 sm:p-5 md:p-8 lg:p-12 shadow-2xl animate-fade-in block mx-6 sm:mx-8 md:mx-12"
+            className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl md:rounded-3xl p-6 sm:p-8 md:p-12 border border-white/20 shadow-2xl animate-fade-in mx-8 md:mx-16"
             key={currentTestimonial.id}
           >
-            <Quote className="h-6 w-6 sm:h-8 sm:w-8 md:h-12 md:w-12 text-cyan-400 mb-2 sm:mb-3 md:mb-6" />
-            <p className="text-sm sm:text-base md:text-xl lg:text-2xl text-white mb-4 sm:mb-5 md:mb-8 leading-relaxed italic font-light">
+            <div className="flex items-center gap-1 mb-4">
+              {[...Array(currentTestimonial.rating)].map((_, i) => (
+                <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />
+              ))}
+            </div>
+            
+            <Quote className="h-8 w-8 md:h-12 md:w-12 text-violet-400 mb-4 md:mb-6" />
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white mb-6 md:mb-10 leading-relaxed italic font-light">
               "{currentTestimonial.quote}"
             </p>
-            <div className="flex items-center gap-3 sm:gap-4 md:gap-6 border-t border-white/20 pt-4 sm:pt-5 md:pt-8">
+            <div className="flex items-center gap-4 md:gap-6 border-t border-white/20 pt-6 md:pt-8">
               <img
                 src={currentTestimonial.photo}
                 alt={currentTestimonial.name}
-                className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full border-2 sm:border-4 border-cyan-400 object-cover flex-shrink-0"
+                className="w-14 h-14 md:w-20 md:h-20 rounded-full border-4 border-violet-400 object-cover flex-shrink-0"
               />
-              <p className="text-white font-bold text-base sm:text-lg md:text-xl">{currentTestimonial.name}</p>
+              <div>
+                <p className="text-white font-bold text-lg md:text-xl">{currentTestimonial.name}</p>
+                <p className="text-violet-400 text-sm md:text-base">{currentTestimonial.role}</p>
+              </div>
             </div>
           </div>
 
-          <div className="flex justify-center gap-2 mt-6">
+          {/* Dots */}
+          <div className="flex justify-center gap-2 mt-8">
             {testimonials.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className={`h-2 rounded-full transition-all ${
-                  index === currentIndex ? "w-8 bg-gradient-to-r from-cyan-500 to-blue-600" : "w-2 bg-white/40"
+                className={`h-2.5 rounded-full transition-all ${
+                  index === currentIndex ? "w-10 bg-gradient-to-r from-violet-500 to-pink-500" : "w-2.5 bg-white/40"
                 }`}
                 aria-label={`Ir para depoimento ${index + 1}`}
               />
             ))}
           </div>
-        </div>
-
-        {/* Grid de 3 cards para telas >= 1200px */}
-        <div className="hidden desktop:grid grid-cols-3 gap-6 ultrawide:gap-7 max-w-7xl mx-auto">
-          {testimonials.map((testimonial) => (
-            <div
-              key={testimonial.id}
-              className="glass-effect-tech rounded-2xl p-5 ultrawide:p-[22px] shadow-2xl animate-fade-in flex flex-col h-full"
-            >
-              <Quote className="h-6 w-6 ultrawide:h-7 ultrawide:w-7 text-cyan-400 mb-3 ultrawide:mb-[13px]" />
-              <p className="text-sm wide:text-[17px] ultrawide:text-[19px] text-white mb-4 ultrawide:mb-[18px] leading-relaxed italic font-light flex-grow">
-                "{testimonial.quote}"
-              </p>
-              <div className="flex items-center gap-3 ultrawide:gap-[13px] border-t border-white/20 pt-4 ultrawide:pt-[18px]">
-                <img
-                  src={testimonial.photo}
-                  alt={testimonial.name}
-                  className="w-12 h-12 ultrawide:w-[54px] ultrawide:h-[54px] rounded-full border-2 border-cyan-400 object-cover"
-                />
-                <p className="text-white font-bold text-sm ultrawide:text-[16px]">{testimonial.name}</p>
-              </div>
-            </div>
-          ))}
         </div>
       </div>
     </section>
