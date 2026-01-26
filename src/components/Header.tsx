@@ -55,7 +55,7 @@ const Header = () => {
 
       {/* Mobile menu sidebar */}
       <div
-        className={`md:hidden fixed top-0 right-0 h-full w-72 border-l border-white/10 z-[110] shadow-2xl transform transition-transform duration-300 ease-in-out ${
+        className={`md:hidden fixed top-0 right-0 h-full w-72 flex flex-col border-l border-white/10 z-[110] shadow-2xl transform transition-transform duration-300 ease-in-out ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
         style={{ backgroundColor: "hsl(225 50% 8%)" }}
@@ -66,7 +66,7 @@ const Header = () => {
             <X className="h-7 w-7" />
           </button>
         </div>
-        <nav className="px-5 py-7 flex flex-col gap-1 bg-[hsl(225,50%,8%)]">
+        <nav className="px-5 py-7 flex-1 flex flex-col gap-1 bg-[hsl(225,50%,8%)]">
           <a
             href="#cursos"
             className="block text-lg font-medium text-white py-4 border-b border-white/10 hover:text-cyan-400 transition-colors"
