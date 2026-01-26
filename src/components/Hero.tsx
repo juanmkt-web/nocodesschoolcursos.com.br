@@ -48,10 +48,10 @@ const Hero = () => {
             </div>
 
             {/* Main headline */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white mb-6 leading-[1.1]">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white mb-6 leading-[1.1]">
               CHEGOU A HORA DE <span className="gradient-text">ESPECIALIZAR </span>
               SUA CARREIRA
-            </h1>
+            </h2>
 
             <p className="text-base sm:text-lg md:text-xl text-white/80 leading-relaxed mb-8 max-w-2xl mx-auto">
               O mercado não aceita mais o básico. Aprofunde seus conhecimentos, domine as tendências da sua área e
