@@ -54,14 +54,14 @@ const blogPosts = [
 
 const Blog = () => {
   return (
-    <section className="pt-8 pb-20 md:pb-36 dark-section relative">
+    <section className="pt-4 pb-12 md:pt-8 md:pb-36 dark-section relative">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-10 md:mb-14">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+        <div className="text-center mb-5 md:mb-14">
+          <h2 className="text-xl md:text-4xl lg:text-5xl font-extrabold text-white mb-2 md:mb-4">
             BLOG DE <span className="gradient-text">INFORMAÇÕES</span>
           </h2>
-          <p className="text-white/60 text-base md:text-lg max-w-3xl mx-auto">
+          <p className="text-white/60 text-xs md:text-lg max-w-3xl mx-auto">
             Dicas de carreira, tendências de mercado e tudo o que você precisa
             saber para impulsionar sua trajetória profissional.
           </p>
@@ -99,7 +99,7 @@ const Blog = () => {
 
                   {/* Title and Stats */}
                   <div>
-                    <h3 className="text-white font-semibold text-sm leading-tight mb-4 group-hover:text-cyan-300 transition-colors">
+                    <h3 className="text-white font-semibold text-[11px] md:text-sm leading-tight mb-2 md:mb-4 group-hover:text-cyan-300 transition-colors line-clamp-3">
                       {post.title}
                     </h3>
                     {/* Stats */}
@@ -128,11 +128,11 @@ const Blog = () => {
       </div>
 
       {/* Bottom Wave */}
-      <div className="absolute bottom-0 left-0 right-0 h-12 md:h-20 lg:h-24">
+      <div className="absolute bottom-0 left-0 right-0 h-8 md:h-20 lg:h-24">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
+          preserveAspectRatio="xMidYMax slice"
           className="w-full h-full"
         >
           <path

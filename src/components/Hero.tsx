@@ -3,7 +3,7 @@ import { ArrowRight, Sparkles, Zap, Globe } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden pt-20 pb-32 md:pt-24 md:pb-40 mesh-gradient">
+    <section className="relative min-h-[90vh] flex items-center overflow-hidden pt-28 pb-20 md:pt-32 md:pb-40 mesh-gradient">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-cyan-500/20 rounded-full blur-[100px] animate-float" />
@@ -24,11 +24,11 @@ const Hero = () => {
       />
 
       {/* Wave bottom */}
-      <div className="absolute bottom-0 left-0 right-0 h-16 md:h-24 lg:h-32">
+      <div className="absolute bottom-0 left-0 right-0 h-10 md:h-24 lg:h-32">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
+          preserveAspectRatio="xMidYMax slice"
           className="w-full h-full"
         >
           <path
@@ -42,24 +42,24 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="animate-fade-in">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2 mb-6">
-              <Sparkles className="w-4 h-4 text-cyan-400" />
-              <span className="text-cyan-300 font-semibold text-sm">PÓS-GRADUAÇÃO E MBA</span>
+            <div className="inline-flex items-center gap-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-3 py-1.5 md:px-4 md:py-2 mb-4 md:mb-6">
+              <Sparkles className="w-3 h-3 md:w-4 md:h-4 text-cyan-400" />
+              <span className="text-cyan-300 font-semibold text-xs md:text-sm">PÓS-GRADUAÇÃO E MBA</span>
             </div>
 
             {/* Main headline */}
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white mb-6 leading-[1.1]">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white mb-4 md:mb-6 leading-[1.1]">
               CHEGOU A HORA DE <span className="gradient-text">ESPECIALIZAR </span>
               SUA CARREIRA
             </h2>
 
-            <p className="text-base sm:text-lg md:text-xl text-white/80 leading-relaxed mb-8 max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base md:text-xl text-white/80 leading-relaxed mb-5 md:mb-8 max-w-2xl mx-auto px-2">
               O mercado não aceita mais o básico. Aprofunde seus conhecimentos, domine as tendências da sua área e
               conquiste os cargos de liderança que exigem qualificação superior.
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center mb-6 md:mb-10 px-2">
               <a
                 href="https://www.fasuleducacional.edu.br/posgraduacao/cursos"
                 target="_blank"
@@ -67,16 +67,16 @@ const Hero = () => {
               >
                 <Button
                   size="lg"
-                  className="w-full sm:w-auto bg-gradient-to-r from-cyan-500 to-purple-600 text-white hover:from-cyan-400 hover:to-purple-500 font-bold text-base md:text-lg px-8 py-6 rounded-full shadow-[0_0_30px_rgba(6,182,212,0.4)] hover:shadow-[0_0_40px_rgba(168,85,247,0.5)] transition-all hover:-translate-y-1"
+                  className="w-full sm:w-auto bg-gradient-to-r from-cyan-500 to-purple-600 text-white hover:from-cyan-400 hover:to-purple-500 font-bold text-sm md:text-lg px-6 md:px-8 py-5 md:py-6 rounded-full shadow-[0_0_30px_rgba(6,182,212,0.4)] hover:shadow-[0_0_40px_rgba(168,85,247,0.5)] transition-all hover:-translate-y-1"
                 >
-                  QUERO ME ESPECIALIZAR <ArrowRight className="ml-2 h-5 w-5" />
+                  QUERO ME ESPECIALIZAR <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
                 </Button>
               </a>
               <a href="#cursos">
                 <Button
                   size="lg"
                   variant="outline"
-                  className="w-full sm:w-auto border-2 border-white/20 text-white bg-white/5 hover:bg-white/10 font-semibold text-base md:text-lg px-8 py-6 rounded-full backdrop-blur-sm"
+                  className="w-full sm:w-auto border-2 border-white/20 text-white bg-white/5 hover:bg-white/10 font-semibold text-sm md:text-lg px-6 md:px-8 py-5 md:py-6 rounded-full backdrop-blur-sm"
                 >
                   VER PÓS-GRADUAÇÕES
                 </Button>
@@ -84,32 +84,32 @@ const Hero = () => {
             </div>
 
             {/* Stats */}
-            <div className="flex flex-wrap gap-6 md:gap-10 justify-center">
+            <div className="flex flex-wrap gap-4 md:gap-10 justify-center">
               <div className="flex items-center gap-2 text-white/90">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-500 to-cyan-600 flex items-center justify-center">
-                  <Sparkles className="h-5 w-5 text-white" />
+                <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-cyan-500 to-cyan-600 flex items-center justify-center">
+                  <Sparkles className="h-4 w-4 md:h-5 md:w-5 text-white" />
                 </div>
                 <div className="text-left">
-                  <div className="text-sm font-bold">Diploma MEC</div>
-                  <div className="text-xs text-white/60">Nota máxima</div>
+                  <div className="text-xs md:text-sm font-bold">Diploma MEC</div>
+                  <div className="text-[10px] md:text-xs text-white/60">Nota máxima</div>
                 </div>
               </div>
               <div className="flex items-center gap-2 text-white/90">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center">
-                  <Zap className="h-5 w-5 text-white" />
+                <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center">
+                  <Zap className="h-4 w-4 md:h-5 md:w-5 text-white" />
                 </div>
                 <div className="text-left">
-                  <div className="text-sm font-bold">100% Online</div>
-                  <div className="text-xs text-white/60">Estude onde quiser</div>
+                  <div className="text-xs md:text-sm font-bold">100% Online</div>
+                  <div className="text-[10px] md:text-xs text-white/60">Estude onde quiser</div>
                 </div>
               </div>
               <div className="flex items-center gap-2 text-white/90">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-pink-500 to-pink-600 flex items-center justify-center">
-                  <Globe className="h-5 w-5 text-white" />
+                <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-pink-500 to-pink-600 flex items-center justify-center">
+                  <Globe className="h-4 w-4 md:h-5 md:w-5 text-white" />
                 </div>
                 <div className="text-left">
-                  <div className="text-sm font-bold">+10 mil Alunos</div>
-                  <div className="text-xs text-white/60">Em todo Brasil</div>
+                  <div className="text-xs md:text-sm font-bold">+10 mil Alunos</div>
+                  <div className="text-[10px] md:text-xs text-white/60">Em todo Brasil</div>
                 </div>
               </div>
             </div>

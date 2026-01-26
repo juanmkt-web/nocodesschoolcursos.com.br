@@ -66,11 +66,11 @@ const Testimonials = () => {
         </svg>
       </div>
       <div className="container mx-auto px-3 sm:px-4 md:px-6 relative z-10">
-        <div className="text-center mb-6 sm:mb-10 md:mb-16 animate-fade-in text-white">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-4">
+        <div className="text-center mb-4 sm:mb-10 md:mb-16 animate-fade-in text-white">
+          <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-1.5 md:mb-4">
             ESPECIALISTAS <span className="gradient-text">DE SUCESSO</span>
           </h2>
-          <p className="text-xs sm:text-sm md:text-lg text-white/70 max-w-3xl mx-auto px-2">
+          <p className="text-[11px] sm:text-sm md:text-lg text-white/70 max-w-3xl mx-auto px-2">
             Confira histórias reais de quem saiu da média e se destacou na Era dos Dados com nossas Pós-Graduações.
           </p>
         </div>
@@ -107,11 +107,12 @@ const Testimonials = () => {
             <p className="text-sm sm:text-base md:text-xl lg:text-2xl text-white mb-5 sm:mb-6 md:mb-8 leading-relaxed italic font-light">
               "{currentTestimonial.quote}"
             </p>
-            <div className="flex items-center gap-4 sm:gap-5 md:gap-6 border-t border-white/10 pt-5 sm:pt-6 md:pt-8">
+            <div className="flex items-center gap-3 sm:gap-5 md:gap-6 border-t border-white/10 pt-4 sm:pt-6 md:pt-8">
               <img
                 src={currentTestimonial.photo}
                 alt={currentTestimonial.name}
-                className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full border-3 sm:border-4 border-cyan-400/50 object-cover flex-shrink-0"
+                className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full border-2 sm:border-4 border-cyan-400/50 object-cover flex-shrink-0"
+                loading="eager"
               />
               <div>
                 <p className="text-white font-bold text-base sm:text-lg md:text-xl">{currentTestimonial.name}</p>
