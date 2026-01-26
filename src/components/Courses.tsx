@@ -14,47 +14,53 @@ import { Button } from "@/components/ui/button";
 
 const courses = [
   {
-    title: "MBA em Desenvolvimento NoCode",
-    description: "Domine Bubble, Webflow, Airtable e outras ferramentas para criar aplicações completas sem código.",
-    modality: "EAD",
-    hours: "420 HORAS",
-    duration: "12 MESES",
-    price: "R$ 189,00",
+    title: "Inteligência Artificial",
+    description: "Domine as técnicas mais avançadas de IA e machine learning para transformar dados em soluções inteligentes.",
+    type: "LATO SENSU",
+    modality: "100% EAD",
+    hours: "360 A 720H",
+    duration: "3 A 12 MESES",
+    price: "R$ 86,00",
+    installments: "18X",
     url: "https://www.fasuleducacional.edu.br/posgraduacao/cursos",
-    icon: Layers,
+    icon: Zap,
     gradient: "from-cyan-500 to-blue-600",
   },
   {
-    title: "Automação e Integração de Processos",
-    description: "Aprenda a automatizar fluxos de trabalho com Make, Zapier, n8n e conectar sistemas empresariais.",
-    modality: "EAD",
-    hours: "360 HORAS",
-    duration: "10 MESES",
-    price: "R$ 169,00",
+    title: "MBA em Análise de Dados com BI e Big Data",
+    description: "Aprenda a transformar grandes volumes de dados em insights estratégicos usando as ferramentas mais modernas do mercado.",
+    type: "LATO SENSU",
+    modality: "100% EAD",
+    hours: "360 A 720H",
+    duration: "3 A 12 MESES",
+    price: "R$ 86,00",
+    installments: "18X",
     url: "https://www.fasuleducacional.edu.br/posgraduacao/cursos",
-    icon: Workflow,
+    icon: Layers,
     gradient: "from-purple-500 to-pink-600",
   },
   {
-    title: "Design de Produtos Digitais",
-    description: "Crie interfaces incríveis com Figma, prototipe com Framer e publique sites profissionais com Webflow.",
-    modality: "EAD",
-    hours: "360 HORAS",
-    duration: "10 MESES",
-    price: "R$ 169,00",
+    title: "Ciência de Dados e Inteligência Artificial",
+    description: "Combine estatística, programação e IA para extrair valor dos dados e criar modelos preditivos de alta performance.",
+    type: "LATO SENSU",
+    modality: "100% EAD",
+    hours: "360 A 720H",
+    duration: "3 A 12 MESES",
+    price: "R$ 86,00",
+    installments: "18X",
     url: "https://www.fasuleducacional.edu.br/posgraduacao/cursos",
-    icon: Palette,
+    icon: Monitor,
     gradient: "from-pink-500 to-orange-500",
   },
 ];
 
 const careerAreas = [
-  { icon: Layers, title: "Desenvolvedor NoCode", description: "Crie apps completos sem programar" },
-  { icon: Smartphone, title: "Product Builder", description: "Lance MVPs em semanas, não meses" },
-  { icon: Workflow, title: "Especialista em Automação", description: "Conecte e automatize sistemas" },
-  { icon: Zap, title: "Growth Hacker", description: "Escale negócios com ferramentas ágeis" },
-  { icon: Palette, title: "UI/UX NoCode", description: "Design e desenvolvimento integrados" },
-  { icon: Globe, title: "Consultor Digital", description: "Transforme empresas com NoCode" },
+  { icon: Layers, title: "Cientista de Dados", description: "Transforme dados em insights" },
+  { icon: Smartphone, title: "Analista de BI", description: "Crie dashboards estratégicos" },
+  { icon: Workflow, title: "Engenheiro de Dados", description: "Construa pipelines robustos" },
+  { icon: Zap, title: "Especialista em IA", description: "Desenvolva modelos inteligentes" },
+  { icon: Palette, title: "Analista de Big Data", description: "Processe grandes volumes" },
+  { icon: Globe, title: "Consultor em Analytics", description: "Transforme empresas com dados" },
 ];
 
 const Courses = () => {
@@ -81,7 +87,7 @@ const Courses = () => {
             NOSSAS <span className="gradient-text">PÓS-GRADUAÇÕES</span>
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-white/70 max-w-3xl mx-auto leading-relaxed px-2">
-            Especialize-se nas ferramentas mais poderosas do mercado NoCode e acelere sua carreira na era digital.
+            Especialize-se nas áreas mais promissoras do mercado de tecnologia e acelere sua carreira na era dos dados.
           </p>
         </div>
 
@@ -109,6 +115,13 @@ const Courses = () => {
                     {course.description}
                   </p>
 
+                  {/* Course Type Badge */}
+                  <div className="mb-3">
+                    <span className="inline-block px-2 py-1 text-[10px] font-semibold bg-cyan-500/20 text-cyan-300 rounded-full">
+                      {course.type}
+                    </span>
+                  </div>
+
                   {/* Course Info */}
                   <div className="grid grid-cols-2 gap-2 mb-4">
                     <div className="flex items-center gap-1.5">
@@ -127,6 +140,7 @@ const Courses = () => {
 
                   {/* Price */}
                   <div className="flex items-baseline gap-1 mb-4">
+                    <span className="text-white/50 text-sm">{course.installments}</span>
                     <span className="text-2xl md:text-3xl font-bold text-white">{course.price}</span>
                     <span className="text-white/50 text-sm">/mês</span>
                   </div>
