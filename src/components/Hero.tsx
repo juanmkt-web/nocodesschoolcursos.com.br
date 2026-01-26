@@ -3,7 +3,7 @@ import { ArrowRight, Sparkles, Zap, Globe } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden pt-20 pb-16 md:pt-24 md:pb-24 mesh-gradient">
+    <section className="relative min-h-[90vh] flex items-center overflow-hidden pt-20 pb-32 md:pt-24 md:pb-40 mesh-gradient">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-cyan-500/20 rounded-full blur-[100px] animate-float" />
@@ -84,7 +84,6 @@ const Hero = () => {
             </div>
 
             {/* Stats */}
-            <div className="mb-16 md:mb-24"></div>
             <div className="flex flex-wrap gap-6 md:gap-10 justify-center">
               <div className="flex items-center gap-2 text-white/90">
                 <div className="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-500 to-cyan-600 flex items-center justify-center">
