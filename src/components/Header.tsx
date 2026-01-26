@@ -7,7 +7,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[hsl(225,50%,8%)]/90 backdrop-blur-xl border-b border-white/5">
+    <header className="fixed top-0 left-0 right-0 z-[100] isolate bg-[hsl(225,50%,8%)]/90 backdrop-blur-xl border-b border-white/5">
       <div className="container mx-auto px-4 py-4 md:py-5 flex items-center justify-between">
         <div className="flex items-center">
           <img src={logoFasul} alt="Fasul Educação" className="h-12 md:h-14" />
@@ -46,11 +46,16 @@ const Header = () => {
       </div>
 
       {/* Mobile menu overlay */}
-      {isMenuOpen && <div className="md:hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-40" onClick={() => setIsMenuOpen(false)} />}
+      {isMenuOpen && (
+        <div
+          className="md:hidden fixed inset-0 bg-black/70 backdrop-blur-sm z-[105]"
+          onClick={() => setIsMenuOpen(false)}
+        />
+      )}
 
       {/* Mobile menu sidebar */}
       <div
-        className={`md:hidden fixed top-0 right-0 h-full w-72 bg-[hsl(225,50%,8%)] border-l border-white/10 z-50 transform transition-transform duration-300 ease-in-out ${
+        className={`md:hidden fixed top-0 right-0 h-full w-72 bg-[hsl(225,50%,8%)]/98 backdrop-blur-xl border-l border-white/10 z-[110] shadow-2xl transform transition-transform duration-300 ease-in-out ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
