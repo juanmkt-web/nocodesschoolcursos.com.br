@@ -132,7 +132,7 @@ const Blog = () => {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
-          preserveAspectRatio="xMidYMax slice"
+          preserveAspectRatio="none"
           className="w-full h-full"
         >
           <path
