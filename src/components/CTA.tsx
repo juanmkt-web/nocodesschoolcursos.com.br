@@ -41,13 +41,16 @@ const CTA = () => {
   return (
     <section className="py-10 md:py-28 mesh-gradient relative overflow-hidden">
       <div className="absolute inset-0 bg-black/10"></div>
-      
+
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-10 left-20 w-64 h-64 bg-cyan-500/15 rounded-full blur-[80px] animate-float" />
-        <div className="absolute bottom-10 right-20 w-80 h-80 bg-purple-500/15 rounded-full blur-[100px] animate-float" style={{ animationDelay: '-2s' }} />
+        <div
+          className="absolute bottom-10 right-20 w-80 h-80 bg-purple-500/15 rounded-full blur-[100px] animate-float"
+          style={{ animationDelay: "-2s" }}
+        />
       </div>
-      
+
       <div className="absolute top-0 left-0 right-0 h-8 md:h-20 lg:h-24 rotate-180">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -67,13 +70,11 @@ const CTA = () => {
           <div className="flex flex-col gap-4 md:gap-10 items-center mb-4 md:mb-10">
             <div className="text-white text-center">
               <h2 className="text-xl md:text-3xl lg:text-5xl font-bold mb-2 md:mb-6 leading-tight">
-                GARANTA SUA VAGA NA{" "}
-                <span className="gradient-text">
-                  PÓS-GRADUAÇÃO NOCODE
-                </span>
+                SUA CARREIRA MERECE UMA <span className="gradient-text">ESPECIALIZAÇÃO DO FUTURO</span>
               </h2>
               <p className="text-xs md:text-xl text-white/80 max-w-2xl mx-auto">
-                Aproveite condições especiais e comece sua jornada para se tornar um especialista NoCode.
+                O mercado mudou. Garanta sua matrícula com desconto e domine as ferramentas de Inteligência Artificial e
+                Big Data que as empresas exigem.
               </p>
             </div>
 
@@ -114,11 +115,7 @@ const CTA = () => {
           </div>
 
           <div className="text-center px-2">
-            <a
-              href="https://www.fasuleducacional.edu.br/posgraduacao/cursos"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://www.fasuleducacional.edu.br/posgraduacao/cursos" target="_blank" rel="noopener noreferrer">
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-cyan-500 to-purple-600 text-white hover:from-cyan-400 hover:to-purple-500 font-bold text-sm md:text-xl px-8 md:px-14 py-6 md:py-8 rounded-full shadow-[0_0_30px_rgba(6,182,212,0.4)] hover:shadow-[0_0_40px_rgba(168,85,247,0.5)] animate-pulse-cta mb-6 md:mb-10 w-full md:w-auto max-w-full whitespace-normal"
@@ -130,7 +127,7 @@ const CTA = () => {
             <div className="flex flex-row items-center justify-center gap-4 md:gap-8 text-xs md:text-sm text-white mt-4 md:mt-8 flex-wrap">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="h-4 w-4 md:h-5 md:w-5 text-cyan-400" />
-                <span>Mensalidade a partir de R$ 169/mês</span>
+                <span>Mensalidade a partir de R$ 86,00/mês</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="h-4 w-4 md:h-5 md:w-5 text-cyan-400" />
