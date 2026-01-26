@@ -63,21 +63,21 @@ const Header = () => {
         <nav className="px-5 py-7 flex flex-col gap-1">
           <a
             href="#cursos"
-            className="text-lg font-medium text-white/80 py-4 border-b border-white/10 hover:text-cyan-400 transition-colors"
+            className="block text-lg font-medium text-white py-4 border-b border-white/10 hover:text-cyan-400 transition-colors"
             onClick={() => setIsMenuOpen(false)}
           >
             Pós-Graduações
           </a>
           <a
             href="#sobre"
-            className="text-lg font-medium text-white/80 py-4 border-b border-white/10 hover:text-cyan-400 transition-colors"
+            className="block text-lg font-medium text-white py-4 border-b border-white/10 hover:text-cyan-400 transition-colors"
             onClick={() => setIsMenuOpen(false)}
           >
             Como Funciona
           </a>
           <a
             href="#depoimentos"
-            className="text-lg font-medium text-white/80 py-4 border-b border-white/10 hover:text-cyan-400 transition-colors"
+            className="block text-lg font-medium text-white py-4 border-b border-white/10 hover:text-cyan-400 transition-colors"
             onClick={() => setIsMenuOpen(false)}
           >
             Alunos
