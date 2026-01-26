@@ -65,12 +65,12 @@ const careerAreas = [
 
 const Courses = () => {
   return (
-    <section id="cursos" className="pb-12 md:pb-24 dark-section relative">
-      <div className="absolute top-0 left-0 right-0 h-6 md:h-16 lg:h-20 rotate-180">
+    <section id="cursos" className="pb-8 md:pb-24 dark-section relative">
+      <div className="absolute top-0 left-0 right-0 h-4 md:h-16 lg:h-20 rotate-180">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
+          preserveAspectRatio="xMidYMax slice"
           className="w-full h-full rotate-180"
         >
           <path
@@ -80,78 +80,78 @@ const Courses = () => {
         </svg>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 relative z-10 pt-10 sm:pt-20">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10 pt-6 sm:pt-20">
         {/* Header */}
-        <div className="text-center mb-8 sm:mb-16 text-white animate-fade-in">
-          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold mb-3 sm:mb-4">
+        <div className="text-center mb-5 sm:mb-16 text-white animate-fade-in">
+          <h2 className="text-xl sm:text-3xl lg:text-5xl font-extrabold mb-2 sm:mb-4">
             NOSSAS <span className="gradient-text">PÓS-GRADUAÇÕES</span>
           </h2>
-          <p className="text-sm sm:text-base md:text-lg text-white/70 max-w-3xl mx-auto leading-relaxed px-2">
+          <p className="text-xs sm:text-base md:text-lg text-white/70 max-w-3xl mx-auto leading-relaxed px-2">
             Especialize-se nas áreas mais promissoras do mercado de tecnologia e acelere sua carreira na era dos dados.
           </p>
         </div>
 
         {/* Course Cards */}
-        <div className="max-w-6xl mx-auto mb-12 md:mb-20">
-          <div className="grid md:grid-cols-3 gap-4 md:gap-6">
+        <div className="max-w-6xl mx-auto mb-8 md:mb-20">
+          <div className="grid md:grid-cols-3 gap-3 md:gap-6">
             {courses.map((course, index) => (
               <div
                 key={index}
-                className="group relative bg-white/[0.03] backdrop-blur-sm rounded-2xl border border-white/10 overflow-hidden hover:border-cyan-500/30 transition-all duration-300 hover:shadow-[0_0_40px_rgba(6,182,212,0.15)]"
+                className="group relative bg-white/[0.03] backdrop-blur-sm rounded-xl md:rounded-2xl border border-white/10 overflow-hidden hover:border-cyan-500/30 transition-all duration-300 hover:shadow-[0_0_40px_rgba(6,182,212,0.15)]"
               >
                 {/* Gradient top bar */}
-                <div className={`h-1.5 bg-gradient-to-r ${course.gradient}`} />
+                <div className={`h-1 md:h-1.5 bg-gradient-to-r ${course.gradient}`} />
                 
-                <div className="p-5 md:p-6">
+                <div className="p-4 md:p-6">
                   {/* Icon */}
-                  <div className={`w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br ${course.gradient} flex items-center justify-center mb-4 shadow-lg`}>
-                    <course.icon className="w-6 h-6 md:w-7 md:h-7 text-white" />
+                  <div className={`w-10 h-10 md:w-14 md:h-14 rounded-lg md:rounded-xl bg-gradient-to-br ${course.gradient} flex items-center justify-center mb-3 md:mb-4 shadow-lg`}>
+                    <course.icon className="w-5 h-5 md:w-7 md:h-7 text-white" />
                   </div>
 
-                  <h3 className="text-lg md:text-xl font-bold text-white mb-2 group-hover:text-cyan-300 transition-colors">
+                  <h3 className="text-base md:text-xl font-bold text-white mb-1.5 md:mb-2 group-hover:text-cyan-300 transition-colors leading-tight">
                     {course.title}
                   </h3>
-                  <p className="text-white/60 text-sm mb-4 leading-relaxed">
+                  <p className="text-white/60 text-xs md:text-sm mb-3 md:mb-4 leading-relaxed line-clamp-2 md:line-clamp-none">
                     {course.description}
                   </p>
 
                   {/* Course Type Badge */}
-                  <div className="mb-3">
-                    <span className="inline-block px-2 py-1 text-[10px] font-semibold bg-cyan-500/20 text-cyan-300 rounded-full">
+                  <div className="mb-2 md:mb-3">
+                    <span className="inline-block px-2 py-0.5 md:py-1 text-[9px] md:text-[10px] font-semibold bg-cyan-500/20 text-cyan-300 rounded-full">
                       {course.type}
                     </span>
                   </div>
 
                   {/* Course Info */}
-                  <div className="grid grid-cols-2 gap-2 mb-4">
-                    <div className="flex items-center gap-1.5">
-                      <Monitor className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                      <span className="text-xs text-white/70">{course.modality}</span>
+                  <div className="grid grid-cols-2 gap-1.5 md:gap-2 mb-3 md:mb-4">
+                    <div className="flex items-center gap-1">
+                      <Monitor className="w-3 h-3 md:w-4 md:h-4 text-cyan-400 flex-shrink-0" />
+                      <span className="text-[10px] md:text-xs text-white/70 whitespace-nowrap">{course.modality}</span>
                     </div>
-                    <div className="flex items-center gap-1.5">
-                      <Clock className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                      <span className="text-xs text-white/70">{course.hours}</span>
+                    <div className="flex items-center gap-1">
+                      <Clock className="w-3 h-3 md:w-4 md:h-4 text-cyan-400 flex-shrink-0" />
+                      <span className="text-[10px] md:text-xs text-white/70 whitespace-nowrap">{course.hours}</span>
                     </div>
-                    <div className="flex items-center gap-1.5">
-                      <GraduationCap className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                      <span className="text-xs text-white/70">{course.duration}</span>
+                    <div className="flex items-center gap-1">
+                      <GraduationCap className="w-3 h-3 md:w-4 md:h-4 text-cyan-400 flex-shrink-0" />
+                      <span className="text-[10px] md:text-xs text-white/70 whitespace-nowrap">{course.duration}</span>
                     </div>
                   </div>
 
                   {/* Price */}
-                  <div className="flex items-baseline gap-1 mb-4">
-                    <span className="text-white/50 text-sm">{course.installments}</span>
-                    <span className="text-2xl md:text-3xl font-bold text-white">{course.price}</span>
-                    <span className="text-white/50 text-sm">/mês</span>
+                  <div className="flex items-baseline gap-1 mb-3 md:mb-4">
+                    <span className="text-white/50 text-xs md:text-sm">{course.installments}</span>
+                    <span className="text-xl md:text-3xl font-bold text-white">{course.price}</span>
+                    <span className="text-white/50 text-xs md:text-sm">/mês</span>
                   </div>
 
                   {/* CTA */}
                   <Button
-                    className={`w-full bg-gradient-to-r ${course.gradient} hover:opacity-90 text-white font-bold rounded-full py-5 transition-all`}
+                    className={`w-full bg-gradient-to-r ${course.gradient} hover:opacity-90 text-white font-bold rounded-full py-4 md:py-5 text-xs md:text-sm transition-all`}
                     asChild
                   >
                     <a href={course.url} target="_blank" rel="noopener noreferrer">
-                      SAIBA MAIS <ArrowRight className="ml-2 h-4 w-4" />
+                      SAIBA MAIS <ArrowRight className="ml-1.5 md:ml-2 h-3 w-3 md:h-4 md:w-4" />
                     </a>
                   </Button>
                 </div>
@@ -162,31 +162,31 @@ const Courses = () => {
 
         {/* Career Areas */}
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white text-center mb-6 sm:mb-10">
+          <h3 className="text-lg sm:text-2xl lg:text-3xl font-extrabold text-white text-center mb-4 sm:mb-10">
             ÁREAS DE <span className="gradient-text">ATUAÇÃO</span>
           </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-4">
             {careerAreas.map((area, index) => (
               <div
                 key={index}
-                className="group bg-white/[0.03] backdrop-blur-sm rounded-xl p-4 sm:p-5 text-center hover:bg-white/[0.06] transition-all duration-300 border border-white/5 hover:border-cyan-500/20"
+                className="group bg-white/[0.03] backdrop-blur-sm rounded-lg sm:rounded-xl p-3 sm:p-5 text-center hover:bg-white/[0.06] transition-all duration-300 border border-white/5 hover:border-cyan-500/20"
               >
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-cyan-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-3 shadow-lg group-hover:scale-110 transition-transform">
-                  <area.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+                <div className="w-8 h-8 sm:w-12 sm:h-12 bg-gradient-to-br from-cyan-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3 shadow-lg group-hover:scale-110 transition-transform">
+                  <area.icon className="w-4 h-4 sm:w-6 sm:h-6 text-white" />
                 </div>
-                <h4 className="text-white font-bold text-xs sm:text-sm mb-1">{area.title}</h4>
-                <p className="text-white/50 text-[10px] sm:text-xs">{area.description}</p>
+                <h4 className="text-white font-bold text-[10px] sm:text-sm mb-0.5 sm:mb-1">{area.title}</h4>
+                <p className="text-white/50 text-[9px] sm:text-xs leading-tight">{area.description}</p>
               </div>
             ))}
           </div>
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-6 md:h-16 lg:h-20">
+      <div className="absolute bottom-0 left-0 right-0 h-4 md:h-16 lg:h-20">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
+          preserveAspectRatio="xMidYMax slice"
           className="w-full h-full rotate-180"
         >
           <path
