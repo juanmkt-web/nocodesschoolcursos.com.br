@@ -54,14 +54,14 @@ const blogPosts = [
 
 const Blog = () => {
   return (
-    <section className="pt-5 pb-16 md:pb-32 bg-[#1E2842] relative">
+    <section className="pt-8 pb-20 md:pb-36 dark-section relative">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            BLOG DE INFORMAÇÕES
+        <div className="text-center mb-10 md:mb-14">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+            BLOG DE <span className="gradient-text">INFORMAÇÕES</span>
           </h2>
-          <p className="text-gray-300 text-lg max-w-3xl mx-auto">
+          <p className="text-white/60 text-base md:text-lg max-w-3xl mx-auto">
             Dicas de carreira, tendências de mercado e tudo o que você precisa
             saber para impulsionar sua trajetória profissional.
           </p>
@@ -75,7 +75,7 @@ const Blog = () => {
               href={post.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative rounded-lg overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105 block"
+              className="group relative rounded-xl overflow-hidden cursor-pointer transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_40px_rgba(6,182,212,0.2)] block border border-white/5"
             >
               {/* Background Image */}
               <div className="aspect-[3/4] md:aspect-[4/5] relative">
@@ -85,26 +85,26 @@ const Blog = () => {
                   className="w-full h-full object-cover"
                 />
                 {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent"></div>
 
                 {/* Content */}
                 <div className="absolute inset-0 flex flex-col justify-between p-4">
                   {/* Author Info */}
                   <div className="text-white">
                     <p className="font-semibold text-sm">{post.author}</p>
-                    <p className="text-xs text-white/90">
+                    <p className="text-xs text-white/80">
                       {post.date} · {post.readTime}
                     </p>
                   </div>
 
                   {/* Title and Stats */}
                   <div>
-                    <h3 className="text-white font-semibold text-sm leading-tight mb-4">
+                    <h3 className="text-white font-semibold text-sm leading-tight mb-4 group-hover:text-cyan-300 transition-colors">
                       {post.title}
                     </h3>
                     {/* Stats */}
                     <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-4 text-white text-xs">
+                      <div className="flex items-center gap-4 text-white/70 text-xs">
                         <span className="flex items-center gap-1">
                           <Eye className="w-3 h-3" />
                           {post.views}
@@ -114,8 +114,8 @@ const Blog = () => {
                           {post.comments}
                         </span>
                       </div>
-                      <span className="flex items-center gap-1 text-white text-xs">
-                        <Heart className="w-3 h-3 text-red-400" />
+                      <span className="flex items-center gap-1 text-white/70 text-xs">
+                        <Heart className="w-3 h-3 text-pink-400" />
                         {post.likes}
                       </span>
                     </div>
@@ -128,7 +128,7 @@ const Blog = () => {
       </div>
 
       {/* Bottom Wave */}
-      <div className="absolute bottom-0 left-0 right-0 h-10 md:h-16 lg:h-20">
+      <div className="absolute bottom-0 left-0 right-0 h-12 md:h-20 lg:h-24">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"

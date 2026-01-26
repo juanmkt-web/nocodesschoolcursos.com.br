@@ -2,44 +2,44 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const faqItems = [
   {
-    question: "Qual a duração do Curso de Análise e Desenvolvimento de Sistemas?",
+    question: "Qual a duração das Pós-Graduações em NoCode?",
     answer:
-      "O Curso de Tecnólogo em ADS tem duração de 5 semestres, com carga horária total de 2.120 horas. É possível concluir em menos tempo através do aproveitamento de disciplinas, caso você já tenha Cursado outra Graduação.",
+      "As especializações variam de 10 a 12 meses, com carga horária entre 360 e 420 horas. É possível concluir em menos tempo através do aproveitamento de disciplinas, caso você já tenha cursado outra Pós-Graduação.",
   },
   {
-    question: "O diploma de ADS EaD é reconhecido pelo MEC?",
+    question: "O certificado de Pós-Graduação é reconhecido pelo MEC?",
     answer:
-      "Sim! A FASUL é uma Instituição com nota 5 no MEC, a nota máxima de avaliação. O diploma de Tecnólogo em Análise e Desenvolvimento de Sistemas tem a mesma validade de Cursos presenciais e é reconhecido em todo o território nacional.",
+      "Sim! A FASUL é uma Instituição com nota 5 no MEC, a nota máxima de avaliação. O certificado de Pós-Graduação tem a mesma validade de cursos presenciais e é reconhecido em todo o território nacional.",
   },
   {
-    question: "Preciso saber programar para começar o Curso?",
+    question: "Preciso saber programar para fazer a Pós em NoCode?",
     answer:
-      "Não! O Curso foi desenvolvido para ensinar programação do zero. Você aprenderá desde lógica de programação até linguagens avançadas como Python, Java, JavaScript e SQL, mesmo sem nenhum conhecimento prévio.",
+      "Não! O NoCode foi criado justamente para quem não sabe programar. Você aprenderá a usar ferramentas visuais como Bubble, Webflow, Make e Zapier para criar aplicações completas sem escrever uma linha de código.",
   },
   {
-    question: "Quais são as principais áreas de atuação para quem forma em ADS?",
+    question: "Quais são as principais áreas de atuação para quem se especializa em NoCode?",
     answer:
-      "O profissional de ADS pode atuar como desenvolvedor web, desenvolvedor mobile, analista de sistemas, DBA (administrador de banco de dados), DevOps, analista de segurança da informação, cientista de dados, entre outras áreas muito demandadas no mercado.",
+      "O profissional NoCode pode atuar como desenvolvedor de apps, especialista em automação, product builder, consultor de transformação digital, UI/UX designer, growth hacker, entre outras áreas em alta demanda no mercado.",
   },
   {
     question: "Qual o valor do investimento?",
     answer:
-      "A mensalidade é de apenas R$ 139,00 com valor fixo até o final do Curso. Oferecemos diversas formas de pagamento: boleto, cartão de crédito com parcelamento e PIX.",
+      "As mensalidades variam de R$ 169,00 a R$ 189,00 com valor fixo até o final do curso. Oferecemos diversas formas de pagamento: boleto, cartão de crédito com parcelamento e PIX.",
   },
 ];
 
 const FAQ = () => {
   return (
-    <section className="pt-2 pb-6 md:pt-6 md:pb-16 bg-white">
+    <section className="pt-4 pb-10 md:pt-8 md:pb-20 bg-white">
       <div className="container mx-auto px-3 sm:px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
-          <div className="mb-4 sm:mb-8 md:mb-10 text-center">
-            <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E2842] mb-2 sm:mb-4">
-              PERGUNTAS FREQUENTES
+          <div className="mb-6 sm:mb-10 md:mb-12 text-center">
+            <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
+              PERGUNTAS <span className="gradient-text">FREQUENTES</span>
             </h2>
             <p className="text-gray-600 text-xs sm:text-base md:text-lg px-2">
-              Tire suas dúvidas sobre o Curso de ADS da FASUL
+              Tire suas dúvidas sobre as Pós-Graduações em NoCode da FASUL
             </p>
           </div>
 
@@ -49,12 +49,12 @@ const FAQ = () => {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="border border-gray-200 rounded-lg px-3 sm:px-4 md:px-6 data-[state=open]:border-violet-500"
+                className="border border-gray-200 rounded-xl px-4 sm:px-5 md:px-6 data-[state=open]:border-cyan-500 data-[state=open]:shadow-[0_0_20px_rgba(6,182,212,0.1)] transition-all"
               >
-                <AccordionTrigger className="text-left text-[#1E2842] font-medium text-sm sm:text-base md:text-lg hover:no-underline py-3 sm:py-4 md:py-5">
+                <AccordionTrigger className="text-left text-gray-900 font-medium text-sm sm:text-base md:text-lg hover:no-underline py-4 sm:py-5 md:py-6 hover:text-cyan-600 transition-colors">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-600 text-xs sm:text-sm md:text-base pb-3 sm:pb-4 md:pb-5">
+                <AccordionContent className="text-gray-600 text-xs sm:text-sm md:text-base pb-4 sm:pb-5 md:pb-6">
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>

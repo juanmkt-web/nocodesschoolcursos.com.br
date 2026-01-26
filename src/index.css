@@ -2,120 +2,109 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* NoCode Theme - Design System
+   All colors MUST be HSL.
 */
 
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 0 0% 20%;
+    --foreground: 220 40% 13%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 20%;
+    --card-foreground: 220 40% 13%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 20%;
+    --popover-foreground: 220 40% 13%;
 
-    /* Brand colors - Purple & Dark Blue palette */
-    --primary: 270 70% 55%;
+    /* NoCode Brand - Vibrant Cyan & Electric Purple */
+    --primary: 175 85% 42%;
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 220 80% 35%;
+    --secondary: 280 75% 55%;
     --secondary-foreground: 0 0% 100%;
     
-    /* Dark Blue for tech accents */
-    --dark-accent: 220 80% 35%;
-    --dark-accent-foreground: 0 0% 100%;
-    
-    /* Purple for primary actions */
-    --purple: 270 70% 55%;
-    --purple-foreground: 0 0% 100%;
+    /* Accent colors */
+    --accent: 280 75% 55%;
+    --accent-foreground: 0 0% 100%;
 
     /* Dark backgrounds */
-    --dark-blue: 220 80% 25%;
+    --dark-surface: 225 50% 8%;
+    --dark-card: 225 45% 12%;
+    
+    /* Gradient spectrum */
+    --gradient-cyan: 175 85% 42%;
+    --gradient-purple: 280 75% 55%;
+    --gradient-pink: 320 85% 60%;
+    --gradient-blue: 220 90% 55%;
 
-    /* Dark Blue accent */
-    --blue-accent: 220 70% 45%;
-
-    --muted: 260 15% 96%;
-    --muted-foreground: 260 20% 40%;
-
-    /* Accent - Dark Blue */
-    --accent: 220 80% 35%;
-    --accent-foreground: 0 0% 100%;
+    --muted: 220 15% 95%;
+    --muted-foreground: 220 15% 40%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 260 13% 91%;
-    --input: 260 13% 91%;
-    --ring: 270 70% 55%;
+    --border: 220 15% 90%;
+    --input: 220 15% 90%;
+    --ring: 175 85% 42%;
 
     --radius: 0.75rem;
-    
-    /* Gradient colors */
-    --gradient-start: 280 55% 35%;
-    --gradient-mid: 250 65% 45%;
-    --gradient-end: 200 80% 55%;
-    
-    /* Legacy gradient colors */
-    --gradient-dark-blue: 200 80% 55%;
-    --gradient-purple: 280 55% 35%;
-    --gradient-blue: 250 65% 45%;
     
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
     --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+    --shadow-glow-cyan: 0 0 40px rgba(6, 182, 212, 0.4);
+    --shadow-glow-purple: 0 0 40px rgba(168, 85, 247, 0.4);
 
     --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 270 70% 55%;
+    --sidebar-foreground: 220 15% 26%;
+    --sidebar-primary: 175 85% 42%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 270 70% 55%;
+    --sidebar-accent: 220 15% 96%;
+    --sidebar-accent-foreground: 220 15% 10%;
+    --sidebar-border: 220 15% 91%;
+    --sidebar-ring: 175 85% 42%;
   }
 
   .dark {
-    --background: 0 0% 13%;
+    --background: 225 50% 6%;
     --foreground: 0 0% 98%;
 
-    --card: 0 0% 13%;
+    --card: 225 45% 10%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 13%;
+    --popover: 225 45% 10%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 217 91% 53%;
+    --primary: 175 85% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 217 91% 60%;
+    --secondary: 280 75% 60%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 260 20% 18%;
-    --muted-foreground: 260 15% 70%;
+    --muted: 225 30% 15%;
+    --muted-foreground: 220 15% 65%;
 
-    --accent: 217 91% 53%;
+    --accent: 280 75% 60%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 63% 31%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 218 30% 20%;
-    --input: 218 30% 20%;
-    --ring: 210 90% 50%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --border: 225 30% 18%;
+    --input: 225 30% 18%;
+    --ring: 175 85% 50%;
+
+    --sidebar-background: 225 50% 8%;
+    --sidebar-foreground: 220 15% 95%;
+    --sidebar-primary: 175 85% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 225 30% 15%;
+    --sidebar-accent-foreground: 220 15% 95%;
+    --sidebar-border: 225 30% 15%;
+    --sidebar-ring: 175 85% 50%;
   }
 }
 
@@ -126,7 +115,7 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', 'Poppins', sans-serif;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
   
@@ -147,27 +136,51 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
-  /* Fixed gradient background - Purple to dark blue tech */
-  .gradient-animated {
+  /* NoCode gradient - Cyan to Purple to Pink */
+  .nocode-gradient {
     background: linear-gradient(135deg, 
-      hsl(280, 55%, 35%) 0%, 
-      hsl(250, 65%, 45%) 50%, 
-      hsl(200, 80%, 55%) 100%
+      hsl(175, 85%, 42%) 0%, 
+      hsl(280, 75%, 55%) 50%, 
+      hsl(320, 85%, 60%) 100%
     );
   }
   
-  /* Tech gradient - Purple to dark blue */
+  /* Tech gradient alternative */
   .tech-gradient {
     background: linear-gradient(135deg, 
-      hsl(280, 55%, 35%) 0%, 
-      hsl(250, 65%, 45%) 50%, 
-      hsl(200, 80%, 55%) 100%
+      hsl(225, 50%, 8%) 0%, 
+      hsl(280, 60%, 25%) 50%, 
+      hsl(175, 70%, 30%) 100%
     );
+  }
+  
+  /* Glassmorphism dark */
+  .glass-dark {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Glassmorphism light */
+  .glass-light {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
   }
   
   /* Gradient text */
   .gradient-text {
-    background: linear-gradient(135deg, hsl(280, 55%, 35%), hsl(200, 80%, 55%));
+    background: linear-gradient(135deg, hsl(175, 85%, 50%), hsl(280, 75%, 60%), hsl(320, 85%, 60%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Gradient text cyan */
+  .gradient-text-cyan {
+    background: linear-gradient(90deg, hsl(175, 85%, 50%), hsl(190, 90%, 60%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -181,15 +194,15 @@ All colors MUST be HSL.
   @keyframes pulseCTA {
     0% {
       transform: scale(1);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 10px 30px rgba(6, 182, 212, 0.3);
     }
     50% {
-      transform: scale(1.05);
-      box-shadow: 0 15px 30px rgba(139, 92, 246, 0.6);
+      transform: scale(1.03);
+      box-shadow: 0 15px 40px rgba(168, 85, 247, 0.5);
     }
     100% {
       transform: scale(1);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 10px 30px rgba(6, 182, 212, 0.3);
     }
   }
   
@@ -204,20 +217,46 @@ All colors MUST be HSL.
     100% { transform: translateY(0px); }
   }
   
-  /* Glassmorphism effect */
-  .glass-effect {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+  /* Glow effect */
+  .glow-cyan {
+    box-shadow: 0 0 40px rgba(6, 182, 212, 0.4);
   }
   
-  /* Tech glassmorphism effect - Blue theme */
-  .glass-effect-tech {
-    background: rgba(42, 96, 235, 0.15);
+  .glow-purple {
+    box-shadow: 0 0 40px rgba(168, 85, 247, 0.4);
+  }
+  
+  /* Glass effect for cards */
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(42, 96, 235, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .glass-effect-tech {
+    background: rgba(6, 182, 212, 0.08);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(6, 182, 212, 0.2);
+  }
+
+  /* Animated gradient border */
+  .gradient-border {
+    position: relative;
+  }
+  
+  .gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: inherit;
+    background: linear-gradient(135deg, hsl(175, 85%, 50%), hsl(280, 75%, 60%), hsl(320, 85%, 60%));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
   }
 }
 
@@ -238,37 +277,47 @@ All colors MUST be HSL.
   }
 }
 
-.benefits-card {
-  background-color: #1a0a2e;
-  background-image: 
-    radial-gradient(ellipse at 12% 88%, rgba(30, 58, 138, 0.5) 0, rgba(30, 58, 138, 0.2) 32%, rgba(26, 10, 46, 0) 60%),
-    radial-gradient(ellipse at 94% 20%, rgba(139, 92, 246, 0.6) 0, rgba(139, 92, 246, 0.25) 32%, rgba(26, 10, 46, 0) 56%),
-    linear-gradient(180deg, #1a0a2e 0, #130722 55%, #0d0518 100%);
-  background-repeat: no-repeat;
-  background-size: 150% 150%, 130% 130%, cover;
-  background-position: left bottom, right top, center;
+.benefits-card-tech {
+  background: linear-gradient(135deg, 
+    hsl(225, 50%, 8%) 0%, 
+    hsl(250, 45%, 15%) 50%, 
+    hsl(225, 50%, 10%) 100%
+  );
+  position: relative;
+  overflow: hidden;
 }
 
-.benefits-card-tech {
-  background-color: #050d21;
-  background-image: 
-    radial-gradient(ellipse at 12% 88%, rgba(12, 96, 124, .65) 0, rgba(12, 96, 124, .25) 32%, rgba(4, 16, 41, 0) 60%),
-    radial-gradient(ellipse at 94% 20%, rgba(103, 41, 166, .65) 0, rgba(103, 41, 166, .25) 32%, rgba(4, 16, 41, 0) 56%),
-    linear-gradient(180deg, #050d21 0, #040b1a 55%, #020711 100%);
-  background-repeat: no-repeat;
-  background-size: 150% 150%, 130% 130%, cover;
-  background-position: left bottom, right top, center;
+.benefits-card-tech::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 60%;
+  height: 100%;
+  background: radial-gradient(ellipse, rgba(6, 182, 212, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.benefits-card-tech::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -10%;
+  width: 50%;
+  height: 80%;
+  background: radial-gradient(ellipse, rgba(168, 85, 247, 0.15) 0%, transparent 70%);
+  pointer-events: none;
 }
 
 .benefits-button-tech {
   width: 100%;
-  background: linear-gradient(135deg, hsl(280, 55%, 35%) 0%, hsl(250, 65%, 45%) 50%, hsl(200, 80%, 55%) 100%);
+  background: linear-gradient(135deg, hsl(175, 85%, 42%) 0%, hsl(280, 75%, 55%) 100%);
   color: white;
   font-weight: 700;
   font-size: 0.875rem;
-  padding: 0.6rem 0.9rem;
+  padding: 0.7rem 1rem;
   border-radius: 9999px;
-  box-shadow: 0 20px 25px -5px rgba(92, 35, 127, 0.3);
+  box-shadow: 0 10px 30px -5px rgba(6, 182, 212, 0.4);
   transition: all 300ms;
   display: inline-flex;
   align-items: center;
@@ -278,15 +327,15 @@ All colors MUST be HSL.
 }
 
 .benefits-button-tech:hover {
-  background: linear-gradient(135deg, hsl(280, 55%, 45%) 0%, hsl(250, 65%, 55%) 50%, hsl(200, 80%, 65%) 100%);
-  box-shadow: 0 25px 50px -12px rgba(92, 35, 127, 0.5);
-  transform: scale(1.05);
+  background: linear-gradient(135deg, hsl(175, 85%, 50%) 0%, hsl(280, 75%, 65%) 100%);
+  box-shadow: 0 15px 40px -5px rgba(168, 85, 247, 0.5);
+  transform: translateY(-2px);
 }
 
 @media (min-width: 768px) {
   .benefits-button-tech {
     font-size: 1.125rem;
-    padding: 0.9rem 1.8rem;
+    padding: 1rem 2rem;
   }
 }
 
@@ -297,7 +346,7 @@ All colors MUST be HSL.
 }
 
 .benefits-content {
-  padding: 1.25rem 1rem;
+  padding: 1.5rem 1rem;
 }
 
 @media (min-width: 640px) {
@@ -340,42 +389,6 @@ All colors MUST be HSL.
   .benefits-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 4rem;
-  }
-}
-
-.benefits-button {
-  width: 100%;
-  background-color: hsl(var(--primary));
-  color: hsl(var(--primary-foreground));
-  font-weight: 700;
-  font-size: 0.875rem;
-  padding: 0.6rem 0.9rem;
-  border-radius: 9999px;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-  transition: all 300ms;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  border: none;
-}
-
-.benefits-button:hover {
-  background-color: hsl(var(--primary) / 0.9);
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  transform: scale(1.05);
-}
-
-@media (min-width: 768px) {
-  .benefits-button {
-    font-size: 1.125rem;
-    padding: 0.9rem 1.8rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .benefits-button {
-    width: auto;
   }
 }
 
@@ -427,7 +440,7 @@ All colors MUST be HSL.
 }
 
 .blue-background {
-  background-color: #0a1835 !important;
+  background-color: hsl(225, 50%, 8%) !important;
   color: #fff !important;
   padding: 15px !important;
 }
@@ -488,297 +501,154 @@ All colors MUST be HSL.
 /* Seção de Contato (Cards) */
 .footer-contact {
   padding: 64px 24px 45px;
-  background-color: #041029;
-  background-image: radial-gradient(ellipse at 12% 88%, rgba(12, 96, 124, .65) 0, rgba(12, 96, 124, .25) 32%, rgba(4, 16, 41, 0) 60%), radial-gradient(ellipse at 94% 20%, rgba(103, 41, 166, .65) 0, rgba(103, 41, 166, .25) 32%, rgba(4, 16, 41, 0) 56%), linear-gradient(180deg, #050d21 0, #040b1a 55%, #020711 100%);
-  background-repeat: no-repeat;
-  background-size: 150% 150%, 130% 130%, cover;
-  background-position: left bottom, right top, center;
+  background: linear-gradient(135deg, 
+    hsl(225, 50%, 8%) 0%, 
+    hsl(250, 45%, 15%) 50%, 
+    hsl(225, 50%, 10%) 100%
+  );
 }
 
 .footer-contact__container {
   position: relative;
   z-index: 1;
-  max-width: 1240px;
+  max-width: 1200px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 320px 1fr;
-  gap: 36px;
-  align-items: center;
 }
 
-.footer-contact__intro {
+.footer-contact__row {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
-  text-transform: uppercase;
-  font-weight: 800;
-}
-
-.footer-contact__intro-title {
-  color: #0fe;
-  font-size: clamp(2rem, 4vw, 2.7rem);
-  letter-spacing: 1px;
-  text-align: left;
-  margin-left: 60px;
-  line-height: 50px;
-}
-
-.footer-contact__intro-subtitle {
-  color: #ff3daf;
-  font-size: clamp(1.4rem, 3vw, 2rem);
-  line-height: 1.4;
-  font-weight: 600;
-  text-align: left;
-  margin-left: 60px;
-}
-
-.footer-contact__cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 28px;
-}
-
-.contact-channel-card {
-  position: relative;
-  background: #fff;
-  border-radius: 24px;
-  padding: 25px 20px;
-  box-shadow: 0 18px 40px rgba(10, 33, 63, .08);
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
-  max-width: 520px;
-  margin-inline: auto;
-  overflow: hidden;
-}
-
-.contact-channel-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  height: 12px;
-  border-radius: 24px 24px 0 0;
-  background: linear-gradient(90deg, #04c45c 0, #2fdf84 100%);
-}
-
-.contact-channel-card__label {
-  display: inline-flex;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
   justify-content: center;
-  gap: 12px;
-  padding: 14px 15px;
-  border-radius: 999px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #0a213f;
-  background: #e9f9f0;
-  width: fit-content;
-  margin-inline: auto;
 }
 
-.contact-channel-card__label-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: #04c45c;
-}
-
-.contact-channel-card__list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.contact-channel-card__item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 20px;
-  border-radius: 18px;
-  background: #fff;
-  border-left: 4px solid #09b65d;
-  box-shadow: 0 14px 32px rgba(10, 33, 63, .08);
-}
-
-.contact-channel-card__item--call {
-  align-items: flex-start;
-}
-
-.contact-channel-card__item-content {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.contact-channel-card__item-title {
-  font-size: .9rem;
-  font-weight: 700;
-  color: #082039;
-  text-transform: uppercase;
-  text-align: left;
-}
-
-.contact-channel-card__item-text {
-  margin: 0;
-  color: #4a5a6b;
-  font-size: .8rem;
-  text-align: left;
-  line-height: 1.5;
-}
-
-.contact-channel-card__promo-banner {
-  background: linear-gradient(90deg, #023e58 0, #3e165b 100%);
-  border-radius: 8px;
-  padding: 10px 15px;
-  margin: 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, .1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-}
-
-.contact-channel-card__promo-text {
-  display: block;
-  font-weight: 800;
-  font-size: 15px;
-  text-transform: uppercase;
-  line-height: 1.1;
-  font-family: "Montserrat", sans-serif;
-}
-
-.contact-channel-card__promo-text--cyan {
-  color: #0fe;
-}
-
-.contact-channel-card__promo-text--pink {
-  color: #d429b7;
-}
-
-.contact-channel-card__promo-badge {
-  background-color: #fff000;
-  color: #000;
-  font-weight: 700;
-  font-size: 9px;
-  line-height: 1.1;
-  text-align: center;
-  padding: 5px 8px;
-  border-radius: 6px;
-  white-space: nowrap;
-  font-family: "Montserrat", sans-serif;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
-}
-
-.contact-channel-card__phone {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding-left: 16px;
-  font-weight: 700;
-  color: #082039;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: color .2s ease;
-}
-
-.contact-channel-card__phone--inline {
-  padding-left: 0;
-  margin-top: 8px;
-}
-
-.contact-channel-card__phone-text {
-  display: flex;
-}
-
-.contact-channel-card__phone:focus-visible,
-.contact-channel-card__phone:hover {
-  color: #09b65d;
-  outline: 0;
-}
-
-.contact-channel-card__cta {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 78px;
-  height: 55px;
+.footer-contact__card {
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+  padding: 24px;
+  background: rgba(6, 182, 212, 0.08);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(6, 182, 212, 0.2);
   border-radius: 16px;
-  background: #09b65d;
-  box-shadow: 0 12px 24px rgba(9, 182, 93, .25);
+  text-align: center;
   color: #fff;
-  transition: transform .2s ease, box-shadow .2s ease;
+  transition: all 0.3s ease;
 }
 
-.contact-channel-card__cta svg {
-  width: 22px;
-  height: 22px;
+.footer-contact__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(6, 182, 212, 0.2);
 }
 
-.contact-channel-card__cta:focus-visible,
-.contact-channel-card__cta:hover {
-  transform: translateX(4px);
-  box-shadow: 0 16px 28px rgba(9, 182, 93, .35);
-  outline: 0;
+.footer-contact__card-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 16px;
+  background: linear-gradient(135deg, hsl(175, 85%, 42%), hsl(280, 75%, 55%));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Responsividade Footer */
-@media (min-width: 576px) {
-  .footer-container { max-width: 94%; }
+.footer-contact__card-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
 }
 
-@media (min-width: 768px) {
-  .footer-container { max-width: 92%; }
+.footer-contact__card-text {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 16px;
 }
 
-@media (min-width: 992px) {
-  .footer-container { max-width: 90%; }
+.footer-contact__card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, hsl(175, 85%, 42%), hsl(280, 75%, 55%));
+  border-radius: 9999px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-@media (min-width: 1200px) {
-  .footer-container { max-width: 1200px; }
+.footer-contact__card-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(6, 182, 212, 0.4);
 }
 
-@media (min-width: 1400px) {
-  .footer-container { max-width: 1400px; }
+/* Bottom Bar */
+.footer-bottom {
+  background: hsl(225, 50%, 6%);
+  padding: 20px 24px;
 }
 
-@media (max-width: 1200px) {
-  .footer-contact__container {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-  .footer-contact__intro {
-    align-items: center;
-  }
-  .footer-contact__container {
-    text-align: start;
-  }
+.footer-bottom__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
 }
 
-@media (max-width: 767px) {
-  .tituloRodape { font-size: 14px; }
-  .atxtrodape { font-size: 13px; }
-  .txtrodape, .txtDir, .txtPol { font-size: 12px !important; }
+.footer-bottom__text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 13px;
 }
 
-@media (max-width: 576px) {
-  .footer-contact__intro-title { margin-left: 0px; }
-  .footer-contact__intro-subtitle { margin-left: 6%; }
-  .contact-channel-card__promo-text { font-weight: 800; font-size: 10px; }
-  .contact-channel-card__promo-badge { font-size: 7px; padding: 3px; }
-  .contact-channel-card__phone--inline { padding-left: 0; margin-top: 0; }
-  .contact-channel-card__item { padding: 15px; }
+.footer-bottom__links {
+  display: flex;
+  gap: 24px;
 }
 
-@media (min-width: 1900px) {
-  .footer-contact {
-    background-image: url('/images/background-rodape-contato.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+.footer-bottom__link {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 13px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom__link:hover {
+  color: hsl(175, 85%, 50%);
+}
+
+/* NoCode specific utilities */
+.nocode-card {
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.05) 0%, rgba(168, 85, 247, 0.05) 100%);
+  border: 1px solid rgba(6, 182, 212, 0.15);
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.nocode-card:hover {
+  border-color: rgba(168, 85, 247, 0.3);
+  box-shadow: 0 10px 40px rgba(6, 182, 212, 0.15);
+}
+
+/* Animated background mesh */
+.mesh-gradient {
+  background: 
+    radial-gradient(at 40% 20%, hsla(175, 85%, 42%, 0.3) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, hsla(280, 75%, 55%, 0.2) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, hsla(320, 85%, 60%, 0.2) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, hsla(175, 85%, 42%, 0.15) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(280, 75%, 55%, 0.2) 0px, transparent 50%),
+    linear-gradient(135deg, hsl(225, 50%, 8%) 0%, hsl(225, 50%, 6%) 100%);
+}
+
+/* Dark section background */
+.dark-section {
+  background: linear-gradient(180deg, 
+    hsl(225, 50%, 8%) 0%, 
+    hsl(225, 50%, 10%) 50%,
+    hsl(225, 50%, 8%) 100%
+  );
 }

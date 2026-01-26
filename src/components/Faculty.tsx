@@ -36,16 +36,11 @@ const professors = [
 
 const Faculty = () => {
   return (
-    <section
-      className="pt-12 md:pt-24 pb-16 md:pb-32 relative overflow-hidden"
-      style={{
-        background: "linear-gradient(to top, hsl(280, 55%, 35%) 0%, hsl(250, 65%, 45%) 30%, hsl(200, 80%, 55%) 100%)",
-      }}
-    >
-      <div className="absolute inset-0 bg-black/10"></div>
+    <section className="pt-16 md:pt-28 pb-20 md:pb-36 relative overflow-hidden mesh-gradient">
+      <div className="absolute inset-0 bg-black/20"></div>
 
       {/* Wave Top */}
-      <div className="absolute top-0 left-0 right-0 h-10 md:h-16 lg:h-20 rotate-180">
+      <div className="absolute top-0 left-0 right-0 h-12 md:h-20 lg:h-24 rotate-180">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
@@ -62,11 +57,11 @@ const Faculty = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-8 md:mb-12">
+          <div className="text-center mb-10 md:mb-14">
             <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6">
-              CORPO DOCENTE DE EXCELÊNCIA
+              CORPO DOCENTE DE <span className="gradient-text">EXCELÊNCIA</span>
             </h2>
-            <p className="text-white/80 text-sm md:text-lg max-w-4xl mx-auto leading-relaxed">
+            <p className="text-white/70 text-sm md:text-lg max-w-4xl mx-auto leading-relaxed">
               Nosso corpo docente é formado por Professores Mestres e Doutores com vasta experiência acadêmica e
               profissional em tecnologia, prontos para guiar você em sua jornada de aprendizado.
             </p>
@@ -82,18 +77,18 @@ const Faculty = () => {
                 rel="noopener noreferrer"
                 className="flex flex-col items-center text-center group cursor-pointer"
               >
-                <div className="relative mb-3 md:mb-4 overflow-hidden rounded-lg">
-                  <div className="absolute inset-0 bg-gradient-to-t from-violet-500/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+                <div className="relative mb-3 md:mb-4 overflow-hidden rounded-xl">
+                  <div className="absolute inset-0 bg-gradient-to-t from-cyan-500/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
                   <img
                     src={professor.image}
                     alt={professor.name}
-                    className="w-full h-40 md:h-56 lg:h-64 object-cover object-top rounded-lg transition-transform duration-300 group-hover:scale-105"
+                    className="w-full h-44 md:h-60 lg:h-64 object-cover object-top rounded-xl transition-transform duration-300 group-hover:scale-105 border border-white/10"
                   />
                 </div>
-                <h3 className="text-white font-semibold text-sm md:text-base lg:text-lg mb-1 !leading-[1.15] transition-transform duration-300 group-hover:scale-105">
+                <h3 className="text-white font-semibold text-sm md:text-base lg:text-lg mb-1.5 !leading-[1.2] transition-all duration-300 group-hover:text-cyan-300">
                   {professor.name}
                 </h3>
-                <span className="flex items-center gap-1 text-cyan-400 group-hover:text-cyan-300 text-xs md:text-sm font-medium transition-colors underline underline-offset-2">
+                <span className="flex items-center gap-1.5 text-cyan-400 group-hover:text-cyan-300 text-xs md:text-sm font-medium transition-colors">
                   <ExternalLink className="w-3 h-3" />
                   Currículo Lattes
                 </span>
@@ -104,7 +99,7 @@ const Faculty = () => {
       </div>
 
       {/* Wave Bottom */}
-      <div className="absolute bottom-0 left-0 right-0 h-10 md:h-16 lg:h-20">
+      <div className="absolute bottom-0 left-0 right-0 h-12 md:h-20 lg:h-24">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
@@ -113,7 +108,7 @@ const Faculty = () => {
         >
           <path
             d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            fill="#1E2842"
+            fill="hsl(225, 50%, 8%)"
           />
         </svg>
       </div>
