@@ -71,7 +71,7 @@ const Testimonials = () => {
             ESPECIALISTAS <span className="gradient-text">DE SUCESSO</span>
           </h2>
           <p className="text-xs sm:text-sm md:text-lg text-white/70 max-w-3xl mx-auto px-2">
-            Veja como a pós-graduação em NoCode transformou a carreira dos nossos alunos.
+            Confira histórias reais de quem saiu da média e se destacou na Era dos Dados com nossas Pós-Graduações.
           </p>
         </div>
 
