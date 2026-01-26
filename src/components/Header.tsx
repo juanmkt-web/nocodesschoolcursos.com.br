@@ -55,7 +55,7 @@ const Header = () => {
 
       {/* Mobile menu sidebar */}
       <div
-        className={`md:hidden fixed top-0 right-0 h-full w-72 flex flex-col border-l border-white/10 z-[110] shadow-2xl transform transition-transform duration-300 ease-in-out ${
+        className={`md:hidden fixed top-0 right-0 h-screen w-72 flex flex-col border-l border-white/10 z-[110] shadow-2xl transform transition-transform duration-300 ease-in-out ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
         style={{ backgroundColor: "hsl(225 50% 8%)" }}
