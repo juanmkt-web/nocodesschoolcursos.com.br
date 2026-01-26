@@ -3,27 +3,27 @@ import { Layers, Workflow, Rocket, Clock, ArrowRight, CheckCircle2 } from "lucid
 const benefits = [
   {
     icon: Layers,
-    title: "Construa",
-    highlight: "Apps Completos",
+    title: "Conquiste",
+    highlight: "Cargos de Liderança",
   },
   {
     icon: Workflow,
-    title: "Automatize",
-    highlight: "Processos",
+    title: "Aumente seu",
+    highlight: "Poder Salarial",
   },
   {
     icon: Rocket,
-    title: "Lance",
-    highlight: "Produtos Digitais",
+    title: "Expanda seu",
+    highlight: "Networking",
   },
   {
     icon: Clock,
-    title: "Economize",
-    highlight: "Tempo e Dinheiro",
+    title: "Atualize suas",
+    highlight: "Competências",
   },
 ];
 
-const highlights = ["Bubble", "Webflow", "Make / Zapier"];
+const highlights = ["Nota Máxima MEC", "Aulas Online", "Conclusão Rápida"];
 
 const Benefits = () => {
   return (
@@ -86,7 +86,7 @@ const Benefits = () => {
                     rel="noopener noreferrer"
                   >
                     <button className="benefits-button-tech">
-                      QUERO SER ESPECIALISTA NOCODE
+                      QUERO SER ESPECIALISTA
                       <ArrowRight className="inline-block ml-2 h-4 w-4 md:h-5 md:w-5" />
                     </button>
                   </a>
