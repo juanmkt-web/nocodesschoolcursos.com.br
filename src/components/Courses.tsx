@@ -2,49 +2,70 @@ import {
   GraduationCap,
   Monitor,
   Clock,
-  Calendar,
-  Code2,
-  Database,
+  Layers,
+  Workflow,
   Globe,
   Smartphone,
-  Shield,
-  Cloud,
+  Palette,
+  Zap,
   ArrowRight,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import cursoADS from "@/assets/curso-analise-sistemas.jpg";
 
-const courseDetails = {
-  title: "Tecnólogo em Análise e Desenvolvimento de Sistemas",
-  modality: "EAD",
-  hours: "2.120 HORAS",
-  semesters: "5 SEMESTRES",
-  promoPrice: "R$ 139,00",
-  regularPrice: "R$ 329,00",
-  image: cursoADS,
-  url: "https://www.fasuleducacional.edu.br/graduacao/analise-e-desenvolvimento-de-sistemas",
-  description:
-    "O Curso de Tecnólogo em Análise e Desenvolvimento de Sistemas da FASUL prepara profissionais para atuar no desenvolvimento de software, aplicações web e mobile, bancos de dados, e gestão de projetos de TI.",
-};
+const courses = [
+  {
+    title: "MBA em Desenvolvimento NoCode",
+    description: "Domine Bubble, Webflow, Airtable e outras ferramentas para criar aplicações completas sem código.",
+    modality: "EAD",
+    hours: "420 HORAS",
+    duration: "12 MESES",
+    price: "R$ 189,00",
+    url: "https://www.fasuleducacional.edu.br/posgraduacao/cursos",
+    icon: Layers,
+    gradient: "from-cyan-500 to-blue-600",
+  },
+  {
+    title: "Automação e Integração de Processos",
+    description: "Aprenda a automatizar fluxos de trabalho com Make, Zapier, n8n e conectar sistemas empresariais.",
+    modality: "EAD",
+    hours: "360 HORAS",
+    duration: "10 MESES",
+    price: "R$ 169,00",
+    url: "https://www.fasuleducacional.edu.br/posgraduacao/cursos",
+    icon: Workflow,
+    gradient: "from-purple-500 to-pink-600",
+  },
+  {
+    title: "Design de Produtos Digitais",
+    description: "Crie interfaces incríveis com Figma, prototipe com Framer e publique sites profissionais com Webflow.",
+    modality: "EAD",
+    hours: "360 HORAS",
+    duration: "10 MESES",
+    price: "R$ 169,00",
+    url: "https://www.fasuleducacional.edu.br/posgraduacao/cursos",
+    icon: Palette,
+    gradient: "from-pink-500 to-orange-500",
+  },
+];
 
 const careerAreas = [
-  { icon: Code2, title: "Desenvolvedor Full-Stack", description: "Crie aplicações web completas do front ao back-end" },
-  { icon: Smartphone, title: "Desenvolvedor Mobile", description: "Desenvolva apps para iOS e Android" },
-  { icon: Database, title: "Analista de Dados", description: "Trabalhe com Big Data e Business Intelligence" },
-  { icon: Shield, title: "Segurança da Informação", description: "Proteja sistemas e dados corporativos" },
-  { icon: Cloud, title: "DevOps / Cloud", description: "Gerencie infraestrutura e deploys em nuvem" },
-  { icon: Globe, title: "Desenvolvedor Web", description: "Crie sites e sistemas para a internet" },
+  { icon: Layers, title: "Desenvolvedor NoCode", description: "Crie apps completos sem programar" },
+  { icon: Smartphone, title: "Product Builder", description: "Lance MVPs em semanas, não meses" },
+  { icon: Workflow, title: "Especialista em Automação", description: "Conecte e automatize sistemas" },
+  { icon: Zap, title: "Growth Hacker", description: "Escale negócios com ferramentas ágeis" },
+  { icon: Palette, title: "UI/UX NoCode", description: "Design e desenvolvimento integrados" },
+  { icon: Globe, title: "Consultor Digital", description: "Transforme empresas com NoCode" },
 ];
 
 const Courses = () => {
   return (
-    <section id="cursos" className="pb-10 md:pb-24 tech-gradient relative">
-      <div className="absolute top-0 left-0 right-0 h-6 md:h-16 lg:h-20">
+    <section id="cursos" className="pb-12 md:pb-24 dark-section relative">
+      <div className="absolute top-0 left-0 right-0 h-6 md:h-16 lg:h-20 rotate-180">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
-          className="w-full h-full"
+          className="w-full h-full rotate-180"
         >
           <path
             d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
@@ -53,114 +74,94 @@ const Courses = () => {
         </svg>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 relative z-10 pt-6 sm:pt-16">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10 pt-10 sm:pt-20">
         {/* Header */}
-        <div className="text-center mb-4 sm:mb-12 text-white animate-fade-in">
-          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold mb-2 sm:mb-4">CONHEÇA O CURSO</h2>
-          <p className="text-sm sm:text-base md:text-lg text-white/90 max-w-3xl mx-auto leading-relaxed px-2">
-            O Tecnólogo em ADS é uma das formações mais valorizadas do mercado de tecnologia, com alta empregabilidade e
-            salários competitivos.
+        <div className="text-center mb-8 sm:mb-16 text-white animate-fade-in">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold mb-3 sm:mb-4">
+            NOSSAS <span className="gradient-text">PÓS-GRADUAÇÕES</span>
+          </h2>
+          <p className="text-sm sm:text-base md:text-lg text-white/70 max-w-3xl mx-auto leading-relaxed px-2">
+            Especialize-se nas ferramentas mais poderosas do mercado NoCode e acelere sua carreira na era digital.
           </p>
         </div>
 
-        {/* Main Course Card */}
-        <div className="max-w-6xl mx-auto mb-6 md:mb-16">
-          <div className="bg-white rounded-2xl md:rounded-3xl shadow-2xl overflow-hidden">
-            <div className="grid lg:grid-cols-2">
-              {/* Image Side */}
-              <div className="relative h-40 md:h-64 lg:h-auto min-h-[160px] md:min-h-[300px]">
-                <img
-                  src={courseDetails.image}
-                  alt={courseDetails.title}
-                  className="w-full h-full object-cover object-center"
-                />
-                <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(0,0,0,0.4)_0%,transparent_30%)] lg:bg-[linear-gradient(to_right,rgba(0,0,0,0.4)_0%,transparent_30%)]" />
-              </div>
+        {/* Course Cards */}
+        <div className="max-w-6xl mx-auto mb-12 md:mb-20">
+          <div className="grid md:grid-cols-3 gap-4 md:gap-6">
+            {courses.map((course, index) => (
+              <div
+                key={index}
+                className="group relative bg-white/[0.03] backdrop-blur-sm rounded-2xl border border-white/10 overflow-hidden hover:border-cyan-500/30 transition-all duration-300 hover:shadow-[0_0_40px_rgba(6,182,212,0.15)]"
+              >
+                {/* Gradient top bar */}
+                <div className={`h-1.5 bg-gradient-to-r ${course.gradient}`} />
+                
+                <div className="p-5 md:p-6">
+                  {/* Icon */}
+                  <div className={`w-12 h-12 md:w-14 md:h-14 rounded-xl bg-gradient-to-br ${course.gradient} flex items-center justify-center mb-4 shadow-lg`}>
+                    <course.icon className="w-6 h-6 md:w-7 md:h-7 text-white" />
+                  </div>
 
-              {/* Content Side */}
-              <div className="p-3 sm:p-6 lg:p-10">
-                <h3 className="text-lg sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-2 sm:mb-4">
-                  {courseDetails.title}
-                </h3>
-                <p className="text-xs sm:text-base text-gray-600 mb-2 sm:mb-6 leading-relaxed">
-                  {courseDetails.description}
-                </p>
+                  <h3 className="text-lg md:text-xl font-bold text-white mb-2 group-hover:text-cyan-300 transition-colors">
+                    {course.title}
+                  </h3>
+                  <p className="text-white/60 text-sm mb-4 leading-relaxed">
+                    {course.description}
+                  </p>
 
-                {/* Course Info */}
-                <div className="grid grid-cols-2 gap-2 sm:gap-4 mb-2 sm:mb-6">
-                  <div className="flex items-center gap-1.5 sm:gap-2">
-                    <GraduationCap className="w-4 h-4 sm:w-5 sm:h-5 text-[#2563EB] flex-shrink-0" />
-                    <span className="text-xs sm:text-sm font-medium text-gray-700">Tecnólogo</span>
+                  {/* Course Info */}
+                  <div className="grid grid-cols-2 gap-2 mb-4">
+                    <div className="flex items-center gap-1.5">
+                      <Monitor className="w-4 h-4 text-cyan-400 flex-shrink-0" />
+                      <span className="text-xs text-white/70">{course.modality}</span>
+                    </div>
+                    <div className="flex items-center gap-1.5">
+                      <Clock className="w-4 h-4 text-cyan-400 flex-shrink-0" />
+                      <span className="text-xs text-white/70">{course.hours}</span>
+                    </div>
+                    <div className="flex items-center gap-1.5">
+                      <GraduationCap className="w-4 h-4 text-cyan-400 flex-shrink-0" />
+                      <span className="text-xs text-white/70">{course.duration}</span>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-1.5 sm:gap-2">
-                    <Monitor className="w-4 h-4 sm:w-5 sm:h-5 text-[#2563EB] flex-shrink-0" />
-                    <span className="text-xs sm:text-sm font-medium text-gray-700">{courseDetails.modality}</span>
-                  </div>
-                  <div className="flex items-center gap-1.5 sm:gap-2">
-                    <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-[#2563EB] flex-shrink-0" />
-                    <span className="text-xs sm:text-sm font-medium text-gray-700">{courseDetails.hours}</span>
-                  </div>
-                  <div className="flex items-center gap-1.5 sm:gap-2">
-                    <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-[#2563EB] flex-shrink-0" />
-                    <span className="text-xs sm:text-sm font-medium text-gray-700">{courseDetails.semesters}</span>
-                  </div>
-                </div>
 
-                {/* Pricing */}
-                <div className="bg-gray-50 rounded-xl p-2 sm:p-4 mb-2 sm:mb-6">
-                  <div className="flex flex-wrap items-baseline gap-1 sm:gap-2 mb-1">
-                    <span className="text-xl sm:text-3xl font-bold text-gray-900">{courseDetails.promoPrice}</span>
-                    <span className="text-sm sm:text-lg text-gray-900">/mês</span>
-                    <span className="text-gray-400 line-through ml-1 sm:ml-2 text-xs sm:text-base">
-                      {courseDetails.regularPrice}
-                    </span>
+                  {/* Price */}
+                  <div className="flex items-baseline gap-1 mb-4">
+                    <span className="text-2xl md:text-3xl font-bold text-white">{course.price}</span>
+                    <span className="text-white/50 text-sm">/mês</span>
                   </div>
-                  <span className="inline-block text-[10px] sm:text-xs bg-gradient-to-r from-violet-500 to-blue-500 text-white px-2 sm:px-3 py-1 rounded-full font-semibold">
-                    VALOR FIXO ATÉ O FINAL DO CURSO
-                  </span>
-                </div>
 
-                {/* CTA Buttons */}
-                <div className="flex flex-row gap-2 sm:gap-3">
+                  {/* CTA */}
                   <Button
-                    className="bg-gradient-to-r from-violet-600 to-blue-600 hover:from-violet-500 hover:to-blue-500 text-white font-bold rounded-full text-[10px] sm:text-base py-2 sm:py-6 px-4 sm:px-6 flex-1 shadow-[0_0_20px_rgba(139,92,246,0.5)]"
+                    className={`w-full bg-gradient-to-r ${course.gradient} hover:opacity-90 text-white font-bold rounded-full py-5 transition-all`}
                     asChild
                   >
-                    <a href={courseDetails.url} target="_blank" rel="noopener noreferrer">
-                      MATRICULE-SE <ArrowRight className="ml-1 h-3 w-3 sm:ml-2 sm:h-5 sm:w-5" />
-                    </a>
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="text-violet-600 font-bold text-[10px] sm:text-base border-2 border-violet-600 rounded-full py-2 sm:py-6 px-4 sm:px-6 flex-1 hover:bg-violet-600/10 transition-colors"
-                    asChild
-                  >
-                    <a href={courseDetails.url} target="_blank" rel="noopener noreferrer">
-                      SAIBA MAIS
+                    <a href={course.url} target="_blank" rel="noopener noreferrer">
+                      SAIBA MAIS <ArrowRight className="ml-2 h-4 w-4" />
                     </a>
                   </Button>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
 
         {/* Career Areas */}
-        <div className="max-w-6xl mx-auto mb-4 md:mb-16">
-          <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white text-center mb-3 sm:mb-8">
-            ÁREAS DE ATUAÇÃO
+        <div className="max-w-6xl mx-auto">
+          <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white text-center mb-6 sm:mb-10">
+            ÁREAS DE <span className="gradient-text">ATUAÇÃO</span>
           </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
             {careerAreas.map((area, index) => (
               <div
                 key={index}
-                className="bg-white/10 backdrop-blur-sm rounded-xl p-2 sm:p-4 lg:p-6 text-center hover:bg-white/20 transition-colors border border-violet-500/20"
+                className="group bg-white/[0.03] backdrop-blur-sm rounded-xl p-4 sm:p-5 text-center hover:bg-white/[0.06] transition-all duration-300 border border-white/5 hover:border-cyan-500/20"
               >
-                <div className="w-8 h-8 sm:w-12 sm:h-12 bg-gradient-to-br from-violet-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-1 sm:mb-3">
-                  <area.icon className="w-4 h-4 sm:w-6 sm:h-6 text-white" />
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-cyan-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-3 shadow-lg group-hover:scale-110 transition-transform">
+                  <area.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </div>
-                <h4 className="text-white font-bold text-[10px] sm:text-sm lg:text-base mb-0.5">{area.title}</h4>
-                <p className="text-white/70 text-[9px] sm:text-xs lg:text-sm">{area.description}</p>
+                <h4 className="text-white font-bold text-xs sm:text-sm mb-1">{area.title}</h4>
+                <p className="text-white/50 text-[10px] sm:text-xs">{area.description}</p>
               </div>
             ))}
           </div>
@@ -176,7 +177,7 @@ const Courses = () => {
         >
           <path
             d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            fill="#1E2842"
+            fill="hsl(225, 50%, 8%)"
           />
         </svg>
       </div>

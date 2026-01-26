@@ -8,25 +8,25 @@ const testimonials = [
   {
     id: 1,
     quote:
-      "Eu já atuava na área de infraestrutura, mas sentia que faltava a base de programação para evoluir. Muitos diziam que depois dos 40 era tarde para mudar, mas a graduação em ADS me provou o contrário. O curso atualizou meu mindset e me deu as ferramentas para migrar para o desenvolvimento Back-End. Hoje, tenho a segurança técnica que precisava e fui promovido a Sênior na minha empresa.",
-    name: "Carlos Silva",
-    course: "Análise e Desenvolvimento de Sistemas",
-    photo: carlosFoto,
+      "Eu era designer e sempre dependia de desenvolvedores para colocar meus projetos no ar. Com a pós em NoCode, aprendi a criar apps completos sozinha. Hoje tenho minha própria startup e já lancei 3 produtos digitais. A liberdade de criar sem barreiras técnicas mudou minha carreira.",
+    name: "Mariana Campos",
+    role: "Fundadora de Startup",
+    photo: marianaFoto,
   },
   {
     id: 2,
     quote:
-      "Entrei na faculdade apaixonada por código, mas descobri que a tecnologia também é sobre gestão e pessoas. A graduação não me ensinou apenas linguagens de programação, mas me deu a visão sistêmica de negócios que eu precisava. Essa bagagem técnica foi o diferencial para eu deixar de ser apenas executora e assumir a cadeira de Diretora de Tecnologia. Hoje, lidero a transformação digital de grandes projetos.",
-    name: "Mariana Campos",
-    course: "Análise e Desenvolvimento de Sistemas",
-    photo: marianaFoto,
+      "Trabalhava em consultoria e via empresas gastando fortunas em desenvolvimentos que levavam meses. Depois da especialização, passei a entregar soluções em semanas. Fui promovido a líder de transformação digital e hoje comando a área de inovação da empresa.",
+    name: "Carlos Silva",
+    role: "Head de Inovação",
+    photo: carlosFoto,
   },
   {
     id: 3,
     quote:
-      "Antes do curso, eu aprendia tudo sozinho, na tentativa e erro. A graduação em ADS organizou meu conhecimento e me ensinou as boas práticas e arquitetura de software que o mercado global exige. O impacto foi imediato: consegui meu primeiro estágio no segundo semestre e fui efetivado em menos de um ano. Hoje trabalho como Tech Lead em uma multinacional e vejo como aquela base sólida faz falta para quem pula etapas.",
+      "Sou da área de marketing e sempre quis criar landing pages e automações sem depender de TI. A pós me deu autonomia total. Hoje crio campanhas completas com Webflow e automatizo tudo com Make. Minha produtividade triplicou e meu salário acompanhou.",
     name: "Pedro Oliveira",
-    course: "Análise e Desenvolvimento de Sistemas",
+    role: "Growth Manager",
     photo: pedroFoto,
   },
 ];
@@ -48,7 +48,7 @@ const Testimonials = () => {
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <section id="depoimentos" className="pt-4 pb-8 sm:py-12 md:py-24 desktop:pb-[116px] bg-[#1E2842] relative">
+    <section id="depoimentos" className="pt-6 pb-12 sm:py-16 md:py-24 desktop:pb-[120px] mesh-gradient relative">
       <div className="absolute bottom-0 left-0 right-0 h-6 md:h-16 lg:h-20 pointer-events-none">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -63,12 +63,12 @@ const Testimonials = () => {
         </svg>
       </div>
       <div className="container mx-auto px-3 sm:px-4 md:px-6 relative z-10">
-        <div className="text-center mb-3 sm:mb-6 md:mb-12 animate-fade-in text-white">
-          <h2 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-1 md:mb-4">
-            DESENVOLVEDORES <span className="text-[#783BED]">DE SUCESSO</span>
+        <div className="text-center mb-6 sm:mb-10 md:mb-16 animate-fade-in text-white">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-4">
+            ESPECIALISTAS <span className="gradient-text">DE SUCESSO</span>
           </h2>
-          <p className="text-xs sm:text-sm md:text-lg text-white/90 max-w-3xl mx-auto px-2">
-            Veja como o Curso de ADS transformou a carreira dos nossos alunos.
+          <p className="text-xs sm:text-sm md:text-lg text-white/70 max-w-3xl mx-auto px-2">
+            Veja como a pós-graduação em NoCode transformou a carreira dos nossos alunos.
           </p>
         </div>
 
@@ -81,36 +81,39 @@ const Testimonials = () => {
           {/* Seta esquerda */}
           <button
             onClick={() => setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length)}
-            className="absolute left-0 md:-left-4 top-1/2 -translate-y-1/2 z-20 w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+            className="absolute left-0 md:-left-4 top-1/2 -translate-y-1/2 z-20 w-9 h-9 md:w-11 md:h-11 flex items-center justify-center rounded-full bg-white/10 hover:bg-cyan-500/20 transition-colors border border-white/10"
             aria-label="Depoimento anterior"
           >
-            <ChevronLeft className="w-5 h-5 md:w-6 md:h-6 text-white/70" />
+            <ChevronLeft className="w-5 h-5 md:w-6 md:h-6 text-white/80" />
           </button>
 
           {/* Seta direita */}
           <button
             onClick={() => setCurrentIndex((prev) => (prev + 1) % testimonials.length)}
-            className="absolute right-0 md:-right-4 top-1/2 -translate-y-1/2 z-20 w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+            className="absolute right-0 md:-right-4 top-1/2 -translate-y-1/2 z-20 w-9 h-9 md:w-11 md:h-11 flex items-center justify-center rounded-full bg-white/10 hover:bg-cyan-500/20 transition-colors border border-white/10"
             aria-label="Próximo depoimento"
           >
-            <ChevronRight className="w-5 h-5 md:w-6 md:h-6 text-white/70" />
+            <ChevronRight className="w-5 h-5 md:w-6 md:h-6 text-white/80" />
           </button>
 
           <div
-            className="glass-effect-tech rounded-2xl md:rounded-3xl p-4 sm:p-5 md:p-8 lg:p-12 shadow-2xl animate-fade-in block mx-6 sm:mx-8 md:mx-12"
+            className="glass-effect-tech rounded-2xl md:rounded-3xl p-5 sm:p-6 md:p-10 lg:p-12 shadow-2xl animate-fade-in block mx-8 sm:mx-10 md:mx-14"
             key={currentTestimonial.id}
           >
-            <Quote className="h-6 w-6 sm:h-8 sm:w-8 md:h-12 md:w-12 text-cyan-400 mb-2 sm:mb-3 md:mb-6" />
-            <p className="text-sm sm:text-base md:text-xl lg:text-2xl text-white mb-4 sm:mb-5 md:mb-8 leading-relaxed italic font-light">
+            <Quote className="h-7 w-7 sm:h-9 sm:w-9 md:h-12 md:w-12 text-cyan-400 mb-3 sm:mb-4 md:mb-6" />
+            <p className="text-sm sm:text-base md:text-xl lg:text-2xl text-white mb-5 sm:mb-6 md:mb-8 leading-relaxed italic font-light">
               "{currentTestimonial.quote}"
             </p>
-            <div className="flex items-center gap-3 sm:gap-4 md:gap-6 border-t border-white/20 pt-4 sm:pt-5 md:pt-8">
+            <div className="flex items-center gap-4 sm:gap-5 md:gap-6 border-t border-white/10 pt-5 sm:pt-6 md:pt-8">
               <img
                 src={currentTestimonial.photo}
                 alt={currentTestimonial.name}
-                className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full border-2 sm:border-4 border-cyan-400 object-cover flex-shrink-0"
+                className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full border-3 sm:border-4 border-cyan-400/50 object-cover flex-shrink-0"
               />
-              <p className="text-white font-bold text-base sm:text-lg md:text-xl">{currentTestimonial.name}</p>
+              <div>
+                <p className="text-white font-bold text-base sm:text-lg md:text-xl">{currentTestimonial.name}</p>
+                <p className="text-cyan-400 text-sm md:text-base">{currentTestimonial.role}</p>
+              </div>
             </div>
           </div>
 
@@ -119,8 +122,8 @@ const Testimonials = () => {
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className={`h-2 rounded-full transition-all ${
-                  index === currentIndex ? "w-8 bg-gradient-to-r from-cyan-500 to-blue-600" : "w-2 bg-white/40"
+                className={`h-2.5 rounded-full transition-all ${
+                  index === currentIndex ? "w-10 bg-gradient-to-r from-cyan-500 to-purple-600" : "w-2.5 bg-white/30"
                 }`}
                 aria-label={`Ir para depoimento ${index + 1}`}
               />
@@ -129,23 +132,26 @@ const Testimonials = () => {
         </div>
 
         {/* Grid de 3 cards para telas >= 1200px */}
-        <div className="hidden desktop:grid grid-cols-3 gap-6 ultrawide:gap-7 max-w-7xl mx-auto">
+        <div className="hidden desktop:grid grid-cols-3 gap-6 ultrawide:gap-8 max-w-7xl mx-auto">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="glass-effect-tech rounded-2xl p-5 ultrawide:p-[22px] shadow-2xl animate-fade-in flex flex-col h-full"
+              className="glass-effect-tech rounded-2xl p-6 ultrawide:p-7 shadow-2xl animate-fade-in flex flex-col h-full hover:border-cyan-500/30 transition-all"
             >
-              <Quote className="h-6 w-6 ultrawide:h-7 ultrawide:w-7 text-cyan-400 mb-3 ultrawide:mb-[13px]" />
-              <p className="text-sm wide:text-[17px] ultrawide:text-[19px] text-white mb-4 ultrawide:mb-[18px] leading-relaxed italic font-light flex-grow">
+              <Quote className="h-7 w-7 ultrawide:h-8 ultrawide:w-8 text-cyan-400 mb-4 ultrawide:mb-5" />
+              <p className="text-base wide:text-lg ultrawide:text-xl text-white mb-5 ultrawide:mb-6 leading-relaxed italic font-light flex-grow">
                 "{testimonial.quote}"
               </p>
-              <div className="flex items-center gap-3 ultrawide:gap-[13px] border-t border-white/20 pt-4 ultrawide:pt-[18px]">
+              <div className="flex items-center gap-4 ultrawide:gap-5 border-t border-white/10 pt-5 ultrawide:pt-6">
                 <img
                   src={testimonial.photo}
                   alt={testimonial.name}
-                  className="w-12 h-12 ultrawide:w-[54px] ultrawide:h-[54px] rounded-full border-2 border-cyan-400 object-cover"
+                  className="w-14 h-14 ultrawide:w-16 ultrawide:h-16 rounded-full border-3 border-cyan-400/50 object-cover"
                 />
-                <p className="text-white font-bold text-sm ultrawide:text-[16px]">{testimonial.name}</p>
+                <div>
+                  <p className="text-white font-bold text-base ultrawide:text-lg">{testimonial.name}</p>
+                  <p className="text-cyan-400 text-sm">{testimonial.role}</p>
+                </div>
               </div>
             </div>
           ))}
