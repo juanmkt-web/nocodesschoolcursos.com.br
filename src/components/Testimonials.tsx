@@ -8,25 +8,28 @@ const testimonials = [
   {
     id: 1,
     quote:
-      "Eu era designer e sempre dependia de desenvolvedores para colocar meus projetos no ar. Com a pós em NoCode, aprendi a criar apps completos sozinha. Hoje tenho minha própria startup e já lancei 3 produtos digitais. A liberdade de criar sem barreiras técnicas mudou minha carreira.",
+      "Minha startup coletava muitos dados, mas a gente não sabia o que fazer com eles. Com a especialização em IA, implementei algoritmos de Machine Learning que personalizam a oferta para cada cliente. Deixamos de 'chutar' o que o cliente queria e passamos a prever. O faturamento triplicou.",
     name: "Mariana Campos",
     role: "Fundadora de Startup",
+    course: "Inteligência Artificial",
     photo: marianaFoto,
   },
   {
     id: 2,
     quote:
-      "Trabalhava em consultoria e via empresas gastando fortunas em desenvolvimentos que levavam meses. Depois da especialização, passei a entregar soluções em semanas. Fui promovido a líder de transformação digital e hoje comando a área de inovação da empresa.",
+      "Nas reuniões de diretoria, ganhava quem tinha a opinião mais forte. O MBA em BI mudou esse jogo. Aprendi a transformar planilhas complexas em dashboards visuais e estratégicos. Hoje, nenhuma decisão importante é tomada na empresa sem passar pelos dados que minha equipe gera.",
     name: "Carlos Silva",
     role: "Head de Inovação",
+    course: "MBA em Análise de Dados e BI",
     photo: carlosFoto,
   },
   {
     id: 3,
     quote:
-      "Sou da área de marketing e sempre quis criar landing pages e automações sem depender de TI. A pós me deu autonomia total. Hoje crio campanhas completas com Webflow e automatizo tudo com Make. Minha produtividade triplicou e meu salário acompanhou.",
+      "Trabalhava com Growth Marketing, mas minhas análises eram muito básicas. A Pós em Ciência de Dados me ensinou a criar modelos preditivos. Agora eu não apenas analiso o que passou, eu prevejo o comportamento de compra do mês seguinte. Meu passe valorizou muito no mercado.",
     name: "Pedro Oliveira",
     role: "Growth Manager",
+    course: "Ciência de Dados e IA",
     photo: pedroFoto,
   },
 ];
