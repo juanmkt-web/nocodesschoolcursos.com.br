@@ -7,7 +7,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-[1000] isolate bg-[hsl(var(--dark-surface))]/90 backdrop-blur-xl border-b border-white/5">
+    <header className="fixed top-0 left-0 right-0 z-[100] isolate bg-[hsl(225,50%,8%)]/90 backdrop-blur-xl border-b border-white/5">
       <div className="container mx-auto px-4 py-4 md:py-5 flex items-center justify-between">
         <div className="flex items-center">
           <img src={logoFasul} alt="Fasul Educação" className="h-12 md:h-14" />
@@ -55,9 +55,10 @@ const Header = () => {
 
       {/* Mobile menu sidebar */}
       <div
-        className={`md:hidden fixed inset-y-0 right-0 w-[75vw] border-l border-white/10 z-[1010] shadow-2xl transform transition-transform duration-300 ease-in-out bg-[hsl(var(--dark-surface))] overflow-y-auto ${
+        className={`md:hidden fixed top-0 right-0 h-full w-72 border-l border-white/10 z-[110] shadow-2xl transform transition-transform duration-300 ease-in-out ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
+        style={{ backgroundColor: "hsl(225 50% 8%)" }}
       >
         <div className="flex items-center justify-between p-5 border-b border-white/10">
           <img src={logoFasul} alt="Fasul Educação" className="h-10" />
