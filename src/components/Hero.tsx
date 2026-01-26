@@ -7,15 +7,21 @@ const Hero = () => {
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-cyan-500/20 rounded-full blur-[100px] animate-float" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/20 rounded-full blur-[120px] animate-float" style={{ animationDelay: '-3s' }} />
+        <div
+          className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/20 rounded-full blur-[120px] animate-float"
+          style={{ animationDelay: "-3s" }}
+        />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-pink-500/10 rounded-full blur-[150px]" />
       </div>
 
       {/* Grid pattern overlay */}
-      <div className="absolute inset-0 opacity-[0.03]" style={{
-        backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
-        backgroundSize: '60px 60px'
-      }} />
+      <div
+        className="absolute inset-0 opacity-[0.03]"
+        style={{
+          backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
+          backgroundSize: "60px 60px",
+        }}
+      />
 
       {/* Wave bottom */}
       <div className="absolute bottom-0 left-0 right-0 h-16 md:h-24 lg:h-32">
@@ -38,18 +44,18 @@ const Hero = () => {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2 mb-6">
               <Sparkles className="w-4 h-4 text-cyan-400" />
-              <span className="text-cyan-300 font-semibold text-sm">PÓS-GRADUAÇÃO EM NOCODE</span>
+              <span className="text-cyan-300 font-semibold text-sm">PÓS-GRADUAÇÃO E MBA</span>
             </div>
 
             {/* Main headline */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white mb-6 leading-[1.1]">
-              CRIE SISTEMAS SEM{" "}
-              <span className="gradient-text">ESCREVER CÓDIGO</span>
+              CHEGOU A HORA DE <span className="gradient-text">ESPECIALIZAR </span>
+              SUA CARREIRA
             </h1>
 
             <p className="text-base sm:text-lg md:text-xl text-white/80 leading-relaxed mb-8 max-w-2xl mx-auto">
-              Domine as ferramentas NoCode mais poderosas do mercado. Construa apps, 
-              automatize processos e lance produtos digitais em tempo recorde.
+              O mercado não aceita mais o básico. Aprofunde seus conhecimentos, domine as tendências da sua área e
+              conquiste os cargos de liderança que exigem qualificação superior.
             </p>
 
             {/* CTA Buttons */}
@@ -66,9 +72,7 @@ const Hero = () => {
                   QUERO ME ESPECIALIZAR <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>
-              <a
-                href="#cursos"
-              >
+              <a href="#cursos">
                 <Button
                   size="lg"
                   variant="outline"
