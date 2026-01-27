@@ -54,8 +54,8 @@ const Hero = () => {
             </h2>
 
             <p className="text-sm sm:text-base md:text-xl text-white/80 leading-relaxed mb-5 md:mb-8 max-w-2xl mx-auto px-2">
-              O mercado não aceita mais o básico. Aprofunde seus conhecimentos, domine as tendências da sua área e
-              conquiste os cargos de liderança que exigem qualificação superior.
+              O Mercado não aceita mais o básico. Aprofunde seus conhecimentos, domine as tendências da sua área e
+              conquiste os cargos de liderança que exigem qualificação Superior.
             </p>
 
             {/* CTA Buttons */}
